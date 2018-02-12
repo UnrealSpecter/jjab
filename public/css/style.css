@@ -1,0 +1,74 @@
+body {
+    overflow-x: hidden;
+}
+
+/* FONTS */
+@font-face {
+    font-family: anton;
+    src: url('/fonts/anton.ttf');
+}
+
+@font-face {
+    font-family: playfair-display;
+    src: url('fonts/playfair-display-regular');
+}
+
+/* FONT STYLING */
+.anton {
+    font-family: anton;
+}
+
+.playfair-display {
+    font-family: playfair-display;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* GENERAL CSS */
+.no-padding-margin {
+    margin: 0;
+    padding: 0;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.z-index-2 {
+    z-index: 2;
+}
+
+/* FLEX DISPLAY CSS */
+.flex-r {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+}
+
+.flex-c {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+}
+
+.align-v {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.justify-c {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
