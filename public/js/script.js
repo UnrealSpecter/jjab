@@ -2,9 +2,9 @@ window.onload = function(){
       window.document.body.onload = logoAnimation(); // note removed parentheses
 };
 
+var hidden = 'd-none';
 function logoAnimation(){
 
-    var hidden = 'd-none';
     var blueShape = $('.blue-shape');
     var purpleShape = $('.purple-shape');
     var orangeShape = $('.orange-shape');
@@ -12,12 +12,22 @@ function logoAnimation(){
     blueShape.removeClass(hidden);
     purpleShape.removeClass(hidden);
 
-    blueShape.addClass('slideInLeft');
-    purpleShape.addClass('slideInRight');
+    blueShape.addClass('fadeInLeft');
+    purpleShape.addClass('fadeInRight');
 
     setTimeout(function(){
         orangeShape.removeClass(hidden);
         orangeShape.addClass('fadeIn');
-    }, 1500);
+        animateTitle();
+    }, 2000);
 
+}
+
+function animateTitle(){
+
+    var mainTitle = $('.main-title');
+    var subTitle = $('.sub-title');
+
+    mainTitle.removeClass(hidden).addClass('fadeInDown');
+    subTitle.removeClass(hidden).addClass('fadeInUp');
 }

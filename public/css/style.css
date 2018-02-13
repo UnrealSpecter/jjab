@@ -1,5 +1,6 @@
 body {
     overflow-x: hidden;
+    height: 100%;
 }
 
 /* FONTS */
@@ -10,7 +11,7 @@ body {
 
 @font-face {
     font-family: playfair-display;
-    src: url('fonts/playfair-display-regular');
+    src: url('fonts/playfair-bold.ttf');
 }
 
 /* FONT STYLING */
