@@ -14,6 +14,95 @@ body {
     src: url('fonts/playfair-bold.ttf');
 }
 
+
+/* large desktops and up ----------- */
+@media screen and (min-width: 1600px) {
+    .main-title {
+        font-size: 18em;
+    }
+
+    .sub-title {
+        font-size: 5em;
+    }
+
+    .scroll-text {
+        font-size: 3em;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+    .main-title {
+        font-size: 10em;
+    }
+
+    .sub-title {
+        font-size: 2.5em;
+    }
+
+    .scroll-text {
+        font-size: 3em;
+    }
+}
+
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .main-title {
+        font-size: 7em;
+    }
+
+    .sub-title {
+        font-size: 2em;
+    }
+
+    .scroll-text {
+        font-size: 2em;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .main-title {
+        font-size: 6em;
+    }
+
+    .sub-title {
+        font-size: 1.5em;
+    }
+
+    .scroll-text {
+        font-size: 1em;
+    }
+
+}
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+    .main-title {
+        font-size: 2em;
+    }
+
+    .sub-title {
+        font-size: 0.75em;
+    }
+
+    .scroll-text {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    .section {
+        display: none !important;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    .landscape-indicator {
+        display: none !important;
+    }
+}
+
+
 /* FONT STYLING */
 .anton {
     font-family: anton;
@@ -72,4 +161,30 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+}
+
+/* HOME STYLING */
+.blue-shape, .purple-shape, .orange-shape, .logo-text-wrapper {
+    position: absolute;
+}
+
+.main-title {
+    text-align: center;
+    color: white;
+}
+
+.sub-title {
+    text-align: center;
+    color: white;
+}
+
+.scroll-text {
+    color: #622a70;
+    /* font-size: 3em; */
+    letter-spacing: 15px;
+    white-space: nowrap;
+    height: 10%;
+    text-align: center;
+    bottom: 0;
+    position: absolute;
 }
