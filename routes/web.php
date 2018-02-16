@@ -15,6 +15,10 @@ Route::get('/home', function () {
     return view('partials.sections');
 });
 
+Route::get('/quotes', function () {
+    return view('partials.sections');
+});
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

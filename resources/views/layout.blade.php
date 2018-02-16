@@ -10,7 +10,7 @@
 
         <title>JJAB</title>
 
-        <link rel="icon" href="{{ URL::asset('/images/dhevak-logo.png')}}">
+        <link rel="icon" href="{{ URL::asset('/images/jjab-tab-icon.png') }}">
 
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('plugins/normalize/css/normalize.css')}}" />
         <!-- <link rel="stylesheet" type="text/css" href="{{ URL::asset('plugins/fullpage-scroll/css/jquery.fullPage.css')}}" /> -->

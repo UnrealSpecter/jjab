@@ -1,5 +1,6 @@
 body {
     overflow-x: hidden;
+    overflow-y: hidden;
     height: 100%;
 }
 
@@ -11,7 +12,12 @@ body {
 
 @font-face {
     font-family: playfair-display;
-    src: url('fonts/playfair-bold.ttf');
+    src: url('/fonts/playfair-display-regular.ttf');
+}
+
+@font-face {
+    font-family: adobe-caslon;
+    src: url('/fonts/adobe-caslon.ttf');
 }
 
 
@@ -180,11 +186,28 @@ body {
 
 .scroll-text {
     color: #622a70;
+    margin-bottom: 1%;
     /* font-size: 3em; */
     letter-spacing: 15px;
     white-space: nowrap;
-    height: 10%;
+    /* height: 10%; */
     text-align: center;
-    bottom: 0;
+    /* bottom: 0; */
+    /* position: absolute; */
+}
+
+/* QUOTES */
+.quote-me {
+    font-size: 15em;
+    color: white;
+}
+
+.quotes {
+    display: none;
+    color: white;
+    font-size: 5em;
+    letter-spacing: 5px;
     position: absolute;
+    bottom: 0;
+    white-space: nowrap;
 }
