@@ -19,7 +19,7 @@ function logoAnimation(){
         orangeShape.removeClass(hidden);
         orangeShape.addClass('fadeIn');
         animateTitle();
-    }, 500);
+    }, 1000);
 
 }
 
