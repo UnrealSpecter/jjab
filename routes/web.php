@@ -11,11 +11,7 @@
 |
 */
 
-Route::get('/home', function () {
-    return view('partials.sections');
-});
-
-Route::get('/quotes', function () {
+Route::get('/', function () {
     return view('partials.sections');
 });
 
