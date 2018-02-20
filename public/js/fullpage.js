@@ -94,7 +94,7 @@ function loaded(){
         	}
 
             if(anchorLink == 'contact'){
-                console.log('4');
+                phoneAnimation();
         	}
         }
     });
@@ -155,5 +155,14 @@ function startQuoteCycling() {
             .fadeOut(1000, showNextQuote);
     }
     showNextQuote();
+
+}
+
+function phoneAnimation(){
+
+    var smartPhone = $('.smartPhone');
+
+    smartPhone.removeClass(hidden).addClass('slideInUp');
+
 
 }

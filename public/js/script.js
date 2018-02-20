@@ -1,5 +1,5 @@
 window.onload = function(){
-      window.document.body.onload = logoAnimation(); // note removed parentheses
+      window.document.body.onload = logoAnimation();// note removed parentheses
 };
 
 var hidden = 'd-none';
@@ -8,6 +8,7 @@ function logoAnimation(){
     var blueShape = $('.blue-shape');
     var purpleShape = $('.purple-shape');
     var orangeShape = $('.orange-shape');
+
 
     blueShape.removeClass(hidden);
     purpleShape.removeClass(hidden);
@@ -22,6 +23,10 @@ function logoAnimation(){
     }, 1000);
 
 }
+
+
+
+
 
 function animateTitle(){
 

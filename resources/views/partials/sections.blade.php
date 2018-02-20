@@ -8,7 +8,7 @@
     <div class="section d-none">@include('partials.sections.home')</div>
     <div class="section d-none">@include('partials.sections.quotes')</div>
     <div class="section d-none">@include('partials.sections.home')</div>
-    <div class="section d-none">@include('partials.sections.quotes')</div>
+    <div class="section d-none">@include('partials.sections.contact')</div>
 
 @endsection
 
