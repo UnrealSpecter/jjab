@@ -222,8 +222,26 @@ body {
 
 .whatsapp {
     width: 50px;
-    margin-left: 520px;
-    margin-top: -130px;
+    margin-left: 707px;
+    margin-top: -150px;
+}
+
+.facebook {
+    width: 50px;
+    margin-left: 770px;
+    margin-top: -150px;
+}
+
+.instagram {
+    width: 50px;
+    margin-left: 836px;
+    margin-top: -150px;
+}
+
+.snapchat {
+    width: 40px;
+    margin-left: 908px;
+    margin-top: -150px;
 }
 
 .contact-text {
@@ -233,4 +251,17 @@ body {
 
 .contact-text h1 {
     font-size: 100px;
+}
+
+.appName {
+  position: absolute;
+  margin-left: 460px;
+  margin-top: 270px;
+  font-size: 0.8rem;
+  color: white;
+
+}
+
+.appName span {
+  padding-right: 8px;
 }
