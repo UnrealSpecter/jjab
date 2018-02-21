@@ -161,8 +161,16 @@ function startQuoteCycling() {
 function phoneAnimation(){
 
     var smartPhone = $('.smartPhone');
+    var whatsApp = $('.whatsapp');
 
     smartPhone.removeClass(hidden).addClass('slideInUp');
+
+    setTimeout(function(){
+        whatsApp.removeClass('slideInUp').addClass('bounce infinite')
+    }, 1000);
+
+
+
 
 
 }
