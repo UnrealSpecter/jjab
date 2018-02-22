@@ -27,6 +27,7 @@
         </div>
         <script src="{{ URL::asset('plugins/jquery/js/jquery-3.2.1.min.js') }}"></script>
         <script src="{{ URL::asset('plugins/tether/js/tether.min.js')}}"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
         <script src="{{ URL::asset('plugins/bootstrap/js/bootstrap.js')}}"></script>
         <script src="{{ URL::asset('plugins/fullpage-scroll/js/jquery.fullPage.js') }}"></script>
         @yield('js')

@@ -164,9 +164,14 @@ function phoneAnimation(){
     var whatsApp = $('.whatsapp');
     var apps = $('.apps');
     var appName = $('.appName');
+    var contactText = $('.contact-text');
 
-    smartPhone.removeClass(hidden).addClass('slideInUp');
 
+    contactText.removeClass(hidden).addClass('slideInRight');
+
+    setTimeout(function(){
+      smartPhone.removeClass(hidden).addClass('slideInUp');
+    }, 200);
 
     setTimeout(function(){
         whatsApp.removeClass('slideInUp').addClass('bounceApp infinite')
