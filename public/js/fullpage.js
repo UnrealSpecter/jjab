@@ -162,6 +162,7 @@ function phoneAnimation(){
 
     var smartPhone = $('.smartPhone');
     var whatsApp = $('.whatsapp');
+    var apps = $('.apps');
     var appName = $('.appName');
 
     smartPhone.removeClass(hidden).addClass('slideInUp');
@@ -169,14 +170,14 @@ function phoneAnimation(){
 
     setTimeout(function(){
         whatsApp.removeClass('slideInUp').addClass('bounceApp infinite')
-    }, 2000);
+    }, 2200);
 
     setTimeout(function(){
         appName.removeClass(hidden).addClass('fadeIn')
     }, 1800);
-
-
-
+    setTimeout(function(){
+        apps.removeClass(hidden).addClass('fadeIn')
+    }, 1500);
 
 
 }

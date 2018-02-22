@@ -213,40 +213,49 @@ body {
 }
 /* Contact Page */
 .smartPhone {
-    top: 40%;
+    /*top: 40%;*/
     bottom: 0;
-    left: -12.5%;
-    height: 100%;
+    /*left: -12.5%;*/
+    height: 75%;
     position: absolute;
 }
 
-.whatsapp {
-    width: 50px;
-    margin-left: 707px;
-    margin-top: -150px;
+.apps {
+
 }
 
-.facebook {
-    width: 50px;
-    margin-left: 770px;
-    margin-top: -150px;
-}
 
-.instagram {
-    width: 50px;
-    margin-left: 836px;
-    margin-top: -150px;
-}
+/*.whatsapp {*/
+    /*width: 50px;*/
+    /*height: 50px;*/
+    /*margin-left: 507px;*/
+    /*margin-top: 200px;*/
+/*}*/
 
-.snapchat {
-    width: 40px;
-    margin-left: 908px;
-    margin-top: -150px;
-}
+/*.facebook {*/
+    /*width: 50px;*/
+    /*height: 50px;*/
+    /*margin-left: 565px;*/
+    /*margin-top: 200px;*/
+/*}*/
+
+/*.instagram {*/
+    /*width: 50px;*/
+    /*height: 50px;*/
+    /*margin-left: 623px;*/
+    /*margin-top: 200px;*/
+/*}*/
+
+/*.snapchat {*/
+    /*width: 40px;*/
+    /*height: 40px;*/
+    /*margin-left: 688px;*/
+    /*margin-top: 205px;*/
+/*}*/
 
 .contact-text {
     position: relative;
-    left: 60%;
+    color: white;
 }
 
 .contact-text h1 {
@@ -255,9 +264,9 @@ body {
 
 .appName {
   position: absolute;
-  margin-left: 460px;
-  margin-top: 270px;
-  font-size: 0.8rem;
+  margin-left: 312px;
+  margin-top: 170px;
+  font-size: 0.7rem;
   color: white;
 
 }
