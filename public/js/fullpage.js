@@ -163,7 +163,6 @@ function phoneAnimation(){
     var smartPhone = $('.smartPhone');
     var whatsApp = $('.whatsapp');
     var apps = $('.apps');
-    var appName = $('.appName');
     var contactText = $('.contact-text');
 
 
@@ -175,14 +174,11 @@ function phoneAnimation(){
 
     setTimeout(function(){
         whatsApp.removeClass('slideInUp').addClass('bounceApp infinite')
-    }, 2200);
+    }, 2400);
 
     setTimeout(function(){
-        appName.removeClass(hidden).addClass('fadeIn')
-    }, 1800);
-    setTimeout(function(){
         apps.removeClass(hidden).addClass('fadeIn')
-    }, 1500);
+    }, 1700);
 
 
 }
