@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('partials.sections');
+    $contact = App\Contact::firstOrFail();
+    return view('partials.sections',compact('contact'));
 });
 
 
