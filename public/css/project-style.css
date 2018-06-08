@@ -1,0 +1,235 @@
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+}
+
+/* FONTS */
+@font-face {
+    font-family: anton;
+    src: url('/fonts/anton.ttf');
+}
+
+@font-face {
+    font-family: playfair-display;
+    src: url('/fonts/playfair-display-regular.ttf');
+}
+
+@font-face {
+    font-family: adobe-caslon;
+    src: url('/fonts/adobe-caslon.ttf');
+}
+/* FONT STYLING */
+.anton {
+    font-family: anton;
+}
+
+.playfair-display {
+    font-family: playfair-display;
+}
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-3px);
+        -ms-transform: translateY(-3px);
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+    60% {
+        -moz-transform: translateY(-3px);
+        -ms-transform: translateY(-3px);
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+}
+
+/* SECTION STYLING */
+.section-wrapper {
+     height: 100vh;
+     width: 100vw;
+}
+
+/* ANBI STYLING */
+.anbi {
+    position: fixed;
+    right: 0;
+    height: 100px;
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 1px;
+    z-index: 200;
+}
+
+.home-anbi, .home-anbi:hover {
+    background-color:  #622a70;
+    color: white;
+}
+
+.quotes-anbi {
+    background-color: white;
+    color: #622a70;
+}
+
+.quotes-employees {
+    background-color: white;
+    color: #68bedb;
+}
+
+.quotes-contact {
+    background-color: white;
+    color: #ef7c38;
+}
+
+/* HOME STYLING */
+.blue-shape, .purple-shape, .orange-shape, .logo-text-wrapper {
+    position: absolute;
+}
+
+.main-title {
+    text-align: center;
+    color: white;
+}
+
+.sub-title {
+    text-align: center;
+    color: white;
+}
+
+/* SCROLL INDICATOR */
+.scroll-indicator {
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+}
+
+.scroll-text {
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.blue {
+    color: #68bedb;
+}
+
+.orange {
+    color: #ef7c38;
+}
+
+.purple {
+    color: #622a70;
+}
+
+.blue-bg {
+    background-color: #68bedb;
+}
+.orange-bg {
+    background-color: #ef7c38;
+}
+.purple-bg {
+    background-color: #622a70;
+}
+
+/* QUOTES */
+.quote-me {
+    color: white;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.quotes {
+    line-height: 1em;
+    display: none;
+    color: white;
+    font-family: adobe-caslon;
+    text-align: center;
+}
+
+/* WIE ZIJN RENDA EN WESLEY */
+.text-wrapper {
+    z-index: 3;
+}
+
+.align-left { left: 0; }
+.align-right { right: 0; }
+.wesley { right: 0; }
+.renda { left: 0; }
+
+.image-render {
+    width: 75%;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+.renda-half     { width: 65%; }
+.renda-zakelijk { width: 60%; }
+
+.wesley-text {
+    color: white;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+.renda-text {
+    color: white;
+    letter-spacing: 1px;
+    line-height: 130%;
+}
+
+
+.button {
+    cursor: pointer;
+    letter-spacing: 4px;
+    padding: 0.5%;
+    border: white solid 1px;
+    color: white;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background: white;
+    color: #68bedb;
+    transition: background 0.25s, border 0.25s, color 0.25s;
+}
+
+/* CUSTOM FULLPAGE */
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: #fff;
+}
+
+#fp-nav ul li .fp-tooltip {
+    color: #fff;
+    font-family: anton;
+    letter-spacing: 5px;
+    font-size: 16px;
+}
+
+/* Contact Page */
+.smartphone {
+    bottom: 0;
+    position: absolute;
+}
+
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.contact-text-wrapper {
+    position: relative;
+    color: white;
+}

@@ -1,0 +1,314 @@
+@media only screen and (orientation: portrait) {
+    .section { display: none !important; }
+}
+
+@media only screen and (orientation: landscape) {
+    .landscape-indicator { display: none !important; }
+}
+
+/* HOME */
+.main-title {
+    font-size: 4em;
+}
+
+.sub-title, .scroll-text {
+    font-size: 1.15em;
+}
+
+/* QUOTES */
+.quote-me {
+    font-size: 2.25em;
+}
+
+.quotes {
+    font-size: 0.75em;
+}
+
+/* WHO ARE WE */
+.renda-text {
+    font-size: 1em;
+}
+
+.button {
+    font-size: 1.5em;
+}
+
+/* CONTACT */
+.link-app {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+}
+
+.div-apps-1 {
+   bottom: 4%;
+}
+
+.fa-envelope, .fa-phone, .fa-map-marker-alt {
+    height: 40px;
+    width: 40px;
+}
+
+.contact-title {
+    margin-top: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+}
+
+@media (min-width: 576px) {
+
+    /* HOME */
+    .main-title {
+        font-size: 5em;
+    }
+
+    .sub-title, .scroll-text {
+        font-size: 1.5em;
+    }
+
+    .scroll-text {
+        margin-bottom: 0px;
+    }
+
+    /* QUOTES */
+    .quote-me {
+        font-size: 2.5em;
+    }
+
+    .quotes {
+        font-size: 0.8em;
+    }
+
+    .link-app {
+        padding: 6px;
+    }
+
+    .div-apps-1 {
+        bottom: 0%;
+    }
+
+    /* WHO ARE WE */
+    .image-render {
+        width: 30%;
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+    }
+
+    .renda-half     { width: 25%; }
+    .renda-zakelijk { width: 17.5%; }
+
+    /*  CONTACT */
+    .contact-text h1 {
+        font-size: 50px;
+    }
+
+    .contact-title {
+        font-size: 2em;
+    }
+
+    .contact-text h3 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    /* HOME */
+    .main-title {
+        font-size: 7em;
+    }
+
+    .sub-title, .scroll-text {
+        font-size: 1.75em;
+    }
+
+    .scroll-text {
+        margin-bottom: 10px;
+    }
+
+    /* QUOTES */
+    .quote-me {
+        font-size: 4em;
+    }
+
+    .quotes {
+        font-size: 1.25em;
+    }
+
+    /* WHO ARE WE */
+    .renda-text {
+        font-size: 1.5em;
+    }
+
+    .image-render {
+        width: 50%;
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+    }
+
+    .renda-half     { width: 40%; }
+    .renda-zakelijk { width: 40%; }
+
+    /* CONTACT */
+    .div-apps-1 {
+       bottom: 5%;
+    }
+
+    .contact-title {
+        margin-top: 20px;
+        font-size: 4.5em;
+    }
+}
+
+@media (min-width: 992px) {
+    /* HOME */
+    .main-title {
+        font-size: 9em;
+    }
+
+    .sub-title, .scroll-text {
+        font-size: 2.25em;
+    }
+
+    /* WHO ARE WE */
+    .button{
+        margin-top: 25px;
+    }
+
+    .renda-text {
+        font-size: 1.5em;
+    }
+
+    .image-render {
+        width: 35%;
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+    }
+
+    .renda-half     { width: 27.5%; }
+    .renda-zakelijk { width: 25%; }
+
+    /* CONTACT */
+    .div-apps-1 {
+       bottom: 20%;
+    }
+
+    .contact-title {
+        position: relative;
+        font-size: 6em;
+        letter-spacing: 2px;
+    }
+
+    .contact-text > span {
+        font-size: 1em;
+    }
+
+    .fa-envelope, .fa-phone, .fa-map-marker-alt {
+        height: 50px;
+        width: 50px;
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* HOME */
+    .main-title {
+        font-size: 10em;
+    }
+
+    .sub-title, .scroll-text {
+        font-size: 2em;
+    }
+    .scroll-text {
+        margin-bottom: 5px;
+    }
+
+    /* QUOTES */
+    .quotes {
+        text-align: left;
+        align-self: flex-end;
+    }
+
+    /* WHO ARE WE */
+    .button{
+        margin-top: 25px;
+    }
+
+    .renda-text {
+        font-size: 1.5em;
+    }
+
+    .image-render {
+        width: 30%;
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+    }
+
+    .renda-half     { width: 22.5%; }
+    .renda-zakelijk { width: 22.5%; }
+
+    /* CONTACT */
+    .contact-title {
+        position: relative;
+        font-size: 6.5em;
+        letter-spacing: 2px;
+    }
+
+    .contact-text > span {
+        font-size: 1.25em;
+    }
+
+    .fa-envelope, .fa-phone, .fa-map-marker-alt {
+        height: 60px;
+        width: 60px;
+        font-size: 1.75em;
+    }
+}
+
+@media (min-width: 1500px) {
+    /* HOME */
+    .main-title {
+        font-size: 13em;
+    }
+
+    .sub-title, .scroll-text {
+        font-size: 2.6em;
+    }
+
+    /* WHO ARE WE */
+    .image-render {
+        width: 30%;
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+    }
+
+    .renda-text {
+        font-size: 2em;
+    }
+
+    .renda-half     { width: 22.5%; }
+    .renda-zakelijk { width: 20%; }
+
+    /* CONTACT */
+    .contact-title {
+        position: relative;
+        font-size: 8em;
+        letter-spacing: 2px;
+    }
+
+    .contact-text > span {
+        font-size: 1.5em;
+    }
+
+    .fa-envelope, .fa-phone, .fa-map-marker-alt {
+        height: 80px;
+        width: 80px;
+        font-size: 2em;
+    }
+
+}
