@@ -118,6 +118,10 @@ function loaded(){
     });
 }
 
+function changeAnbiStyling(){
+    var anbi = $('.anbi');
+}
+
 function logoAnimation(){
 
     var blueShape = $('.blue-shape');

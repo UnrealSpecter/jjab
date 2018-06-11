@@ -94,12 +94,12 @@ body {
 
 .main-title {
     text-align: center;
-    color: white;
+        color: red;
 }
 
 .sub-title {
     text-align: center;
-    color: white;
+        color: red;
 }
 
 /* SCROLL INDICATOR */
