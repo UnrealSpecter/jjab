@@ -1,4 +1,4 @@
-<div class="section-wrapper d-flex flex-r flex-wrap align-items-center justify-content-center no-padding-margin blue-bg">
+<div class="section-wrapper d-flex flex-row flex-wrap align-items-center justify-content-center no-padding-margin blue-bg">
 
         <img class="renda image-render align-left img-fluid no-padding-margin animated d-none"                  src="{{ asset('/images/renders/informeel-renda.png') }}">
         <img class="wesley image-render align-right img-fluid no-padding-margin animated d-none"                src="{{ asset('/images/renders/informeel-wesley.png') }}">

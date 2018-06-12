@@ -88,18 +88,22 @@ body {
 }
 
 /* HOME STYLING */
-.blue-shape, .purple-shape, .orange-shape, .logo-text-wrapper {
+.logo-piece-wrapper {
+    height: 100vh;
+    width: 100vw;
     position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .main-title {
     text-align: center;
-        color: red;
+    color: white;
 }
 
 .sub-title {
     text-align: center;
-        color: red;
+    color: white;
 }
 
 /* SCROLL INDICATOR */
