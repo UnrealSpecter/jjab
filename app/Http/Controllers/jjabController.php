@@ -15,7 +15,7 @@ class jjabController extends Controller
         $contact = Contact::firstOrFail();
         $quotes = Quote::all();
         $employees = Employee::all();
-
+        
         return view('partials.sections',compact('contact', 'quotes', 'employees'));
     }
 

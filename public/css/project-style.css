@@ -177,6 +177,10 @@ body {
 .renda-half     { width: 65%; }
 .renda-zakelijk { width: 60%; }
 
+.who-are-we-text {
+    /* position: absolute; */
+}
+
 .wesley-text {
     color: white;
     font-size: 2.5em;

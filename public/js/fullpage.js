@@ -10,12 +10,20 @@ var slideInRight    = 'slideInRight';
 var slideInUp       = 'slideInUp';
 var slideInDown     = 'slideInDown';
 var fadeIn          = 'fadeIn';
+var fadeOut         = 'fadeOut';
 var fadeInUp        = 'fadeInUp';
 var fadeInDown      = 'fadeInDown';
 var fadeInRight     = 'fadeInRight';
 var fadeInLeft      = 'fadeInLeft';
 var bounce          = 'infinite bounce';
 var delay           = '500';
+
+var animated = 'animated';
+var halfSecond = 'half-a-second';
+var oneSecond = 'one-second';
+
+var animationTypes  = [animated, halfSecond, oneSecond];
+var animations      = [slideInLeft, slideInRight, slideInUp, slideInDown, fadeIn, fadeOut, fadeInUp, fadeInDown, fadeInRight, fadeInLeft, bounce];
 
 //on page load function (waits till the whole page is loaded)
 window.onload = function(){
@@ -30,9 +38,7 @@ function loaded(){
     // $('.load-wrapper').addClass('animated fadeOut');
 
     $('.button').on('click', function(){
-        if(unlocked){
-            cycleWhoAreWe();
-        }
+        cycleWhoAreWe();
     });
 
     $('#fullpage').fullpage({
@@ -106,7 +112,8 @@ function loaded(){
         	}
             if(anchorLink == 'wie-zijn-wij'){
                 if(!isRevealedInitialWhoAreWeAnimation){
-                    cycleWhoAreWe();
+                    console.log($('.paragraph').first());
+                    animate($('.paragraph').first(), fadeOut, hidden);
                     isRevealedInitialWhoAreWeAnimation = true;
                 }
                 revealScrollIndicator('who-are-we');
@@ -198,28 +205,28 @@ function unlock () {
 
 function cycleWhoAreWe(){
 
-    $('.button').removeClass('d-none');
-
-    unlocked = false;
-
-    setTimeout(unlock, 1500);
-
     var currentImage = $('.image-render').not('.' + hidden);
     var nextImage = currentImage.next().hasClass('image-render') ? currentImage.next() : $('.image-render').first();
 
-    var currentText = $('.who-are-we-text').not('.' + hidden);
-    var nextText = currentText.next().hasClass('who-are-we-text') ? currentText.next() : $('.who-are-we-text').first();
+    var currentParagraph = $('.paragraph').not('.' + hidden);
+    var nextParagraph = currentText.next().hasClass('paragraph') ? currentText.next() : $('.paragraph').first();
 
-    currentImage.removeClass('fadeInUp').fadeOut(500, function(){
-        currentImage.addClass(hidden);
-        currentImage.removeAttr('style');
-    });
+    // animate(currentImage, fadeOut, hidden);
+    // animate(nextImage, fadeInUp, hidden, null, 1000);
 
-    currentText.addClass(hidden);
-    currentText.removeAttr('style');
+    animate(currentText, fadeOut, hidden, halfSecond);
+    animate(nextText, fadeIn, hidden, halfSecond, 1000);
 
-    nextImage.removeClass(hidden).addClass('fadeInUp');
-    nextText.removeClass(hidden);
+    // currentImage.removeClass('fadeInUp').fadeOut(500, function(){
+    //     currentImage.addClass(hidden);
+    //     currentImage.removeAttr('style');
+    // });
+    //
+    // currentText.addClass(hidden);
+    // currentText.removeAttr('style');
+    //
+    // nextImage.removeClass(hidden).addClass('fadeInUp');
+    // nextText.removeClass(hidden);
 
 }
 
@@ -247,5 +254,31 @@ function phoneAnimation(){
             contactText.removeClass(invisible).addClass('slideInRight');
         }
     }, 1700);
+
+}
+
+//animate event to make animating stuff easier
+function animate(selector, animationToAdd, classToRemove, duration, wait) {
+
+    var element, delay;
+    wait ? delay = wait : delay = 0;
+    selector instanceof jQuery ? element = selector : element = $('.' + selector);
+
+    // console.log(element.attr('class'));
+    //remove existing animations and reset to a baseline
+    $.each(animationTypes, function(index, type){
+        if(element.hasClass(type)){
+            $.each(animations, function(index, animation){
+                console.log(animation);
+                element.removeClass(type).removeClass(animation);
+            });
+        }
+    });
+
+    // if there are miliseconds specified wait before applying the animation
+    duration ? element.addClass(duration) : element.addClass('animated');
+    setTimeout(function(){
+        element.removeClass(classToRemove).addClass(animationToAdd);
+    }, delay);
 
 }
