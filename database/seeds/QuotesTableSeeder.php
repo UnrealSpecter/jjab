@@ -30,7 +30,7 @@ class QuotesTableSeeder extends Seeder
             2 =>
             array (
                 'id' => 3,
-                'content' => 'heb moeite met mijn games afsluiten s\'avonds',
+                'content' => 'heb moeite met mijn games afsluiten \'s avonds',
                 'created_at' => '2018-03-07 22:22:46',
                 'updated_at' => '2018-03-07 22:23:05',
             ),

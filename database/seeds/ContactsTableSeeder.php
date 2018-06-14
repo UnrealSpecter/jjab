@@ -17,7 +17,7 @@ class ContactsTableSeeder extends Seeder
             array (
                 'id' => 2,
                 'phone_number' => '31622654017',
-                'email' => 'renda.wesley@gmail.com',
+                'email' => 'info@jjab.nl',
                 'street_name' => 'Baander',
                 'house_number' => '5',
                 'postal_code' => '7811HH',

@@ -17,9 +17,9 @@ class EmployeesTableSeeder extends Seeder
             array (
                 'id' => 1,
                 'name' => 'Renda Blok',
-                'why' => 'Ik ben Renda Blok, 22 jaar en ik kom uit Emmer-Compascuum. Ik hou van carnaval en mensen helpen. Ik ben direct en eerlijk maar heb begrip voor de problemen van mensen. Niks maakt mij blijer dan iemand stappen zien maken naar een betere toekomst voor zichzelf.',
+                'why' => 'Ik ben Renda Blok, 22 jaar en ik kom uit Emmer-Compascuum. Ik hou van mensen helpen. Ik ben direct en eerlijk maar heb begrip voor de problemen van mensen. Niks maakt mij blijer dan iemand stappen zien maken naar een betere toekomst voor zichzelf.',
                 'who' => 'Toen Wesley met het idee kwam om een stichting te starten in juridisch advies, werd ik meteen enthousiast. Het idee om jongeren te kunnen helpen en gratis juridisch advies te geven sprak mij erg aan. Ik wil graag zoveel mogelijk jongeren helpen en hoop dan ook met de stichting de stap om hulp te vragen bij bepaalde vragen, makkelijker te maken.',
-            'experience' => 'De afgelopen 4 jaar ben ik bezig geweest met mijn opleiding sociaal juridische dienstverlening aan de Hanzehogeschool in Groningen. Ik heb stage gelopen bij VNN(verslavingszorg noord-nederland) in kliniek Vossenloo in Eelde. Daar heb ik mensen begeleid met allerlei problemen op het gebied van financiën, huisvesting en justitie. Op dit moment doe ik, naast mijn werk voor de de stichting, vrijwilligerswerk bij Reclassering Nederland en een afstudeerstage bij Jimmy’s in Emmen.',
+                'experience' => 'De afgelopen 4 jaar ben ik bezig geweest met mijn opleiding sociaal juridische dienstverlening aan de Hanzehogeschool in Groningen. Ik heb stage gelopen bij VNN(verslavingszorg noord-nederland) in kliniek Vossenloo in Eelde. Daar heb ik mensen begeleid met allerlei problemen op het gebied van financiën, huisvesting en justitie. Op dit moment doe ik, naast mijn werk voor de de stichting, vrijwilligerswerk bij Reclassering Nederland en een afstudeerstage bij Jimmy’s in Emmen.',
                 'created_at' => '2018-03-07 22:33:48',
                 'updated_at' => '2018-03-07 22:33:48',
             ),

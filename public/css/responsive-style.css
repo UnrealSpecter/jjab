@@ -160,6 +160,12 @@
         margin-top: 20px;
         font-size: 4.5em;
     }
+
+    /* SCROLL INDICATOR */
+    .scroll-arrow {
+        width: auto;
+        height: 16.5vh;
+    }
 }
 
 @media (min-width: 992px) {
@@ -227,6 +233,10 @@
     }
 
     /* QUOTES */
+    .quote-me {
+        margin-right: 5px;
+    }
+
     .quotes {
         text-align: left;
         align-self: flex-end;
@@ -266,6 +276,12 @@
         height: 60px;
         width: 60px;
         font-size: 1.75em;
+    }
+
+    /* SCROLL INDICATOR */
+    .scroll-arrow {
+        height: 8.5vh;
+        width: auto;
     }
 }
 

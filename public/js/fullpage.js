@@ -112,8 +112,8 @@ function loaded(){
         	}
             if(anchorLink == 'wie-zijn-wij'){
                 if(!isRevealedInitialWhoAreWeAnimation){
-                    console.log($('.paragraph').first());
-                    animate($('.paragraph').first(), fadeOut, hidden);
+                    $('.paragraph').first().removeClass(hidden);
+                    $('.image-render').first().removeClass(hidden);
                     isRevealedInitialWhoAreWeAnimation = true;
                 }
                 revealScrollIndicator('who-are-we');
@@ -198,10 +198,6 @@ function startQuoteCycling() {
     showNextQuote();
 
 }
-var unlocked = true;
-function unlock () {
-    unlocked = true;
-}
 
 function cycleWhoAreWe(){
 
@@ -209,24 +205,18 @@ function cycleWhoAreWe(){
     var nextImage = currentImage.next().hasClass('image-render') ? currentImage.next() : $('.image-render').first();
 
     var currentParagraph = $('.paragraph').not('.' + hidden);
-    var nextParagraph = currentText.next().hasClass('paragraph') ? currentText.next() : $('.paragraph').first();
+    var nextParagraph = currentParagraph.next().hasClass('paragraph') ? currentParagraph.next() : $('.paragraph').first();
 
-    // animate(currentImage, fadeOut, hidden);
-    // animate(nextImage, fadeInUp, hidden, null, 1000);
+    currentImage.removeClass('fadeInUp').fadeOut(500, function(){
+        currentImage.addClass(hidden);
+        currentImage.removeAttr('style');
+    });
 
-    animate(currentText, fadeOut, hidden, halfSecond);
-    animate(nextText, fadeIn, hidden, halfSecond, 1000);
+    currentParagraph.addClass(hidden);
+    currentParagraph.removeAttr('style');
 
-    // currentImage.removeClass('fadeInUp').fadeOut(500, function(){
-    //     currentImage.addClass(hidden);
-    //     currentImage.removeAttr('style');
-    // });
-    //
-    // currentText.addClass(hidden);
-    // currentText.removeAttr('style');
-    //
-    // nextImage.removeClass(hidden).addClass('fadeInUp');
-    // nextText.removeClass(hidden);
+    nextImage.removeClass(hidden).addClass('fadeInUp');
+    nextParagraph.removeClass(hidden);
 
 }
 
@@ -258,7 +248,7 @@ function phoneAnimation(){
 }
 
 //animate event to make animating stuff easier
-function animate(selector, animationToAdd, classToRemove, duration, wait) {
+function animate(selector, animationToAdd, classToRemove, duration, wait, onCompleteClassAdd) {
 
     var element, delay;
     wait ? delay = wait : delay = 0;
@@ -269,7 +259,7 @@ function animate(selector, animationToAdd, classToRemove, duration, wait) {
     $.each(animationTypes, function(index, type){
         if(element.hasClass(type)){
             $.each(animations, function(index, animation){
-                console.log(animation);
+                // console.log(animation);
                 element.removeClass(type).removeClass(animation);
             });
         }
