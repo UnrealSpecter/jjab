@@ -1,10 +1,10 @@
-@media only screen and (orientation: portrait) {
+/* @media only screen and (orientation: portrait) {
     .section { display: none !important; }
 }
 
 @media only screen and (orientation: landscape) {
     .landscape-indicator { display: none !important; }
-}
+} */
 
 /* HOME */
 .main-title {
@@ -30,7 +30,8 @@
 }
 
 .button {
-    font-size: 1.5em;
+    font-size: 1em;
+    width: 50%;
 }
 
 /* CONTACT */
@@ -57,6 +58,16 @@
 }
 
 @media (min-width: 576px) {
+
+    .button {
+        font-size: 1.25em;
+        width: 35%;
+    }
+
+    .anbi {
+        height: 75px;
+        font-size: 1.75em;
+    }
 
     /* HOME */
     .main-title {
@@ -111,9 +122,25 @@
     .contact-text h3 {
         font-size: 20px;
     }
+    /* SCROLL INDICATOR */
+    .scroll-arrow {
+        width: auto;
+        height: 6.5vh;
+    }
 }
 
 @media (min-width: 768px) {
+
+    .button {
+        font-size: 1.25em;
+        width: 30%;
+    }
+
+    .anbi {
+        height: 100px;
+        font-size: 3em;
+    }
+
     /* HOME */
     .main-title {
         font-size: 7em;
@@ -164,11 +191,21 @@
     /* SCROLL INDICATOR */
     .scroll-arrow {
         width: auto;
-        height: 16.5vh;
+        height: 4.5vh;
     }
 }
 
 @media (min-width: 992px) {
+
+    .button {
+        font-size: 1.5em;
+        width: 35%;
+    }
+
+    .anbi {
+        font-size: 3em;
+    }
+
     /* HOME */
     .main-title {
         font-size: 9em;
@@ -217,9 +254,31 @@
         width: 50px;
         font-size: 1.5em;
     }
+
+    /* SCROLL INDICATOR */
+    .scroll-arrow {
+        height: 6.5vh;
+        width: auto;
+    }
 }
 
 @media (min-width: 1200px) {
+
+    .button {
+        font-size: 1.5em;
+        width: 25%;
+    }
+
+
+    .button {
+        font-size: 1.5em;
+        width: 25%;
+    }
+
+    .anbi {
+        font-size: 2.5em;
+    }
+
     /* HOME */
     .main-title {
         font-size: 10em;
@@ -280,12 +339,17 @@
 
     /* SCROLL INDICATOR */
     .scroll-arrow {
-        height: 8.5vh;
+        height: 6.5vh;
         width: auto;
     }
 }
 
 @media (min-width: 1500px) {
+
+    .anbi {
+        font-size: 3em;
+    }
+
     /* HOME */
     .main-title {
         font-size: 13em;
@@ -325,6 +389,12 @@
         height: 80px;
         width: 80px;
         font-size: 2em;
+    }
+
+    /* SCROLL INDICATOR */
+    .scroll-arrow {
+        height: 8.5vh;
+        width: auto;
     }
 
 }

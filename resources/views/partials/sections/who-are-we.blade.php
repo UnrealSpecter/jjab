@@ -10,27 +10,27 @@
         <div class="text-wrapper d-flex flex-row flex-xl-column flex-wrap justify-content-center align-items-xl-center">
             <div class="paragraph w-75 d-none half-a-second fadeIn d-flex flex-column align-items-center justify-content-center">
                 <p class="w-100 renda-text adobe-caslon text-center">{{ $employees[0]->why }}</p>
-                <div class="w-25 button text-center animated fadeInDown">Lees Meer</div>
+                <div class="button text-center animated fadeInDown">Lees Meer</div>
             </div>
             <div class="paragraph w-75 d-none half-a-second fadeIn d-flex flex-column align-items-center justify-content-center">
                 <p class="w-100 renda-text adobe-caslon text-center">{{ $employees[1]->why }}</p>
-                <div class="w-25 button text-center animated fadeInDown">Lees Meer</div>
+                <div class="button text-center animated fadeInDown">Lees Meer</div>
             </div>
             <div class="paragraph w-75 d-none half-a-second fadeIn d-flex flex-column align-items-center justify-content-center">
                 <p class="w-100 renda-text adobe-caslon text-center">{{ $employees[0]->who }}</p>
-                <div class="w-25 button text-center animated fadeInDown">Lees Meer</div>
+                <div class="button text-center animated fadeInDown">Lees Meer</div>
             </div>
             <div class="paragraph w-75 d-none half-a-second fadeIn d-flex flex-column align-items-center justify-content-center">
                 <p class="w-100 renda-text adobe-caslon text-center">{{ $employees[1]->who }}</p>
-                <div class="w-25 button text-center animated fadeInDown">Lees Meer</div>
+                <div class="button text-center animated fadeInDown">Lees Meer</div>
             </div>
             <div class="paragraph w-75 d-none half-a-second fadeIn d-flex flex-column align-items-center justify-content-center">
                 <p class="w-100 renda-text adobe-caslon text-center">{{ $employees[0]->experience }}</p>
-                <div class="w-25 button text-center animated fadeInDown">Lees Meer</div>
+                <div class="button text-center animated fadeInDown">Lees Meer</div>
             </div>
             <div class="paragraph w-75 d-none half-a-second fadeIn d-flex flex-column align-items-center justify-content-center">
                 <p class="w-100 renda-text adobe-caslon text-center">{{ $employees[1]->experience }}</p>
-                <div class="w-25 button text-center animated fadeInDown">Lees Meer</div>
+                <div class="button text-center animated fadeInDown">Lees Meer</div>
             </div>
         </div>
 

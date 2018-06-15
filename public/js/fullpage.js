@@ -102,6 +102,7 @@ function loaded(){
         afterLoad: function(anchorLink, index){
             if(anchorLink == 'jeugd-juridisch-advies'){
                 logoAnimation();
+                changeAnbiStyling('home');
         	}
             if(anchorLink == 'waar-helpen-we-mee'){
                 if(!startedLoaderQuoteCycling){
@@ -109,24 +110,29 @@ function loaded(){
                     startedLoaderQuoteCycling = true;
                 }
                 revealScrollIndicator('scroll-quotes');
+                changeAnbiStyling('quotes');
         	}
             if(anchorLink == 'wie-zijn-wij'){
                 if(!isRevealedInitialWhoAreWeAnimation){
                     $('.paragraph').first().removeClass(hidden);
-                    $('.image-render').first().removeClass(hidden);
+                    $('.image-render').first().removeClass(hidden).addClass('fadeInUp');
                     isRevealedInitialWhoAreWeAnimation = true;
                 }
                 revealScrollIndicator('who-are-we');
+                changeAnbiStyling('who-are-we');
         	}
             if(anchorLink == 'contact'){
                 phoneAnimation();
+                changeAnbiStyling('contact');
         	}
         }
     });
 }
 
-function changeAnbiStyling(){
+function changeAnbiStyling(anbiClass){
     var anbi = $('.anbi');
+    anbi.removeClass('home-anbi quotes-anbi who-are-we-anbi contact-anbi');
+    anbi.addClass(anbiClass + '-anbi');
 }
 
 function logoAnimation(){

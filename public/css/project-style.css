@@ -60,11 +60,13 @@ body {
 .anbi {
     position: fixed;
     right: 0;
-    height: 100px;
+    height: 75px;
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     letter-spacing: 1px;
     z-index: 200;
+    -webkit-transition: color 0.5s, background-color 0.5s; /* Safari */
+    transition: color 0.5s, background-color 0.5s;
 }
 
 .home-anbi, .home-anbi:hover {
@@ -77,12 +79,12 @@ body {
     color: #622a70;
 }
 
-.quotes-employees {
+.who-are-we-anbi {
     background-color: white;
     color: #68bedb;
 }
 
-.quotes-contact {
+.contact-anbi {
     background-color: white;
     color: #ef7c38;
 }
@@ -122,18 +124,18 @@ body {
 
 .scroll-arrow {
     width: auto;
-    height: 33vh;
+    height: 4.5vh;
 }
 
-.blue {
+.blue, .blue:hover {
     color: #68bedb;
 }
 
-.orange {
+.orange, .orange:hover {
     color: #ef7c38;
 }
 
-.purple {
+.purple, .purple:hover {
     color: #622a70;
 }
 
