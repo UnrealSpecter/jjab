@@ -36,7 +36,7 @@ class QuotesTableSeeder extends Seeder
             ),
             3 =>
             array (
-                'id' => 3,
+                'id' => 4,
                 'content' => 'heb problemen met mijn werkgever',
                 'created_at' => '2018-03-07 22:22:46',
                 'updated_at' => '2018-03-07 22:23:05',

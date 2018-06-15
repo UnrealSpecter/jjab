@@ -260,12 +260,10 @@ function animate(selector, animationToAdd, classToRemove, duration, wait, onComp
     wait ? delay = wait : delay = 0;
     selector instanceof jQuery ? element = selector : element = $('.' + selector);
 
-    // console.log(element.attr('class'));
     //remove existing animations and reset to a baseline
     $.each(animationTypes, function(index, type){
         if(element.hasClass(type)){
             $.each(animations, function(index, animation){
-                // console.log(animation);
                 element.removeClass(type).removeClass(animation);
             });
         }

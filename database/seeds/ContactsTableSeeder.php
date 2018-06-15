@@ -15,7 +15,7 @@ class ContactsTableSeeder extends Seeder
         \DB::table('contacts')->insert(array (
             0 =>
             array (
-                'id' => 2,
+                'id' => 1,
                 'phone_number' => '31622654017',
                 'email' => 'info@jjab.nl',
                 'street_name' => 'Baander',

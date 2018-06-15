@@ -12,6 +12,5 @@
 @endsection
 
 @section('additional-scripts')
-    <!-- <script src="{{ asset('/js/script.js')}}"></script> -->
     <script src="{{ asset('/js/fullpage.js')}}"></script>
 @endsection
