@@ -13,10 +13,6 @@
                 @yield('content')
             </div>
         </div>
-        <script>
-            var contact = @json($contact->anbi);
-            console.log(contact);
-        </script>
         @include('scroll-indicators')
         @include('scripts')
         <div id="outdated"></div>
