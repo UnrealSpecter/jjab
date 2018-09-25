@@ -4,6 +4,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <meta name="description" content="Jeugd Juridisch Advies Bureau">
-<meta name="google-site-verification" content="JP6t3wxyGbx9FPDvzPKx6qg49REeYmYopch3tFTW2g4" />
+<meta name="google-site-verification" content="N5HZNorDp2krL5afeAaBmtFsmi1JJdcn7nhNQT5IWFg" />
 
 <title>JJAB</title>
