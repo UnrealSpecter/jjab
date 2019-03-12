@@ -4,7 +4,7 @@
     <script src="{{ URL::asset('plugins/tether/js/tether.min.js')}}"></script>
     <script src="{{ URL::asset('plugins/bootstrap-4.0/js/bootstrap.min.js')}}"></script>
     <script src="{{ URL::asset('plugins/fullpage-scroll/js/jquery.fullPage.js') }}"></script>
-    <script src="{{ URL::asset('plugins/outdatedbrowser/js/outdatedbrowser.min.js') }}" src=""></script>
+    <script src="{{ URL::asset('plugins/outdatedbrowser/js/outdatedbrowser.min.js') }}"></script>
 
     <!-- ANALYTICS -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118817546-1"></script>

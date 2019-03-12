@@ -11,7 +11,7 @@
 
     <div class="col-12 d-flex flex-column align-items-center justify-content-center scroll-indicator animated" style="padding: 15px; position: absolute; bottom: 0;">
         <span class="uppercase anton scroll-text d-none animated">Iets voor mij?</span>
-        <img src="{{ asset('/images/arrows/arrow-big-purple.svg') }}" class="img-fluid col-1 scroll-arrow d-none animated">
+        <img alt="scroll down button" src="{{ asset('/images/arrows/arrow-big-purple.svg') }}" class="img-fluid col-1 scroll-arrow d-none animated">
     </div>
 
 </div>
