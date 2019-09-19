@@ -1,10 +1,10 @@
-@section('additional-styles')
-    <link rel="stylesheet" type="text/css" href="{{ asset('/styles/general-style.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('/styles/project-style.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('/styles/responsive-style.css') }}" />
+@section('additional-css')
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/general-style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/project-style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/responsive-style.css') }}" />
 @endsection
 
-@extends('master') @section('content')
+@extends('layout') @section('content')
     <div class="section d-none">@include('partials.sections.home')</div>
     <div class="section d-none">@include('partials.sections.quotes')</div>
     <div class="section d-none">@include('partials.sections.who-are-we')</div>
@@ -12,4 +12,5 @@
 @endsection
 
 @section('additional-scripts')
+    <script src="{{ asset('/js/fullpage.js')}}"></script>
 @endsection
