@@ -1,0 +1,12 @@
+<template>
+
+    <h1 class="anton text-center w-full text-jjab-purple text-6rem my-16 leading-none">
+        <slot></slot>
+    </h1>
+
+</template>
+
+<script>
+    export default {
+    }
+</script>

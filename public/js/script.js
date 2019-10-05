@@ -25,42 +25,39 @@ function logoAnimation(){
 }
 
 
+// function animateTitle(){
+//
+//     var mainTitle = $('.main-title');
+//     var subTitle = $('.sub-title');
+//
+//     mainTitle.removeClass(hidden).addClass('fadeInDown');
+//     subTitle.removeClass(hidden).addClass('fadeInUp');
+//
+//     revealScrollIndicator();
+// }
 
+// function revealScrollIndicator() {
+//
+//     var scrollText = $('.scroll-text');
+//     var scrollArrow = $('.scroll-arrow');
+//
+//     scrollText.removeClass(hidden).addClass('fadeIn');
+//     scrollArrow.removeClass(hidden).addClass('fadeInUp');
+//
+//     // $('.scroll-indicator').removeClass(hidden).addClass('fadeIn');
+// }
 
-
-function animateTitle(){
-
-    var mainTitle = $('.main-title');
-    var subTitle = $('.sub-title');
-
-    mainTitle.removeClass(hidden).addClass('fadeInDown');
-    subTitle.removeClass(hidden).addClass('fadeInUp');
-
-    revealScrollIndicator();
-}
-
-function revealScrollIndicator() {
-
-    var scrollText = $('.scroll-text');
-    var scrollArrow = $('.scroll-arrow');
-
-    scrollText.removeClass(hidden).addClass('fadeIn');
-    scrollArrow.removeClass(hidden).addClass('fadeInUp');
-
-    // $('.scroll-indicator').removeClass(hidden).addClass('fadeIn');
-}
-
-function startLoaderQuoteCycling() {
-
-    //cycle through quotes
-    var quotes = $(".quotes");
-    var quoteIndex = -1;
-    function showNextQuote() {
-        ++quoteIndex;
-        quotes.eq(quoteIndex % quotes.length)
-            .fadeIn(1000)
-            .delay(2000)
-            .fadeOut(1000, showNextQuote);
-    }
-    showNextQuote();
-}
+// function startLoaderQuoteCycling() {
+//
+//     //cycle through quotes
+//     var quotes = $(".quotes");
+//     var quoteIndex = -1;
+//     function showNextQuote() {
+//         ++quoteIndex;
+//         quotes.eq(quoteIndex % quotes.length)
+//             .fadeIn(1000)
+//             .delay(2000)
+//             .fadeOut(1000, showNextQuote);
+//     }
+//     showNextQuote();
+// }

@@ -8,4 +8,6 @@
 
 <meta name="google-site-verification" content="N5HZNorDp2krL5afeAaBmtFsmi1JJdcn7nhNQT5IWFg" />
 
+<meta name="csrf-token" content="{{ csrf_token() }}">
+
 <title>JJAB - Jeugd Juridisch Advies in Emmen </title>

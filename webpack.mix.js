@@ -1,5 +1,6 @@
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 
+require('laravel-mix-tailwind');
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -11,5 +12,7 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix.js('resources/js/vue.js', 'public/scripts')
+    .sass('resources/sass/tailwind.scss', 'public/styles')
+    // .sass('resources/sass/hamburgers/hamburgers.scss', 'public/styles')
+    .tailwind();

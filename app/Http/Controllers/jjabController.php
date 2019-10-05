@@ -12,17 +12,17 @@ class jjabController extends Controller
 {
     public function index()
     {
-        $contact = Contact::firstOrFail();
-        $quotes = Quote::all();
-        $employees = Employee::all();
+        // $contact = Contact::firstOrFail();
+        // $quotes = Quote::all();
+        // $employees = Employee::all();
 
-        return view('partials.sections',compact('contact', 'quotes', 'employees'));
+        return view('master');
     }
 
-    public function anbi()
-    {
-        $contact = Contact::firstOrFail();
-
-        return view('partials.anbi', compact('contact'));
-    }
+    // public function anbi()
+    // {
+    //     $contact = Contact::firstOrFail();
+    //
+    //     return view('partials.anbi', compact('contact'));
+    // }
 }
