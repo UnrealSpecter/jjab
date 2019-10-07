@@ -1,8 +1,11 @@
 
     <!-- CORE JS INCLUDES -->
-    <script src="{{ asset('/scripts/vue.js') }}"></script>
     <script src="{{ asset('plugins/jquery/scripts/jquery.min.js') }}"></script>
     <script src="{{ asset('plugins/emergence/scripts/emergence.js') }}"></script>
+
+    <!-- SCRIPTS -->
+    <script src="{{ asset('/scripts/vue.js') }}"></script>
+    <script src="{{ asset('scripts/emergence.js') }}"></script>
 
     <!-- ANALYTICS -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118817546-1"></script>

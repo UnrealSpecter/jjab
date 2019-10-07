@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 
-use App\Quote;
-use App\Contact;
-use App\Employee;
+// use App\Quote;
+// use App\Contact;
+// use App\Employee;
+
+use App\Explanation;
 
 class jjabController extends Controller
 {
@@ -15,8 +17,14 @@ class jjabController extends Controller
         // $contact = Contact::firstOrFail();
         // $quotes = Quote::all();
         // $employees = Employee::all();
+        $explanations = Explanation::all();
 
-        return view('master');
+        $collection = [
+            'explanations' => $explanations,
+        ];
+
+        return view('master')->with($collection, 'collection');
+
     }
 
     // public function anbi()

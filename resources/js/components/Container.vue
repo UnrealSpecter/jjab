@@ -1,6 +1,6 @@
 <template>
 
-    <div class="container bg-jjab-orange overflow-hidden mx-auto flex-center flex-wrap">
+    <div class="container mx-auto flex-center flex-wrap">
         <slot></slot>
     </div>
 

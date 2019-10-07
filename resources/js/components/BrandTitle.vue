@@ -1,6 +1,6 @@
 <template>
 
-    <h1 class="anton text-center w-full text-jjab-purple text-6rem my-16 leading-none">
+    <h1 class="anton text-center w-full text-jjab-purple text-10rem my-16 leading-none">
         <slot></slot>
     </h1>
 

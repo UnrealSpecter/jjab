@@ -1,6 +1,6 @@
 <template>
 
-    <div class="rounded-lg shadow-md bg-jjab-purple anton p-5 text-white text-2.5rem w-1/4">
+    <div class="rounded-jjab shadow-md bg-jjab-purple anton mb-16 p-10 py-5 leading-tight text-white text-2rem w-1/4">
         <slot></slot>
     </div>
 
