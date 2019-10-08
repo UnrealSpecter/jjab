@@ -24,9 +24,13 @@ Vue.component('wrapper', require('./components/Wrapper.vue'));
 Vue.component('container', require('./components/Container.vue'));
 
 Vue.component('introduction', require('./components/Introduction.vue'));
+Vue.component('call-to-action', require('./components/CallToAction.vue'));
+Vue.component('quick-search', require('./components/QuickSearch.vue'));
+
 Vue.component('explanation', require('./components/Explanation.vue'));
 Vue.component('transition', require('./components/Transition.vue'));
 Vue.component('brand-title', require('./components/BrandTitle.vue'));
+Vue.component('brand-button', require('./components/BrandButton.vue'));
 Vue.component('card', require('./components/Card.vue'));
 Vue.component('logo-animation', require('./components/LogoAnimation.vue'));
 

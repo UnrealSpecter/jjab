@@ -1,7 +1,4 @@
 var animation;
-var delay;
-var hasAnimated;
-var type;
 
 $(document).ready(function(){
 
@@ -21,8 +18,8 @@ function startEmergence(){
 
     emergence.init({
         container: window,
-        reset: false,
-        handheld: true,
+        reset: true,
+        handheld: false,
         throttle: 250,
         elemCushion: 0.25,
         offsetTop: 0,
@@ -31,41 +28,36 @@ function startEmergence(){
         offsetLeft: 0,
         callback: function(element, state) {
             if (state === 'visible') {
+
                 var element = $(element);
 
-                type = element.data('type');
+                var hasAnimated = element.data('has-animated');
+
                 animation = element.data('animation');
-                delay = element.data('delay');
-                hasAnimated = element.data('has-animated');
 
-                element.attr('data-has-animated', true);
-
-                if(!hasAnimated){
-                    playAnimation(element, type, animation, delay);
+                if(!hasAnimated) {
+                    playAnimation(element, animation);
                 }
 
-            } else if (state === 'reset') {
-            } else if (state === 'noreset') {}
-
+            }
         }
 
     });
 
 }
 
-function playAnimation(element, type, animation, delay = 0) {
+// optimized animation class
+function playAnimation(element, animation, callback) {
 
-    var animationType;
+        element.removeClass('invisible').addClass(animation);
 
-    type ? animationType = type : animationType = "animation";
+        function handleAnimationEnd() {
+            element.removeClass(animation);
+            element.off('animationend', handleAnimationEnd);
+            element.data('has-animated', true);
+            if (typeof callback === 'function') callback()
+        }
 
-    setTimeout(function(){
-        $(element)
-            .removeClass('invisible')
-            .addClass(type + ' ' + animation);
-            // if($(element).hasClass('animation') && $(element).data('has-animated') === false){
-            //     playLottieAnimation(element);
-            // }
-    }, delay);
+        element.on('animationend', handleAnimationEnd);
 
 }

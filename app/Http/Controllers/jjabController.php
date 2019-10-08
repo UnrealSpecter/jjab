@@ -17,9 +17,17 @@ class jjabController extends Controller
         // $contact = Contact::firstOrFail();
         // $quotes = Quote::all();
         // $employees = Employee::all();
-        $explanations = Explanation::all();
+        $explanations = Explanation::with('examples')->get();
+
+        $tags = [];
+
+        foreach($explanations as $explanation){
+            $tag = $explanation->title;
+            array_push($tags, $tag);
+        }
 
         $collection = [
+            'tags' => $tags,
             'explanations' => $explanations,
         ];
 
