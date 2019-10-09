@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 // use App\Employee;
 
 use App\Explanation;
+use App\Employee;
 
 class jjabController extends Controller
 {
@@ -16,7 +17,7 @@ class jjabController extends Controller
     {
         // $contact = Contact::firstOrFail();
         // $quotes = Quote::all();
-        // $employees = Employee::all();
+        $employees = Employee::all();
         $explanations = Explanation::with('examples')->get();
 
         $tags = [];
@@ -29,6 +30,7 @@ class jjabController extends Controller
         $collection = [
             'tags' => $tags,
             'explanations' => $explanations,
+            'employees' => $employees
         ];
 
         return view('master')->with($collection, 'collection');

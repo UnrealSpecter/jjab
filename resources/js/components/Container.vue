@@ -1,6 +1,6 @@
 <template>
 
-    <div class="container mx-auto flex-center flex-wrap">
+    <div class="container relative py-150px mx-auto flex-wrap">
         <slot></slot>
     </div>
 

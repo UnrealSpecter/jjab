@@ -150,6 +150,10 @@ module.exports = {
       '48': '12rem',
       '56': '14rem',
       '64': '16rem',
+      '150px': '150px',
+      '200px': '200px',
+      '250px': '250px',
+      '300px': '300px'
     },
     backgroundColor: theme => theme('colors'),
     backgroundPosition: {
@@ -313,6 +317,8 @@ module.exports = {
     }),
     inset: {
       '0': '0',
+      '150px': '-150px',
+      '300px': '-300px',
       auto: 'auto',
     },
     letterSpacing: {
