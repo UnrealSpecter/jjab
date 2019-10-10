@@ -1,16 +1,16 @@
 <template>
 
-    <button type="button"
-            class="outline-none anton w-1/2 p-5 text-white rounded-jjab shadow-md bg-jjab-orange leading-none">
+    <a  :href="`#${ href }`"
+        class="outline-none anton w-1/2 p-5 text-white text-center rounded-jjab shadow-md bg-jjab-orange leading-none">
             <slot></slot>
-    </button>
+    </a>
 
 </template>
 
 <script>
     export default {
         props: [
-            'text'
+            'text', 'href'
         ]
     }
 </script>

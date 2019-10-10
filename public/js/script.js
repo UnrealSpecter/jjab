@@ -1,26 +1,24 @@
 window.onload = function(){
-      window.document.body.onload = logoAnimation();// note removed parentheses
+      window.document.body.onload = logoAnimation(); // note removed parentheses
 };
 
-var hidden = 'd-none';
 function logoAnimation(){
-
-    var blueShape = $('.blue-shape');
-    var purpleShape = $('.purple-shape');
-    var orangeShape = $('.orange-shape');
-
-
-    blueShape.removeClass(hidden);
-    purpleShape.removeClass(hidden);
-
-    blueShape.addClass('fadeInLeft');
-    purpleShape.addClass('fadeInRight');
-
-    setTimeout(function(){
-        orangeShape.removeClass(hidden);
-        orangeShape.addClass('fadeIn');
-        animateTitle();
-    }, 1000);
+    //
+    // var blueShape = $('.blue-shape');
+    // var purpleShape = $('.purple-shape');
+    // var orangeShape = $('.orange-shape');
+    //
+    // blueShape.removeClass(hidden);
+    // purpleShape.removeClass(hidden);
+    //
+    // blueShape.addClass('fadeInLeft');
+    // purpleShape.addClass('fadeInRight');
+    //
+    // setTimeout(function(){
+    //     orangeShape.removeClass(hidden);
+    //     orangeShape.addClass('fadeIn');
+    //     animateTitle();
+    // }, 1000);
 
 }
 

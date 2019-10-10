@@ -32,7 +32,7 @@ class jjabController extends Controller
             'explanations' => $explanations,
             'employees' => $employees
         ];
-
+        
         return view('master')->with($collection, 'collection');
 
     }

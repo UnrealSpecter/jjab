@@ -128,7 +128,7 @@ module.exports = {
       },
       'jjab-purple': '#622a70',
       'jjab-blue': '#68bedb',
-      'jjab-orange': '#ef7c38'
+      'jjab-orange': '#ef7c38',
     },
     spacing: {
       px: '1px',
@@ -153,7 +153,7 @@ module.exports = {
       '150px': '150px',
       '200px': '200px',
       '250px': '250px',
-      '300px': '300px'
+      '300px': '300px',
     },
     backgroundColor: theme => theme('colors'),
     backgroundPosition: {

@@ -4,6 +4,10 @@
 
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;    
+}
+
 .transition-all-250ms {
     transition: all 0.25s;
 }

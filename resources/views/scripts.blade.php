@@ -6,6 +6,7 @@
     <!-- SCRIPTS -->
     <script src="{{ asset('/scripts/vue.js') }}"></script>
     <script src="{{ asset('scripts/emergence.js') }}"></script>
+    <!-- <script src="{{ asset('/scripts/logo-animation.js') }}"></script> -->
 
     <!-- ANALYTICS -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118817546-1"></script>

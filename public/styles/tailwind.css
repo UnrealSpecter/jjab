@@ -11721,6 +11721,10 @@ video {
   z-index: auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .transition-all-250ms {
   -webkit-transition: all 0.25s;
   transition: all 0.25s;

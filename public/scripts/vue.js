@@ -14287,7 +14287,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(14);
-module.exports = __webpack_require__(92);
+module.exports = __webpack_require__(98);
 
 
 /***/ }),
@@ -14331,12 +14331,14 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('page-transition', __webpa
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('explanation', __webpack_require__(71));
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('jjab-form', __webpack_require__(74));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('employee', __webpack_require__(97));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('transition', __webpack_require__(77));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('brand-title', __webpack_require__(80));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('brand-button', __webpack_require__(83));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('card', __webpack_require__(86));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('logo-animation', __webpack_require__(89));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('employee', __webpack_require__(77));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('transition', __webpack_require__(80));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('brand-title', __webpack_require__(83));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('brand-button', __webpack_require__(86));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('card', __webpack_require__(89));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('logo-animation', __webpack_require__(92));
+
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('phone', __webpack_require__(95));
 
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
   el: '#vue'
@@ -50814,7 +50816,9 @@ var render = function() {
             "button-wrapper flex flex-row justify-center w-1/2 items-center text-2rem tracking-2px"
         },
         [
-          _c("brand-button", [_vm._v("Mail")]),
+          _c("brand-button", { attrs: { href: "stel-je-vraag" } }, [
+            _vm._v("Mail")
+          ]),
           _vm._v(" "),
           _c(
             "span",
@@ -50824,7 +50828,7 @@ var render = function() {
             [_vm._v("of")]
           ),
           _vm._v(" "),
-          _c("brand-button", [_vm._v("App")])
+          _c("brand-button", { attrs: { href: "contact" } }, [_vm._v("App")])
         ],
         1
       ),
@@ -50914,10 +50918,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['tags'],
-    data: function data() {
-        return {};
-    }
+    props: ['tags']
 });
 
 /***/ }),
@@ -50945,9 +50946,11 @@ var render = function() {
         "div",
         { staticClass: "tag-wrapper w-full flex-center text-2rem" },
         _vm._l(_vm.tags, function(tag, index) {
-          return _c("brand-button", { key: "tag-" + index }, [
-            _vm._v(_vm._s(tag))
-          ])
+          return _c(
+            "brand-button",
+            { key: "tag-" + index, attrs: { href: tag } },
+            [_vm._v(_vm._s(tag))]
+          )
         }),
         1
       )
@@ -51318,7 +51321,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/js/components/Transition.vue"
+Component.options.__file = "resources/js/components/Employee.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -51327,9 +51330,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-14346780", Component.options)
+    hotAPI.createRecord("data-v-99aa15ce", Component.options)
   } else {
-    hotAPI.reload("data-v-14346780", Component.options)
+    hotAPI.reload("data-v-99aa15ce", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -51361,13 +51364,142 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['employee']
+});
+
+/***/ }),
+/* 79 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "w-full wrapper flex flex-col mb-10" }, [
+    _c("div", { staticClass: "w-full h-600px flex flex-row flex-no-wrap" }, [
+      _c(
+        "p",
+        {
+          staticClass:
+            "p-24 w-full h-full flex-center text-2rem roboto text-jjab-blue"
+        },
+        [_vm._v(_vm._s(_vm.employee.description))]
+      ),
+      _vm._v(" "),
+      _c("img", {
+        staticClass: "w-auto h-full object-fit",
+        attrs: { src: "storage/" + _vm.employee.photo }
+      })
+    ]),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass:
+          "flex flex-col rounded-jjab shadow-md bg-jjab-blue w-full p-10 justify-center items-center"
+      },
+      [
+        _c("h1", { staticClass: "text-6rem text-white anton" }, [
+          _vm._v(_vm._s(_vm.employee.name))
+        ]),
+        _vm._v(" "),
+        _c("h2", { staticClass: "roboto text-3rem text-white" }, [
+          _vm._v(_vm._s(_vm.employee.title))
+        ])
+      ]
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-99aa15ce", module.exports)
+  }
+}
+
+/***/ }),
+/* 80 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(81)
+/* template */
+var __vue_template__ = __webpack_require__(82)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/Transition.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-14346780", Component.options)
+  } else {
+    hotAPI.reload("data-v-14346780", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 81 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: []
 });
 
 /***/ }),
-/* 79 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -51395,15 +51527,15 @@ if (false) {
 }
 
 /***/ }),
-/* 80 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(81)
+var __vue_script__ = __webpack_require__(84)
 /* template */
-var __vue_template__ = __webpack_require__(82)
+var __vue_template__ = __webpack_require__(85)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -51442,7 +51574,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 81 */
+/* 84 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51456,10 +51588,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['id']
+});
 
 /***/ }),
-/* 82 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -51470,7 +51604,8 @@ var render = function() {
     "h1",
     {
       staticClass:
-        "anton text-center w-full text-jjab-purple text-10rem my-16 leading-none"
+        "anton text-center w-full text-jjab-purple text-10rem my-16 leading-none",
+      attrs: { id: "" + _vm.id }
     },
     [_vm._t("default")],
     2
@@ -51487,15 +51622,15 @@ if (false) {
 }
 
 /***/ }),
-/* 83 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(84)
+var __vue_script__ = __webpack_require__(87)
 /* template */
-var __vue_template__ = __webpack_require__(85)
+var __vue_template__ = __webpack_require__(88)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -51534,7 +51669,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 84 */
+/* 87 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51550,11 +51685,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['text']
+    props: ['text', 'href']
 });
 
 /***/ }),
-/* 85 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -51562,11 +51697,11 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "button",
+    "a",
     {
       staticClass:
-        "outline-none anton w-1/2 p-5 text-white rounded-jjab shadow-md bg-jjab-orange leading-none",
-      attrs: { type: "button" }
+        "outline-none anton w-1/2 p-5 text-white text-center rounded-jjab shadow-md bg-jjab-orange leading-none",
+      attrs: { href: "#" + _vm.href }
     },
     [_vm._t("default")],
     2
@@ -51583,15 +51718,15 @@ if (false) {
 }
 
 /***/ }),
-/* 86 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(87)
+var __vue_script__ = __webpack_require__(90)
 /* template */
-var __vue_template__ = __webpack_require__(88)
+var __vue_template__ = __webpack_require__(91)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -51630,7 +51765,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 87 */
+/* 90 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51647,7 +51782,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
-/* 88 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -51658,7 +51793,7 @@ var render = function() {
     "div",
     {
       staticClass:
-        "desktop:h-300px rounded-jjab shadow-md bg-jjab-purple anton mb-16 p-10 py-5 leading-tight text-white text-2rem w-1/4 mx-5"
+        "desktop:h-300px rounded-jjab shadow-md bg-jjab-purple anton mb-16 p-10 py-5 leading-tight text-white text-2rem w-1/4"
     },
     [_vm._t("default")],
     2
@@ -51675,15 +51810,15 @@ if (false) {
 }
 
 /***/ }),
-/* 89 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(90)
+var __vue_script__ = __webpack_require__(93)
 /* template */
-var __vue_template__ = __webpack_require__(91)
+var __vue_template__ = __webpack_require__(94)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -51722,7 +51857,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 90 */
+/* 93 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51766,7 +51901,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
-/* 91 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -51784,7 +51919,7 @@ var staticRenderFns = [
       "div",
       {
         staticClass:
-          "w-2/3 h-600px relative flex flex-row justify-center items-center"
+          "w-full h-600px relative flex flex-row justify-center items-center"
       },
       [
         _c("img", {
@@ -51847,25 +51982,15 @@ if (false) {
 }
 
 /***/ }),
-/* 92 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 93 */,
-/* 94 */,
-/* 95 */,
-/* 96 */,
-/* 97 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(98)
+var __vue_script__ = __webpack_require__(96)
 /* template */
-var __vue_template__ = __webpack_require__(99)
+var __vue_template__ = __webpack_require__(97)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -51882,7 +52007,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/js/components/Employee.vue"
+Component.options.__file = "resources/js/components/Phone.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -51891,9 +52016,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-99aa15ce", Component.options)
+    hotAPI.createRecord("data-v-d5fd61da", Component.options)
   } else {
-    hotAPI.reload("data-v-99aa15ce", Component.options)
+    hotAPI.reload("data-v-d5fd61da", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -51904,7 +52029,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 98 */
+/* 96 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51927,63 +52052,217 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-/* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['employee']
-});
+/* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
-/* 99 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "w-full wrapper flex flex-col mb-10" }, [
-    _c("div", { staticClass: "w-full h-600px flex flex-row flex-no-wrap" }, [
-      _c(
-        "p",
-        {
-          staticClass:
-            "p-24 w-full h-full flex-center text-2rem roboto text-jjab-purple"
-        },
-        [_vm._v(_vm._s(_vm.employee.description))]
-      ),
-      _vm._v(" "),
-      _c("img", {
-        staticClass: "w-auto h-full object-fit",
-        attrs: { src: "storage/" + _vm.employee.photo }
-      })
-    ]),
-    _vm._v(" "),
-    _c(
-      "div",
-      {
-        staticClass:
-          "flex flex-col rounded-jjab shadow-md bg-jjab-purple w-full p-10 justify-center items-center"
-      },
-      [
-        _c("h1", { staticClass: "text-6rem text-white anton" }, [
-          _vm._v(_vm._s(_vm.employee.name))
-        ]),
-        _vm._v(" "),
-        _c("h2", { staticClass: "roboto text-3rem text-white" }, [
-          _vm._v(_vm._s(_vm.employee.title))
-        ])
-      ]
-    )
-  ])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "w-2/5 relative mt-10" }, [
+      _c("img", {
+        staticClass: "absolute w-full animated no-drag",
+        attrs: {
+          alt: "een afbeelding van een smartphone",
+          src: "/images/smartphone-render.svg"
+        }
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "w-full pt-300px px-16 absolute" }, [
+        _c(
+          "div",
+          { staticClass: "row flex flex-row justify-center items-center mb-5" },
+          [
+            _c(
+              "a",
+              {
+                staticClass: "w-1/3",
+                attrs: {
+                  href: "https://www.facebook.com/stichtingjjab/",
+                  target: "_blank"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass:
+                    "w-full facebook d-none no-padding-margin animated img-fluid",
+                  attrs: {
+                    alt: "facebook social media knop",
+                    draggable: "false",
+                    src: "/images/apps/facebook.svg"
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "w-1/3 mx-5",
+                attrs: {
+                  href: "https://www.instagram.com/stichting.jjab/?hl=nl",
+                  target: "_blank"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass:
+                    "w-full no-padding-margin instagram d-none animated img-fluid",
+                  attrs: {
+                    alt: "instagram social media knop",
+                    draggable: "false",
+                    src: "/images/apps/instagram.svg"
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "w-1/3",
+                attrs: {
+                  href: "https://www.linkedin.com/in/stichting-jjab-0a3594159/",
+                  target: "_blank"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass:
+                    "w-full linkedin d-none animated no-padding-margin img-fluid",
+                  attrs: {
+                    alt: "linkedin social media knop",
+                    draggable: "false",
+                    src: "/images/apps/linkedin.svg"
+                  }
+                })
+              ]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "row flex flex-row justify-center items-center" },
+          [
+            _c(
+              "a",
+              {
+                staticClass: "w-1/3",
+                attrs: {
+                  href:
+                    "https://www.google.nl/maps/place/Baander+5,+7811+HH+Emmen/@52.7814346,6.8939633,17z/data=!3m1!4b1!4m5!3m4!1s0x47b7e63e008b13f1:0xe5e555e1b3c9242c!8m2!3d52.7814346!4d6.896152",
+                  target: "_blank"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass:
+                    "w-full snapchat d-none animated no-padding-margin img-fluid",
+                  attrs: {
+                    alt: "google maps social media knop",
+                    draggable: "false",
+                    src: "/images/apps/google-maps.svg"
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "w-1/3 mx-5",
+                attrs: {
+                  href:
+                    "mailto:info@jjab.nl?subject=help! JJAB&body=Waar kunnen we je mee helpen?%0D%0A %0D%0A",
+                  target: "_blank"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass:
+                    "w-full gmail d-none animated no-padding-margin img-fluid",
+                  attrs: {
+                    alt: "via deze knop open je een mail:to naar jjab",
+                    draggable: "false",
+                    src: "/images/apps/gmail.svg"
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "w-1/3",
+                attrs: {
+                  href: "https://api.whatsapp.com/send?phone=31653138729",
+                  target: "_blank"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass:
+                    "w-full whatsapp d-none animated no-padding-margin img-fluid",
+                  attrs: {
+                    alt: "klik op deze knop om whatsapp te openen",
+                    draggable: "false",
+                    src: "/images/apps/whatsapp.svg"
+                  }
+                })
+              ]
+            )
+          ]
+        )
+      ])
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-99aa15ce", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-d5fd61da", module.exports)
   }
 }
+
+/***/ }),
+/* 98 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
