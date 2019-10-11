@@ -10,6 +10,7 @@
             <!-- LOGO ANIMATION & EYE CATCHER. -->
             <wrapper id="#" class="bg-white min-h-screen" title="title one">
                 <container>
+                    <brand-menu></brand-menu>
                     <logo-animation></logo-animation>
                 </container>
             </wrapper>
@@ -19,7 +20,7 @@
                 <container>
 
                     <!-- INTRODUCTION INFORMATION -->
-                    <introduction>Hallo Jongere!</introduction>
+                    <!-- <introduction>Hallo Jongere!</introduction> -->
 
                     <!-- CALL TO ACTION -->
                     <call-to-action></call-to-action>
@@ -75,37 +76,42 @@
                 </container>
             </wrapper>
 
-            <!-- MAIL -->
-            <wrapper id="stel-je-vraag" class="bg-jjab-orange min-h-screen">
+            <!-- CONTACT -->
+            <wrapper id="contact" class="bg-jjab-orange">
                 <container>
 
                     <!-- TRANSITION -->
-                    <page-transition>Stel je vraag!</page-transition>
-
-                    <!-- MAIL TEXT -->
-                    <div class="wrapper w-full text-center my-10 text-6rem text-jjab-purple tracking-10px anton">
-                        Waar kunnen we je bij helpen?
-                    </div>
+                    <page-transition>Contact</page-transition>
 
                     <!-- MAIL FORM -->
                     <div class="wrapper w-full flex flex-col">
                         <jjab-form></jjab-form>
                     </div>
 
+                    <!-- CONTACT TITLE -->
+                    <brand-title id="app-ons">App Ons!</brand-title>
+
+                    <!-- APP ONS -->
+                    <phone></phone>
+
                 </container>
             </wrapper>
 
-            <!-- CONTACT -->
-            <wrapper id="contact" class="bg-jjab-orange min-h-screen">
-                <container>
-
-                    <!-- TRANSITION -->
-                    <page-transition>APP ONS!</page-transition>
-
-                    <phone></phone>
-
-                    </container>
-            </wrapper>
+            <!-- FOOTER -->
+            <footer class="py-12 w-full bg-jjab-orange text-jjab-purple tracking-2px anton flex flex-row justify-between items-center">
+                <div class="h-32 w-1/3 flex flex-col justify-center items-center">
+                    <i class="text-4rem fa fa-phone mb-2"></i>
+                    <span class="text-2.5rem tracking-2px">+‎31 6 53138729</span>
+                </div>
+                <div class="h-32 w-1/3 flex flex-col justify-center items-center">
+                    <i class="text-4rem fa fa-envelope mb-2"></i>
+                    <span class="text-2.5rem tracking-2px">info@jjab.nl</span>
+                </div>
+                <div class="h-32 w-1/3 flex flex-col justify-center items-center">
+                    <i class="text-4rem fa fa-map-marker-alt mb-2"></i>
+                    <span class="text-2.5rem tracking-2px">Baander 5, 7811HH Emmen</span>
+                </div>
+            </footer>
 
         </div>
         @include('scripts')

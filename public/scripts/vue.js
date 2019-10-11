@@ -14339,6 +14339,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('card', __webpack_require_
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('logo-animation', __webpack_require__(92));
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('phone', __webpack_require__(95));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('brand-menu', __webpack_require__(103));
 
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
   el: '#vue'
@@ -50800,7 +50801,8 @@ var render = function() {
     "div",
     {
       staticClass:
-        "mb-16 shadow-md rounded-jjab flex flex-col justify-center items-center w-full bg-jjab-purple p-16"
+        "mb-16 shadow-md rounded-jjab flex flex-col justify-center items-center w-full bg-jjab-purple p-16",
+      attrs: { id: "juridisch-advies" }
     },
     [
       _c(
@@ -50813,7 +50815,7 @@ var render = function() {
         "div",
         {
           staticClass:
-            "button-wrapper flex flex-row justify-center w-1/2 items-center text-2rem tracking-2px"
+            "button-wrapper flex flex-row justify-center w-1/2 items-center tracking-2px"
         },
         [
           _c("brand-button", { attrs: { href: "stel-je-vraag" } }, [
@@ -50916,6 +50918,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['tags']
@@ -50944,11 +50947,14 @@ var render = function() {
       _vm._v(" "),
       _c(
         "div",
-        { staticClass: "tag-wrapper w-full flex-center text-2rem" },
+        {
+          staticClass:
+            "tag-wrapper w-full flex flex-row flex-wrap justify-center"
+        },
         _vm._l(_vm.tags, function(tag, index) {
           return _c(
             "brand-button",
-            { key: "tag-" + index, attrs: { href: tag } },
+            { key: "tag-" + index, staticClass: "m-2", attrs: { href: tag } },
             [_vm._v(_vm._s(tag))]
           )
         }),
@@ -51236,6 +51242,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -51254,35 +51272,52 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "form",
-    {
-      staticClass: "flex flex-col justify-center items-end",
-      attrs: { action: "", method: "post" }
-    },
+    "div",
     [
-      _c("input", {
-        attrs: { type: "hidden", name: "_token" },
-        domProps: { value: _vm.csrf }
-      }),
+      _c("brand-title", { attrs: { id: "mail" } }, [_vm._v("Stel je vraag!")]),
       _vm._v(" "),
-      _c("input", {
-        staticClass:
-          "placeholder-jjab-purple outline-none w-full mb-10 tracking-5px shadow-md p-10 text-2.5rem text-jjab-purple leading-none bg-white anton rounded-jjab overflow-hidden",
-        attrs: { type: "email", placeholder: "email" }
-      }),
+      _c(
+        "div",
+        {
+          staticClass:
+            "wrapper w-full text-center my-10 text-6rem text-jjab-purple tracking-10px anton"
+        },
+        [_vm._v("\n        Waar kunnen we je bij helpen?\n    ")]
+      ),
       _vm._v(" "),
-      _c("textarea", {
-        staticClass:
-          "placeholder-jjab-purple outline-none w-full mb-10 tracking-5px shadow-md p-10 text-2.5rem text-jjab-purple bg-white leading-none anton rounded-jjab overflow-hidden",
-        attrs: { placeholder: "stel je vraag!" }
-      }),
-      _vm._v(" "),
-      _c("input", {
-        staticClass:
-          "placeholder-jjab-purple outline-none w-1/4 cursor-pointer mb-10 tracking-5px shadow-md p-10 text-4rem tracking-wide leading-none text-white bg-jjab-purple anton rounded-jjab overflow-hidden",
-        attrs: { type: "submit", value: "help!" }
-      })
-    ]
+      _c(
+        "form",
+        {
+          staticClass: "flex flex-col justify-center items-end",
+          attrs: { action: "", method: "post" }
+        },
+        [
+          _c("input", {
+            attrs: { type: "hidden", name: "_token" },
+            domProps: { value: _vm.csrf }
+          }),
+          _vm._v(" "),
+          _c("input", {
+            staticClass:
+              "placeholder-jjab-purple-placeholder outline-none w-full mb-10 tracking-5px shadow-md p-10 text-2.5rem text-jjab-purple leading-none bg-white anton rounded-jjab overflow-hidden",
+            attrs: { type: "email", placeholder: "email" }
+          }),
+          _vm._v(" "),
+          _c("textarea", {
+            staticClass:
+              "placeholder-jjab-purple-placeholder outline-none w-full mb-10 tracking-5px shadow-md p-10 text-2.5rem text-jjab-purple bg-white leading-none anton rounded-jjab overflow-hidden",
+            attrs: { placeholder: "stel je vraag!" }
+          }),
+          _vm._v(" "),
+          _c("input", {
+            staticClass:
+              "transition-all-250ms hover:bg-jjab-purple-hover hover:shadow-xl placeholder-jjab-purple outline-none w-1/4 cursor-pointer mb-10 tracking-5px shadow-md p-10 text-4rem tracking-wide leading-none text-white bg-jjab-purple anton rounded-jjab overflow-hidden",
+            attrs: { type: "submit", value: "help!" }
+          })
+        ]
+      )
+    ],
+    1
   )
 }
 var staticRenderFns = []
@@ -51700,7 +51735,7 @@ var render = function() {
     "a",
     {
       staticClass:
-        "outline-none anton w-1/2 p-5 text-white text-center rounded-jjab shadow-md bg-jjab-orange leading-none",
+        "text-2rem hover:bg-jjab-orange-hover transition-all-250ms hover:shadow-xl w-300px outline-none anton p-5 text-white text-center rounded-jjab shadow-md bg-jjab-orange leading-none",
       attrs: { href: "#" + _vm.href }
     },
     [_vm._t("default")],
@@ -52090,7 +52125,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "w-2/5 relative mt-10" }, [
+    return _c("div", { staticClass: "w-2/5 relative mt-10 min-h-screen" }, [
       _c("img", {
         staticClass: "absolute w-full animated no-drag",
         attrs: {
@@ -52225,7 +52260,7 @@ var staticRenderFns = [
             _c(
               "a",
               {
-                staticClass: "w-1/3",
+                staticClass: "w-1/3 animated bounce infinite slow",
                 attrs: {
                   href: "https://api.whatsapp.com/send?phone=31653138729",
                   target: "_blank"
@@ -52263,6 +52298,216 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 99 */,
+/* 100 */,
+/* 101 */,
+/* 102 */,
+/* 103 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(104)
+/* template */
+var __vue_template__ = __webpack_require__(105)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/BrandMenu.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-15ce30ab", Component.options)
+  } else {
+    hotAPI.reload("data-v-15ce30ab", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 104 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {};
+    }
+});
+
+/***/ }),
+/* 105 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "header",
+      {
+        staticClass:
+          "px-10 shadow-md absolute top-0 mt-10 text-white anton w-full rounded-full flex flex-row justify-between bg-jjab-purple",
+        attrs: {
+          "data-emergence": "hidden",
+          "data-animation": "animated fadeInDown"
+        }
+      },
+      [
+        _c(
+          "div",
+          { staticClass: "flex flex-row justify-between px-5 hidden" },
+          [
+            _c(
+              "a",
+              {
+                staticClass: "tracking-2px h-20 flex-center text-3rem px-10",
+                attrs: { href: "#" }
+              },
+              [_vm._v("JJAB")]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "tracking-2px h-20 flex-center text-3rem px-10",
+                attrs: { type: "button" }
+              },
+              [_vm._v("x")]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "mobile flex flex-col hidden" }, [
+          _c(
+            "a",
+            {
+              staticClass: "tracking-2px h-20 flex-center text-3rem px-10",
+              attrs: { href: "#" }
+            },
+            [_vm._v("JJAB")]
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "flex flex-row justify-between flex-grow leading-none py-2"
+          },
+          [
+            _c(
+              "a",
+              {
+                staticClass: "tracking-2px h-20 flex-center text-3rem px-10",
+                attrs: { href: "#" }
+              },
+              [_vm._v("JJAB")]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "tracking-2px h-20 flex-center text-2rem ",
+                attrs: { href: "#kennisbank" }
+              },
+              [_vm._v("Kennisbank")]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "tracking-2px h-20 flex-center text-2rem ",
+                attrs: { href: "#wie-zijn-wij" }
+              },
+              [_vm._v("Wie zijn wij?")]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass:
+                  "transition-all-250ms hover:bg-jjab-orange-hover tracking-2px h-20 flex-center text-2rem bg-jjab-orange rounded-full px-10 shadow-md",
+                attrs: { href: "#contact" }
+              },
+              [_vm._v("contact")]
+            )
+          ]
+        )
+      ]
+    )
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-15ce30ab", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

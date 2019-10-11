@@ -4,10 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 
-// use App\Quote;
-// use App\Contact;
-// use App\Employee;
-
 use App\Explanation;
 use App\Employee;
 
@@ -32,7 +28,7 @@ class jjabController extends Controller
             'explanations' => $explanations,
             'employees' => $employees
         ];
-        
+
         return view('master')->with($collection, 'collection');
 
     }

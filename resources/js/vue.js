@@ -38,6 +38,7 @@ Vue.component('card', require('./components/Card.vue'));
 Vue.component('logo-animation', require('./components/LogoAnimation.vue'));
 
 Vue.component('phone', require('./components/Phone.vue'));
+Vue.component('brand-menu', require('./components/BrandMenu.vue'));
 
 const app = new Vue({
     el: '#vue'

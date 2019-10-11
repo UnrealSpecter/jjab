@@ -1,6 +1,6 @@
 <template>
 
-    <div class="w-2/5 relative mt-10">
+    <div class="w-2/5 relative mt-10 min-h-screen">
 
         <img alt="een afbeelding van een smartphone" class="absolute w-full animated no-drag" src="/images/smartphone-render.svg">
 
@@ -25,7 +25,7 @@
                 <a class="w-1/3 mx-5" href="mailto:info@jjab.nl?subject=help! JJAB&body=Waar kunnen we je mee helpen?%0D%0A %0D%0A" target="_blank">
                     <img alt="via deze knop open je een mail:to naar jjab" class="w-full gmail d-none animated no-padding-margin img-fluid" draggable="false" src="/images/apps/gmail.svg">
                 </a>
-                <a class="w-1/3" href="https://api.whatsapp.com/send?phone=31653138729" target="_blank">
+                <a class="w-1/3 animated bounce infinite slow" href="https://api.whatsapp.com/send?phone=31653138729" target="_blank">
                     <img alt="klik op deze knop om whatsapp te openen" class="w-full whatsapp d-none animated no-padding-margin img-fluid" draggable="false" src="/images/apps/whatsapp.svg">
                 </a>
             </div>

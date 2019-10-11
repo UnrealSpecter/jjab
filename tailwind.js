@@ -129,6 +129,9 @@ module.exports = {
       'jjab-purple': '#622a70',
       'jjab-blue': '#68bedb',
       'jjab-orange': '#ef7c38',
+      'jjab-orange-hover': '#F0894B',
+      'jjab-purple-hover': '#713f7e',
+      'jjab-purple-placeholder': '#8d6597',
     },
     spacing: {
       px: '1px',
