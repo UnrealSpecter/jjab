@@ -13,6 +13,9 @@
 
 Route::get('/', 'jjabController@index');
 
+// MAIL
+Route::post('/send-mail', 'MailController@sendMail');
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });

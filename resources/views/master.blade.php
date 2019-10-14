@@ -46,7 +46,7 @@
                     <explanation title="{{ $explanation->subtitle }}" description="{{ $explanation->description }}"></explanation>
 
                     <!-- ANIMATION -->
-                    <div class="w-full flex flex-row justify-between mb-16 ">
+                    <div data-emergence="hidden" data-animation="animated fadeInUp" class="w-full flex flex-row justify-between mb-16 ">
                         <youtube class="rounded-jjab shadow-md w-full h-700px" video-id="{{ $explanation->video }}" />
                     </div>
 
@@ -66,7 +66,10 @@
                 <container>
 
                     <!-- TRANSITION -->
-                    <page-transition>wie zijn wij?</page-transition>
+                    <page-transition>Over JJAB</page-transition>
+
+                    <!-- EXPLANATION -->
+                    <explanation title="Benieuwd naar wie wij zijn?" description="Lees een stukje over onze achtergrond, waarom we bestaan etc."></explanation>
 
                     <!-- EMPLOYEE -->
                     @foreach($employees as $employee)
@@ -83,35 +86,17 @@
                     <!-- TRANSITION -->
                     <page-transition>Contact</page-transition>
 
-                    <!-- MAIL FORM -->
-                    <div class="wrapper w-full flex flex-col">
-                        <jjab-form></jjab-form>
-                    </div>
+                    <!-- EXPLANATION -->
+                    <explanation title="Waar kunnen we je bij helpen?" description="Je kunt hier zonder verplichting je vraag stellen. Dan krijg je van ons z.s.m een mail terug. Dit is geheel vrijblijvend. Je kunt op basis van het antwoord zelf kiezen wat het vervolg is."></explanation>
 
-                    <!-- CONTACT TITLE -->
-                    <brand-title id="app-ons">App Ons!</brand-title>
+                    <!-- MAIL FORM -->
+                    <jjab-form></jjab-form>
 
                     <!-- APP ONS -->
                     <phone></phone>
 
                 </container>
             </wrapper>
-
-            <!-- FOOTER -->
-            <footer class="py-12 w-full bg-jjab-orange text-jjab-purple tracking-2px anton flex flex-row justify-between items-center">
-                <div class="h-32 w-1/3 flex flex-col justify-center items-center">
-                    <i class="text-4rem fa fa-phone mb-2"></i>
-                    <span class="text-2.5rem tracking-2px">+‎31 6 53138729</span>
-                </div>
-                <div class="h-32 w-1/3 flex flex-col justify-center items-center">
-                    <i class="text-4rem fa fa-envelope mb-2"></i>
-                    <span class="text-2.5rem tracking-2px">info@jjab.nl</span>
-                </div>
-                <div class="h-32 w-1/3 flex flex-col justify-center items-center">
-                    <i class="text-4rem fa fa-map-marker-alt mb-2"></i>
-                    <span class="text-2.5rem tracking-2px">Baander 5, 7811HH Emmen</span>
-                </div>
-            </footer>
 
         </div>
         @include('scripts')

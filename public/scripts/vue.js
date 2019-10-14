@@ -14287,7 +14287,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(14);
-module.exports = __webpack_require__(98);
+module.exports = __webpack_require__(101);
 
 
 /***/ }),
@@ -14339,7 +14339,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('card', __webpack_require_
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('logo-animation', __webpack_require__(92));
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('phone', __webpack_require__(95));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('brand-menu', __webpack_require__(103));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('brand-menu', __webpack_require__(98));
 
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
   el: '#vue'
@@ -50802,7 +50802,11 @@ var render = function() {
     {
       staticClass:
         "mb-16 shadow-md rounded-jjab flex flex-col justify-center items-center w-full bg-jjab-purple p-16",
-      attrs: { id: "juridisch-advies" }
+      attrs: {
+        id: "juridisch-advies",
+        "data-emergence": "hidden",
+        "data-animation": "animated fadeInUp"
+      }
     },
     [
       _c(
@@ -50936,7 +50940,11 @@ var render = function() {
     "div",
     {
       staticClass:
-        "shadow-md rounded-jjab flex flex-col justify-center items-center w-full bg-jjab-purple p-16 mb-16"
+        "shadow-md rounded-jjab flex flex-col justify-center items-center w-full bg-jjab-purple p-16 mb-16",
+      attrs: {
+        "data-emergence": "hidden",
+        "data-animation": "animated fadeInUp"
+      }
     },
     [
       _c(
@@ -51050,7 +51058,11 @@ var render = function() {
     "div",
     {
       staticClass:
-        "absolute top-150px shadow-md w-full rounded-jjab flex-center shadow-md top-0 h-300px bg-jjab-purple text-white text-8rem anton"
+        "absolute top-150px shadow-md w-full rounded-jjab flex-center shadow-md top-0 h-300px bg-jjab-purple text-white text-8rem anton",
+      attrs: {
+        "data-emergence": "hidden",
+        "data-animation": "animated fadeInUp"
+      }
     },
     [_vm._t("default")],
     2
@@ -51145,7 +51157,11 @@ var render = function() {
     "div",
     {
       staticClass:
-        "w-full rounded-jjab shadow-md bg-jjab-blue p-16 text-white text-2.5rem w-1/2 mb-16 flex flex-col justify-center items-center"
+        "w-full rounded-jjab shadow-md bg-jjab-blue p-16 text-white text-2.5rem w-1/2 my-16 flex flex-col justify-center items-center",
+      attrs: {
+        "data-emergence": "hidden",
+        "data-animation": "animated fadeInUp"
+      }
     },
     [
       _c("h1", { staticClass: "text-white anton text-6rem mb-5 text-center" }, [
@@ -51254,12 +51270,60 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
-            csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+            csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+            data: {
+                email: '',
+                content: ''
+            },
+            errors: {}
         };
+    },
+    methods: {
+        submit: function submit() {
+
+            if (this.validate()) {
+                this.send();
+            }
+        },
+        validate: function validate() {
+
+            this.errors = {};
+
+            for (var property in this.data) {
+                if (this.data[property] === "") {
+                    this.errors[property] = property + "";
+                }
+            }
+
+            var errorCount = Object.keys(this.errors).length;
+
+            return errorCount >= 1 ? false : true;
+        },
+        send: function send() {
+
+            axios.post('/mail', {
+                email: this.data.email,
+                content: this.data.content
+            }).then(function (response) {
+                if (response.data) {
+                    //success
+                }
+            }).catch(function (error) {
+                //error
+            });
+        },
+        clearError: function clearError(key) {
+            this.errors[key] = "";
+        }
     }
 });
 
@@ -51277,15 +51341,6 @@ var render = function() {
       _c("brand-title", { attrs: { id: "mail" } }, [_vm._v("Stel je vraag!")]),
       _vm._v(" "),
       _c(
-        "div",
-        {
-          staticClass:
-            "wrapper w-full text-center my-10 text-6rem text-jjab-purple tracking-10px anton"
-        },
-        [_vm._v("\n        Waar kunnen we je bij helpen?\n    ")]
-      ),
-      _vm._v(" "),
-      _c(
         "form",
         {
           staticClass: "flex flex-col justify-center items-end",
@@ -51298,21 +51353,117 @@ var render = function() {
           }),
           _vm._v(" "),
           _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.data.email,
+                expression: "data.email"
+              }
+            ],
             staticClass:
-              "placeholder-jjab-purple-placeholder outline-none w-full mb-10 tracking-5px shadow-md p-10 text-2.5rem text-jjab-purple leading-none bg-white anton rounded-jjab overflow-hidden",
-            attrs: { type: "email", placeholder: "email" }
+              "placeholder-jjab-purple-placeholder outline-none w-full tracking-5px mb-10 shadow-md p-10 text-2.5rem text-jjab-purple leading-none bg-white anton rounded-jjab overflow-hidden",
+            attrs: {
+              type: "email",
+              "data-emergence": "hidden",
+              "data-animation": "animated fadeInUp",
+              name: "data[email]",
+              value: "{ data.email }",
+              placeholder: "email"
+            },
+            domProps: { value: _vm.data.email },
+            on: {
+              keydown: function($event) {
+                return _vm.clearError("email")
+              },
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.data, "email", $event.target.value)
+              }
+            }
           }),
           _vm._v(" "),
+          _vm.errors.email
+            ? _c(
+                "p",
+                {
+                  staticClass:
+                    "w-full p-12 text-white shadow-md rounded-jjab bg-jjab-blue anton mb-10 flex-center text-2.5rem"
+                },
+                [
+                  _c("span", {
+                    staticClass: "fa fa-exclamation-circle mr-5 text-3rem"
+                  }),
+                  _vm._v("Vul een geldig emailadres in.\n        ")
+                ]
+              )
+            : _vm._e(),
+          _vm._v(" "),
           _c("textarea", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.data.content,
+                expression: "data.content"
+              }
+            ],
             staticClass:
-              "placeholder-jjab-purple-placeholder outline-none w-full mb-10 tracking-5px shadow-md p-10 text-2.5rem text-jjab-purple bg-white leading-none anton rounded-jjab overflow-hidden",
-            attrs: { placeholder: "stel je vraag!" }
+              "placeholder-jjab-purple-placeholder outline-none w-full tracking-5px mb-10 shadow-md p-10 text-2.5rem text-jjab-purple bg-white leading-none anton rounded-jjab overflow-hidden h-200px",
+            attrs: {
+              "data-emergence": "hidden",
+              "data-animation": "animated fadeInUp",
+              name: "data[content]",
+              value: "{ data.content }",
+              placeholder: "stel je vraag!"
+            },
+            domProps: { value: _vm.data.content },
+            on: {
+              keydown: function($event) {
+                return _vm.clearError("content")
+              },
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.data, "content", $event.target.value)
+              }
+            }
           }),
+          _vm._v(" "),
+          _vm.errors.content
+            ? _c(
+                "p",
+                {
+                  staticClass:
+                    "w-full p-12 text-white shadow-md rounded-jjab bg-jjab-blue anton mb-10 flex-center text-2.5rem"
+                },
+                [
+                  _c("span", {
+                    staticClass: "fa fa-exclamation-circle mr-5 text-3rem"
+                  }),
+                  _vm._v("Dit veld mag niet leeg zijn.\n        ")
+                ]
+              )
+            : _vm._e(),
           _vm._v(" "),
           _c("input", {
             staticClass:
               "transition-all-250ms hover:bg-jjab-purple-hover hover:shadow-xl placeholder-jjab-purple outline-none w-1/4 cursor-pointer mb-10 tracking-5px shadow-md p-10 text-4rem tracking-wide leading-none text-white bg-jjab-purple anton rounded-jjab overflow-hidden",
-            attrs: { type: "submit", value: "help!" }
+            attrs: {
+              "data-emergence": "hidden",
+              "data-animation": "animated fadeInUp",
+              type: "submit",
+              value: "help!"
+            },
+            on: {
+              click: function($event) {
+                $event.preventDefault()
+                return _vm.submit()
+              }
+            }
           })
         ]
       )
@@ -51401,6 +51552,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['employee']
@@ -51414,40 +51567,61 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "w-full wrapper flex flex-col mb-10" }, [
-    _c("div", { staticClass: "w-full h-600px flex flex-row flex-no-wrap" }, [
+  return _c(
+    "div",
+    {
+      staticClass: "w-full wrapper flex flex-col mb-16",
+      attrs: {
+        "data-emergence": "hidden",
+        "data-animation": "animated fadeInUp"
+      }
+    },
+    [
+      _c("div", { staticClass: "w-full h-600px flex flex-row flex-no-wrap" }, [
+        _c(
+          "div",
+          {
+            staticClass:
+              "flex flex-col justify-center items-start w-full h-full"
+          },
+          [
+            _c(
+              "h2",
+              { staticClass: "px-12 text-4rem mb-5 text-jjab-orange anton" },
+              [_vm._v(_vm._s(_vm.employee.title))]
+            ),
+            _vm._v(" "),
+            _c(
+              "p",
+              {
+                staticClass:
+                  "px-12 flex-center text-2rem roboto lowercase text-jjab-orange"
+              },
+              [_vm._v(_vm._s(_vm.employee.description))]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c("img", {
+          staticClass: "w-auto h-full object-fit",
+          attrs: { src: "storage/" + _vm.employee.photo }
+        })
+      ]),
+      _vm._v(" "),
       _c(
-        "p",
+        "div",
         {
           staticClass:
-            "p-24 w-full h-full flex-center text-2rem roboto text-jjab-blue"
+            "flex flex-col rounded-jjab shadow-md bg-jjab-purple w-full px-10 py-16 justify-center items-center"
         },
-        [_vm._v(_vm._s(_vm.employee.description))]
-      ),
-      _vm._v(" "),
-      _c("img", {
-        staticClass: "w-auto h-full object-fit",
-        attrs: { src: "storage/" + _vm.employee.photo }
-      })
-    ]),
-    _vm._v(" "),
-    _c(
-      "div",
-      {
-        staticClass:
-          "flex flex-col rounded-jjab shadow-md bg-jjab-blue w-full p-10 justify-center items-center"
-      },
-      [
-        _c("h1", { staticClass: "text-6rem text-white anton" }, [
-          _vm._v(_vm._s(_vm.employee.name))
-        ]),
-        _vm._v(" "),
-        _c("h2", { staticClass: "roboto text-3rem text-white" }, [
-          _vm._v(_vm._s(_vm.employee.title))
-        ])
-      ]
-    )
-  ])
+        [
+          _c("h1", { staticClass: "text-6rem text-white anton" }, [
+            _vm._v(_vm._s(_vm.employee.name))
+          ])
+        ]
+      )
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -51640,7 +51814,11 @@ var render = function() {
     {
       staticClass:
         "anton text-center w-full text-jjab-purple text-10rem my-16 leading-none",
-      attrs: { id: "" + _vm.id }
+      attrs: {
+        id: "" + _vm.id,
+        "data-emergence": "hidden",
+        "data-animation": "animated fadeInUp"
+      }
     },
     [_vm._t("default")],
     2
@@ -51828,7 +52006,11 @@ var render = function() {
     "div",
     {
       staticClass:
-        "desktop:h-300px rounded-jjab shadow-md bg-jjab-purple anton mb-16 p-10 py-5 leading-tight text-white text-2rem w-1/4"
+        "desktop:h-300px rounded-jjab shadow-md bg-jjab-purple anton mb-16 p-10 py-5 leading-tight text-white text-2rem w-1/4",
+      attrs: {
+        "data-emergence": "hidden",
+        "data-animation": "animated fadeInUp"
+      }
     },
     [_vm._t("default")],
     2
@@ -52107,6 +52289,32 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
@@ -52118,170 +52326,249 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "div",
+    {
+      attrs: {
+        "data-emergence": "hidden",
+        "data-animation": "animated fadeInUp"
+      }
+    },
+    [
+      _c("brand-title", { attrs: { id: "app-ons" } }, [_vm._v("App Ons!")]),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._m(1)
+    ],
+    1
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "w-2/5 relative mt-10 min-h-screen" }, [
-      _c("img", {
-        staticClass: "absolute w-full animated no-drag",
-        attrs: {
-          alt: "een afbeelding van een smartphone",
-          src: "/images/smartphone-render.svg"
-        }
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "w-full pt-300px px-16 absolute" }, [
+    return _c(
+      "div",
+      {
+        staticClass:
+          "w-full flex flex-row justify-center items-end relative mt-10 min-h-screen"
+      },
+      [
+        _c("img", {
+          staticClass: "absolute h-full animated no-drag",
+          attrs: {
+            alt: "een afbeelding van een smartphone",
+            src: "/images/smartphone-render.svg"
+          }
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "w-1/2 top-0 pt-300px px-24 absolute" }, [
+          _c(
+            "div",
+            {
+              staticClass: "row flex flex-row justify-center items-center mb-5"
+            },
+            [
+              _c(
+                "a",
+                {
+                  staticClass: "w-1/3",
+                  attrs: {
+                    href: "https://www.facebook.com/stichtingjjab/",
+                    target: "_blank"
+                  }
+                },
+                [
+                  _c("img", {
+                    staticClass:
+                      "w-full facebook d-none no-padding-margin animated img-fluid",
+                    attrs: {
+                      alt: "facebook social media knop",
+                      draggable: "false",
+                      src: "/images/apps/facebook.svg"
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "w-1/3 mx-5",
+                  attrs: {
+                    href: "https://www.instagram.com/stichting.jjab/?hl=nl",
+                    target: "_blank"
+                  }
+                },
+                [
+                  _c("img", {
+                    staticClass:
+                      "w-full no-padding-margin instagram d-none animated img-fluid",
+                    attrs: {
+                      alt: "instagram social media knop",
+                      draggable: "false",
+                      src: "/images/apps/instagram.svg"
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "w-1/3",
+                  attrs: {
+                    href:
+                      "https://www.linkedin.com/in/stichting-jjab-0a3594159/",
+                    target: "_blank"
+                  }
+                },
+                [
+                  _c("img", {
+                    staticClass:
+                      "w-full linkedin d-none animated no-padding-margin img-fluid",
+                    attrs: {
+                      alt: "linkedin social media knop",
+                      draggable: "false",
+                      src: "/images/apps/linkedin.svg"
+                    }
+                  })
+                ]
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "row flex flex-row justify-center items-center" },
+            [
+              _c(
+                "a",
+                {
+                  staticClass: "w-1/3",
+                  attrs: {
+                    href:
+                      "https://www.google.nl/maps/place/Baander+5,+7811+HH+Emmen/@52.7814346,6.8939633,17z/data=!3m1!4b1!4m5!3m4!1s0x47b7e63e008b13f1:0xe5e555e1b3c9242c!8m2!3d52.7814346!4d6.896152",
+                    target: "_blank"
+                  }
+                },
+                [
+                  _c("img", {
+                    staticClass:
+                      "w-full snapchat d-none animated no-padding-margin img-fluid",
+                    attrs: {
+                      alt: "google maps social media knop",
+                      draggable: "false",
+                      src: "/images/apps/google-maps.svg"
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "w-1/3 mx-5",
+                  attrs: {
+                    href:
+                      "mailto:info@jjab.nl?subject=help! JJAB&body=Waar kunnen we je mee helpen?%0D%0A %0D%0A",
+                    target: "_blank"
+                  }
+                },
+                [
+                  _c("img", {
+                    staticClass:
+                      "w-full gmail d-none animated no-padding-margin img-fluid",
+                    attrs: {
+                      alt: "via deze knop open je een mail:to naar jjab",
+                      draggable: "false",
+                      src: "/images/apps/gmail.svg"
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "w-1/3 animated bounce infinite slow",
+                  attrs: {
+                    href: "https://api.whatsapp.com/send?phone=31653138729",
+                    target: "_blank"
+                  }
+                },
+                [
+                  _c("img", {
+                    staticClass:
+                      "w-full whatsapp d-none animated no-padding-margin img-fluid",
+                    attrs: {
+                      alt: "klik op deze knop om whatsapp te openen",
+                      draggable: "false",
+                      src: "/images/apps/whatsapp.svg"
+                    }
+                  })
+                ]
+              )
+            ]
+          )
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "footer",
+      {
+        staticClass:
+          "p-12 w-full rounded-jjab text-white bg-jjab-purple  anton flex flex-row justify-between items-center"
+      },
+      [
         _c(
           "div",
-          { staticClass: "row flex flex-row justify-center items-center mb-5" },
+          {
+            staticClass: "h-32 w-1/3 flex flex-col justify-center items-center"
+          },
           [
-            _c(
-              "a",
-              {
-                staticClass: "w-1/3",
-                attrs: {
-                  href: "https://www.facebook.com/stichtingjjab/",
-                  target: "_blank"
-                }
-              },
-              [
-                _c("img", {
-                  staticClass:
-                    "w-full facebook d-none no-padding-margin animated img-fluid",
-                  attrs: {
-                    alt: "facebook social media knop",
-                    draggable: "false",
-                    src: "/images/apps/facebook.svg"
-                  }
-                })
-              ]
-            ),
+            _c("i", { staticClass: "text-3rem fa fa-phone mb-4" }),
             _vm._v(" "),
-            _c(
-              "a",
-              {
-                staticClass: "w-1/3 mx-5",
-                attrs: {
-                  href: "https://www.instagram.com/stichting.jjab/?hl=nl",
-                  target: "_blank"
-                }
-              },
-              [
-                _c("img", {
-                  staticClass:
-                    "w-full no-padding-margin instagram d-none animated img-fluid",
-                  attrs: {
-                    alt: "instagram social media knop",
-                    draggable: "false",
-                    src: "/images/apps/instagram.svg"
-                  }
-                })
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                staticClass: "w-1/3",
-                attrs: {
-                  href: "https://www.linkedin.com/in/stichting-jjab-0a3594159/",
-                  target: "_blank"
-                }
-              },
-              [
-                _c("img", {
-                  staticClass:
-                    "w-full linkedin d-none animated no-padding-margin img-fluid",
-                  attrs: {
-                    alt: "linkedin social media knop",
-                    draggable: "false",
-                    src: "/images/apps/linkedin.svg"
-                  }
-                })
-              ]
-            )
+            _c("span", { staticClass: "text-2.5rem" }, [
+              _vm._v("+‎31 6 53138729")
+            ])
           ]
         ),
         _vm._v(" "),
         _c(
           "div",
-          { staticClass: "row flex flex-row justify-center items-center" },
+          {
+            staticClass: "h-32 w-1/3 flex flex-col justify-center items-center"
+          },
           [
-            _c(
-              "a",
-              {
-                staticClass: "w-1/3",
-                attrs: {
-                  href:
-                    "https://www.google.nl/maps/place/Baander+5,+7811+HH+Emmen/@52.7814346,6.8939633,17z/data=!3m1!4b1!4m5!3m4!1s0x47b7e63e008b13f1:0xe5e555e1b3c9242c!8m2!3d52.7814346!4d6.896152",
-                  target: "_blank"
-                }
-              },
-              [
-                _c("img", {
-                  staticClass:
-                    "w-full snapchat d-none animated no-padding-margin img-fluid",
-                  attrs: {
-                    alt: "google maps social media knop",
-                    draggable: "false",
-                    src: "/images/apps/google-maps.svg"
-                  }
-                })
-              ]
-            ),
+            _c("i", { staticClass: "text-3.5rem fa fa-envelope mb-4" }),
             _vm._v(" "),
-            _c(
-              "a",
-              {
-                staticClass: "w-1/3 mx-5",
-                attrs: {
-                  href:
-                    "mailto:info@jjab.nl?subject=help! JJAB&body=Waar kunnen we je mee helpen?%0D%0A %0D%0A",
-                  target: "_blank"
-                }
-              },
-              [
-                _c("img", {
-                  staticClass:
-                    "w-full gmail d-none animated no-padding-margin img-fluid",
-                  attrs: {
-                    alt: "via deze knop open je een mail:to naar jjab",
-                    draggable: "false",
-                    src: "/images/apps/gmail.svg"
-                  }
-                })
-              ]
-            ),
+            _c("span", { staticClass: "text-2.5rem" }, [_vm._v("info@jjab.nl")])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "h-32 w-1/3 flex flex-col justify-center items-center"
+          },
+          [
+            _c("i", { staticClass: "text-4rem fa fa-map-marker-alt mb-4" }),
             _vm._v(" "),
-            _c(
-              "a",
-              {
-                staticClass: "w-1/3 animated bounce infinite slow",
-                attrs: {
-                  href: "https://api.whatsapp.com/send?phone=31653138729",
-                  target: "_blank"
-                }
-              },
-              [
-                _c("img", {
-                  staticClass:
-                    "w-full whatsapp d-none animated no-padding-margin img-fluid",
-                  attrs: {
-                    alt: "klik op deze knop om whatsapp te openen",
-                    draggable: "false",
-                    src: "/images/apps/whatsapp.svg"
-                  }
-                })
-              ]
-            )
+            _c("span", { staticClass: "text-2.5rem" }, [
+              _vm._v("Baander 5, 7811HH Emmen")
+            ])
           ]
         )
-      ])
-    ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -52295,24 +52582,14 @@ if (false) {
 
 /***/ }),
 /* 98 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 99 */,
-/* 100 */,
-/* 101 */,
-/* 102 */,
-/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(104)
+var __vue_script__ = __webpack_require__(99)
 /* template */
-var __vue_template__ = __webpack_require__(105)
+var __vue_template__ = __webpack_require__(100)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -52351,11 +52628,12 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 104 */
+/* 99 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -52391,7 +52669,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 105 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -52492,6 +52770,16 @@ var staticRenderFns = [
                   "transition-all-250ms hover:bg-jjab-orange-hover tracking-2px h-20 flex-center text-2rem bg-jjab-orange rounded-full px-10 shadow-md",
                 attrs: { href: "#contact" }
               },
+              [_vm._v("ik heb een vraag")]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass:
+                  "transition-all-250ms hover:bg-jjab-orange-hover tracking-2px h-20 flex-center text-2rem bg-jjab-orange rounded-full px-10 shadow-md",
+                attrs: { href: "#contact" }
+              },
               [_vm._v("contact")]
             )
           ]
@@ -52508,6 +52796,12 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-15ce30ab", module.exports)
   }
 }
+
+/***/ }),
+/* 101 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

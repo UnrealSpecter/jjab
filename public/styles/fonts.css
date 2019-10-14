@@ -27,5 +27,6 @@
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    line-height: 1;
 }
