@@ -157,6 +157,7 @@ module.exports = {
       '200px': '200px',
       '250px': '250px',
       '300px': '300px',
+      'phone-portrait': '1.25rem',
     },
     backgroundColor: theme => theme('colors'),
     backgroundPosition: {
@@ -232,6 +233,7 @@ module.exports = {
       default: '1',
     },
     fontFamily: {
+      anton: ['anton'],
       sans: [
         '-apple-system',
         'BlinkMacSystemFont',

@@ -29,9 +29,9 @@ function startEmergence(){
         callback: function(element, state) {
             if (state === 'visible') {
 
-                var element = $(element);
+                let element = $(element);
 
-                var hasAnimated = element.data('has-animated');
+                let hasAnimated = element.data('has-animated');
 
                 animation = element.data('animation');
 

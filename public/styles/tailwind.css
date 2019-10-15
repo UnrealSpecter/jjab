@@ -4031,6 +4031,10 @@ video {
   clear: both;
 }
 
+.font-anton {
+  font-family: anton;
+}
+
 .font-sans {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -4247,6 +4251,10 @@ video {
   height: 300px;
 }
 
+.h-phone-portrait {
+  height: 1.25rem;
+}
+
 .h-full {
   height: 100%;
 }
@@ -4435,6 +4443,10 @@ video {
   margin: 300px;
 }
 
+.m-phone-portrait {
+  margin: 1.25rem;
+}
+
 .-m-1 {
   margin: -0.25rem;
 }
@@ -4521,6 +4533,10 @@ video {
 
 .-m-300px {
   margin: -300px;
+}
+
+.-m-phone-portrait {
+  margin: -1.25rem;
 }
 
 .my-0 {
@@ -4763,6 +4779,16 @@ video {
   margin-right: 300px;
 }
 
+.my-phone-portrait {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.mx-phone-portrait {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .-my-1 {
   margin-top: -0.25rem;
   margin-bottom: -0.25rem;
@@ -4981,6 +5007,16 @@ video {
 .-mx-300px {
   margin-left: -300px;
   margin-right: -300px;
+}
+
+.-my-phone-portrait {
+  margin-top: -1.25rem;
+  margin-bottom: -1.25rem;
+}
+
+.-mx-phone-portrait {
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
 }
 
 .mt-0 {
@@ -5367,6 +5403,22 @@ video {
   margin-left: 300px;
 }
 
+.mt-phone-portrait {
+  margin-top: 1.25rem;
+}
+
+.mr-phone-portrait {
+  margin-right: 1.25rem;
+}
+
+.mb-phone-portrait {
+  margin-bottom: 1.25rem;
+}
+
+.ml-phone-portrait {
+  margin-left: 1.25rem;
+}
+
 .-mt-1 {
   margin-top: -0.25rem;
 }
@@ -5717,6 +5769,22 @@ video {
 
 .-ml-300px {
   margin-left: -300px;
+}
+
+.-mt-phone-portrait {
+  margin-top: -1.25rem;
+}
+
+.-mr-phone-portrait {
+  margin-right: -1.25rem;
+}
+
+.-mb-phone-portrait {
+  margin-bottom: -1.25rem;
+}
+
+.-ml-phone-portrait {
+  margin-left: -1.25rem;
 }
 
 .max-h-full {
@@ -6077,6 +6145,10 @@ video {
   padding: 300px;
 }
 
+.p-phone-portrait {
+  padding: 1.25rem;
+}
+
 .py-0 {
   padding-top: 0;
   padding-bottom: 0;
@@ -6305,6 +6377,16 @@ video {
 .px-300px {
   padding-left: 300px;
   padding-right: 300px;
+}
+
+.py-phone-portrait {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.px-phone-portrait {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .pt-0 {
@@ -6673,6 +6755,22 @@ video {
 
 .pl-300px {
   padding-left: 300px;
+}
+
+.pt-phone-portrait {
+  padding-top: 1.25rem;
+}
+
+.pr-phone-portrait {
+  padding-right: 1.25rem;
+}
+
+.pb-phone-portrait {
+  padding-bottom: 1.25rem;
+}
+
+.pl-phone-portrait {
+  padding-left: 1.25rem;
 }
 
 .placeholder-transparent::-webkit-input-placeholder {
@@ -11785,6 +11883,10 @@ video {
   width: 300px;
 }
 
+.w-phone-portrait {
+  width: 1.25rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -11923,6 +12025,22 @@ video {
 
 .z-auto {
   z-index: auto;
+}
+
+.brand-title {
+  font-size: 2.5rem;
+  font-family: anton;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-bottom: 1.25rem
+}
+
+@media (min-width: 992px) {
+  .brand-title {
+    font-size: 6rem;
+    margin-bottom: 2.5rem
+  }
 }
 
 html {
@@ -15356,6 +15474,10 @@ html {
     clear: both;
   }
 
+  .phone-landscape\:font-anton {
+    font-family: anton;
+  }
+
   .phone-landscape\:font-sans {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
@@ -15572,6 +15694,10 @@ html {
     height: 300px;
   }
 
+  .phone-landscape\:h-phone-portrait {
+    height: 1.25rem;
+  }
+
   .phone-landscape\:h-full {
     height: 100%;
   }
@@ -15760,6 +15886,10 @@ html {
     margin: 300px;
   }
 
+  .phone-landscape\:m-phone-portrait {
+    margin: 1.25rem;
+  }
+
   .phone-landscape\:-m-1 {
     margin: -0.25rem;
   }
@@ -15846,6 +15976,10 @@ html {
 
   .phone-landscape\:-m-300px {
     margin: -300px;
+  }
+
+  .phone-landscape\:-m-phone-portrait {
+    margin: -1.25rem;
   }
 
   .phone-landscape\:my-0 {
@@ -16088,6 +16222,16 @@ html {
     margin-right: 300px;
   }
 
+  .phone-landscape\:my-phone-portrait {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .phone-landscape\:mx-phone-portrait {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
   .phone-landscape\:-my-1 {
     margin-top: -0.25rem;
     margin-bottom: -0.25rem;
@@ -16306,6 +16450,16 @@ html {
   .phone-landscape\:-mx-300px {
     margin-left: -300px;
     margin-right: -300px;
+  }
+
+  .phone-landscape\:-my-phone-portrait {
+    margin-top: -1.25rem;
+    margin-bottom: -1.25rem;
+  }
+
+  .phone-landscape\:-mx-phone-portrait {
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
   }
 
   .phone-landscape\:mt-0 {
@@ -16692,6 +16846,22 @@ html {
     margin-left: 300px;
   }
 
+  .phone-landscape\:mt-phone-portrait {
+    margin-top: 1.25rem;
+  }
+
+  .phone-landscape\:mr-phone-portrait {
+    margin-right: 1.25rem;
+  }
+
+  .phone-landscape\:mb-phone-portrait {
+    margin-bottom: 1.25rem;
+  }
+
+  .phone-landscape\:ml-phone-portrait {
+    margin-left: 1.25rem;
+  }
+
   .phone-landscape\:-mt-1 {
     margin-top: -0.25rem;
   }
@@ -17042,6 +17212,22 @@ html {
 
   .phone-landscape\:-ml-300px {
     margin-left: -300px;
+  }
+
+  .phone-landscape\:-mt-phone-portrait {
+    margin-top: -1.25rem;
+  }
+
+  .phone-landscape\:-mr-phone-portrait {
+    margin-right: -1.25rem;
+  }
+
+  .phone-landscape\:-mb-phone-portrait {
+    margin-bottom: -1.25rem;
+  }
+
+  .phone-landscape\:-ml-phone-portrait {
+    margin-left: -1.25rem;
   }
 
   .phone-landscape\:max-h-full {
@@ -17402,6 +17588,10 @@ html {
     padding: 300px;
   }
 
+  .phone-landscape\:p-phone-portrait {
+    padding: 1.25rem;
+  }
+
   .phone-landscape\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -17630,6 +17820,16 @@ html {
   .phone-landscape\:px-300px {
     padding-left: 300px;
     padding-right: 300px;
+  }
+
+  .phone-landscape\:py-phone-portrait {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .phone-landscape\:px-phone-portrait {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .phone-landscape\:pt-0 {
@@ -17998,6 +18198,22 @@ html {
 
   .phone-landscape\:pl-300px {
     padding-left: 300px;
+  }
+
+  .phone-landscape\:pt-phone-portrait {
+    padding-top: 1.25rem;
+  }
+
+  .phone-landscape\:pr-phone-portrait {
+    padding-right: 1.25rem;
+  }
+
+  .phone-landscape\:pb-phone-portrait {
+    padding-bottom: 1.25rem;
+  }
+
+  .phone-landscape\:pl-phone-portrait {
+    padding-left: 1.25rem;
   }
 
   .phone-landscape\:placeholder-transparent::-webkit-input-placeholder {
@@ -23110,6 +23326,10 @@ html {
     width: 300px;
   }
 
+  .phone-landscape\:w-phone-portrait {
+    width: 1.25rem;
+  }
+
   .phone-landscape\:w-1\/2 {
     width: 50%;
   }
@@ -26646,6 +26866,10 @@ html {
     clear: both;
   }
 
+  .tablet-portrait\:font-anton {
+    font-family: anton;
+  }
+
   .tablet-portrait\:font-sans {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
@@ -26862,6 +27086,10 @@ html {
     height: 300px;
   }
 
+  .tablet-portrait\:h-phone-portrait {
+    height: 1.25rem;
+  }
+
   .tablet-portrait\:h-full {
     height: 100%;
   }
@@ -27050,6 +27278,10 @@ html {
     margin: 300px;
   }
 
+  .tablet-portrait\:m-phone-portrait {
+    margin: 1.25rem;
+  }
+
   .tablet-portrait\:-m-1 {
     margin: -0.25rem;
   }
@@ -27136,6 +27368,10 @@ html {
 
   .tablet-portrait\:-m-300px {
     margin: -300px;
+  }
+
+  .tablet-portrait\:-m-phone-portrait {
+    margin: -1.25rem;
   }
 
   .tablet-portrait\:my-0 {
@@ -27378,6 +27614,16 @@ html {
     margin-right: 300px;
   }
 
+  .tablet-portrait\:my-phone-portrait {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .tablet-portrait\:mx-phone-portrait {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
   .tablet-portrait\:-my-1 {
     margin-top: -0.25rem;
     margin-bottom: -0.25rem;
@@ -27596,6 +27842,16 @@ html {
   .tablet-portrait\:-mx-300px {
     margin-left: -300px;
     margin-right: -300px;
+  }
+
+  .tablet-portrait\:-my-phone-portrait {
+    margin-top: -1.25rem;
+    margin-bottom: -1.25rem;
+  }
+
+  .tablet-portrait\:-mx-phone-portrait {
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
   }
 
   .tablet-portrait\:mt-0 {
@@ -27982,6 +28238,22 @@ html {
     margin-left: 300px;
   }
 
+  .tablet-portrait\:mt-phone-portrait {
+    margin-top: 1.25rem;
+  }
+
+  .tablet-portrait\:mr-phone-portrait {
+    margin-right: 1.25rem;
+  }
+
+  .tablet-portrait\:mb-phone-portrait {
+    margin-bottom: 1.25rem;
+  }
+
+  .tablet-portrait\:ml-phone-portrait {
+    margin-left: 1.25rem;
+  }
+
   .tablet-portrait\:-mt-1 {
     margin-top: -0.25rem;
   }
@@ -28332,6 +28604,22 @@ html {
 
   .tablet-portrait\:-ml-300px {
     margin-left: -300px;
+  }
+
+  .tablet-portrait\:-mt-phone-portrait {
+    margin-top: -1.25rem;
+  }
+
+  .tablet-portrait\:-mr-phone-portrait {
+    margin-right: -1.25rem;
+  }
+
+  .tablet-portrait\:-mb-phone-portrait {
+    margin-bottom: -1.25rem;
+  }
+
+  .tablet-portrait\:-ml-phone-portrait {
+    margin-left: -1.25rem;
   }
 
   .tablet-portrait\:max-h-full {
@@ -28692,6 +28980,10 @@ html {
     padding: 300px;
   }
 
+  .tablet-portrait\:p-phone-portrait {
+    padding: 1.25rem;
+  }
+
   .tablet-portrait\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -28920,6 +29212,16 @@ html {
   .tablet-portrait\:px-300px {
     padding-left: 300px;
     padding-right: 300px;
+  }
+
+  .tablet-portrait\:py-phone-portrait {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .tablet-portrait\:px-phone-portrait {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .tablet-portrait\:pt-0 {
@@ -29288,6 +29590,22 @@ html {
 
   .tablet-portrait\:pl-300px {
     padding-left: 300px;
+  }
+
+  .tablet-portrait\:pt-phone-portrait {
+    padding-top: 1.25rem;
+  }
+
+  .tablet-portrait\:pr-phone-portrait {
+    padding-right: 1.25rem;
+  }
+
+  .tablet-portrait\:pb-phone-portrait {
+    padding-bottom: 1.25rem;
+  }
+
+  .tablet-portrait\:pl-phone-portrait {
+    padding-left: 1.25rem;
   }
 
   .tablet-portrait\:placeholder-transparent::-webkit-input-placeholder {
@@ -34400,6 +34718,10 @@ html {
     width: 300px;
   }
 
+  .tablet-portrait\:w-phone-portrait {
+    width: 1.25rem;
+  }
+
   .tablet-portrait\:w-1\/2 {
     width: 50%;
   }
@@ -37936,6 +38258,10 @@ html {
     clear: both;
   }
 
+  .tablet-landscape\:font-anton {
+    font-family: anton;
+  }
+
   .tablet-landscape\:font-sans {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
@@ -38152,6 +38478,10 @@ html {
     height: 300px;
   }
 
+  .tablet-landscape\:h-phone-portrait {
+    height: 1.25rem;
+  }
+
   .tablet-landscape\:h-full {
     height: 100%;
   }
@@ -38340,6 +38670,10 @@ html {
     margin: 300px;
   }
 
+  .tablet-landscape\:m-phone-portrait {
+    margin: 1.25rem;
+  }
+
   .tablet-landscape\:-m-1 {
     margin: -0.25rem;
   }
@@ -38426,6 +38760,10 @@ html {
 
   .tablet-landscape\:-m-300px {
     margin: -300px;
+  }
+
+  .tablet-landscape\:-m-phone-portrait {
+    margin: -1.25rem;
   }
 
   .tablet-landscape\:my-0 {
@@ -38668,6 +39006,16 @@ html {
     margin-right: 300px;
   }
 
+  .tablet-landscape\:my-phone-portrait {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .tablet-landscape\:mx-phone-portrait {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
   .tablet-landscape\:-my-1 {
     margin-top: -0.25rem;
     margin-bottom: -0.25rem;
@@ -38886,6 +39234,16 @@ html {
   .tablet-landscape\:-mx-300px {
     margin-left: -300px;
     margin-right: -300px;
+  }
+
+  .tablet-landscape\:-my-phone-portrait {
+    margin-top: -1.25rem;
+    margin-bottom: -1.25rem;
+  }
+
+  .tablet-landscape\:-mx-phone-portrait {
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
   }
 
   .tablet-landscape\:mt-0 {
@@ -39272,6 +39630,22 @@ html {
     margin-left: 300px;
   }
 
+  .tablet-landscape\:mt-phone-portrait {
+    margin-top: 1.25rem;
+  }
+
+  .tablet-landscape\:mr-phone-portrait {
+    margin-right: 1.25rem;
+  }
+
+  .tablet-landscape\:mb-phone-portrait {
+    margin-bottom: 1.25rem;
+  }
+
+  .tablet-landscape\:ml-phone-portrait {
+    margin-left: 1.25rem;
+  }
+
   .tablet-landscape\:-mt-1 {
     margin-top: -0.25rem;
   }
@@ -39622,6 +39996,22 @@ html {
 
   .tablet-landscape\:-ml-300px {
     margin-left: -300px;
+  }
+
+  .tablet-landscape\:-mt-phone-portrait {
+    margin-top: -1.25rem;
+  }
+
+  .tablet-landscape\:-mr-phone-portrait {
+    margin-right: -1.25rem;
+  }
+
+  .tablet-landscape\:-mb-phone-portrait {
+    margin-bottom: -1.25rem;
+  }
+
+  .tablet-landscape\:-ml-phone-portrait {
+    margin-left: -1.25rem;
   }
 
   .tablet-landscape\:max-h-full {
@@ -39982,6 +40372,10 @@ html {
     padding: 300px;
   }
 
+  .tablet-landscape\:p-phone-portrait {
+    padding: 1.25rem;
+  }
+
   .tablet-landscape\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -40210,6 +40604,16 @@ html {
   .tablet-landscape\:px-300px {
     padding-left: 300px;
     padding-right: 300px;
+  }
+
+  .tablet-landscape\:py-phone-portrait {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .tablet-landscape\:px-phone-portrait {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .tablet-landscape\:pt-0 {
@@ -40578,6 +40982,22 @@ html {
 
   .tablet-landscape\:pl-300px {
     padding-left: 300px;
+  }
+
+  .tablet-landscape\:pt-phone-portrait {
+    padding-top: 1.25rem;
+  }
+
+  .tablet-landscape\:pr-phone-portrait {
+    padding-right: 1.25rem;
+  }
+
+  .tablet-landscape\:pb-phone-portrait {
+    padding-bottom: 1.25rem;
+  }
+
+  .tablet-landscape\:pl-phone-portrait {
+    padding-left: 1.25rem;
   }
 
   .tablet-landscape\:placeholder-transparent::-webkit-input-placeholder {
@@ -45690,6 +46110,10 @@ html {
     width: 300px;
   }
 
+  .tablet-landscape\:w-phone-portrait {
+    width: 1.25rem;
+  }
+
   .tablet-landscape\:w-1\/2 {
     width: 50%;
   }
@@ -49226,6 +49650,10 @@ html {
     clear: both;
   }
 
+  .laptop\:font-anton {
+    font-family: anton;
+  }
+
   .laptop\:font-sans {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
@@ -49442,6 +49870,10 @@ html {
     height: 300px;
   }
 
+  .laptop\:h-phone-portrait {
+    height: 1.25rem;
+  }
+
   .laptop\:h-full {
     height: 100%;
   }
@@ -49630,6 +50062,10 @@ html {
     margin: 300px;
   }
 
+  .laptop\:m-phone-portrait {
+    margin: 1.25rem;
+  }
+
   .laptop\:-m-1 {
     margin: -0.25rem;
   }
@@ -49716,6 +50152,10 @@ html {
 
   .laptop\:-m-300px {
     margin: -300px;
+  }
+
+  .laptop\:-m-phone-portrait {
+    margin: -1.25rem;
   }
 
   .laptop\:my-0 {
@@ -49958,6 +50398,16 @@ html {
     margin-right: 300px;
   }
 
+  .laptop\:my-phone-portrait {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .laptop\:mx-phone-portrait {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
   .laptop\:-my-1 {
     margin-top: -0.25rem;
     margin-bottom: -0.25rem;
@@ -50176,6 +50626,16 @@ html {
   .laptop\:-mx-300px {
     margin-left: -300px;
     margin-right: -300px;
+  }
+
+  .laptop\:-my-phone-portrait {
+    margin-top: -1.25rem;
+    margin-bottom: -1.25rem;
+  }
+
+  .laptop\:-mx-phone-portrait {
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
   }
 
   .laptop\:mt-0 {
@@ -50562,6 +51022,22 @@ html {
     margin-left: 300px;
   }
 
+  .laptop\:mt-phone-portrait {
+    margin-top: 1.25rem;
+  }
+
+  .laptop\:mr-phone-portrait {
+    margin-right: 1.25rem;
+  }
+
+  .laptop\:mb-phone-portrait {
+    margin-bottom: 1.25rem;
+  }
+
+  .laptop\:ml-phone-portrait {
+    margin-left: 1.25rem;
+  }
+
   .laptop\:-mt-1 {
     margin-top: -0.25rem;
   }
@@ -50912,6 +51388,22 @@ html {
 
   .laptop\:-ml-300px {
     margin-left: -300px;
+  }
+
+  .laptop\:-mt-phone-portrait {
+    margin-top: -1.25rem;
+  }
+
+  .laptop\:-mr-phone-portrait {
+    margin-right: -1.25rem;
+  }
+
+  .laptop\:-mb-phone-portrait {
+    margin-bottom: -1.25rem;
+  }
+
+  .laptop\:-ml-phone-portrait {
+    margin-left: -1.25rem;
   }
 
   .laptop\:max-h-full {
@@ -51272,6 +51764,10 @@ html {
     padding: 300px;
   }
 
+  .laptop\:p-phone-portrait {
+    padding: 1.25rem;
+  }
+
   .laptop\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -51500,6 +51996,16 @@ html {
   .laptop\:px-300px {
     padding-left: 300px;
     padding-right: 300px;
+  }
+
+  .laptop\:py-phone-portrait {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .laptop\:px-phone-portrait {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .laptop\:pt-0 {
@@ -51868,6 +52374,22 @@ html {
 
   .laptop\:pl-300px {
     padding-left: 300px;
+  }
+
+  .laptop\:pt-phone-portrait {
+    padding-top: 1.25rem;
+  }
+
+  .laptop\:pr-phone-portrait {
+    padding-right: 1.25rem;
+  }
+
+  .laptop\:pb-phone-portrait {
+    padding-bottom: 1.25rem;
+  }
+
+  .laptop\:pl-phone-portrait {
+    padding-left: 1.25rem;
   }
 
   .laptop\:placeholder-transparent::-webkit-input-placeholder {
@@ -56980,6 +57502,10 @@ html {
     width: 300px;
   }
 
+  .laptop\:w-phone-portrait {
+    width: 1.25rem;
+  }
+
   .laptop\:w-1\/2 {
     width: 50%;
   }
@@ -60516,6 +61042,10 @@ html {
     clear: both;
   }
 
+  .desktop\:font-anton {
+    font-family: anton;
+  }
+
   .desktop\:font-sans {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
@@ -60732,6 +61262,10 @@ html {
     height: 300px;
   }
 
+  .desktop\:h-phone-portrait {
+    height: 1.25rem;
+  }
+
   .desktop\:h-full {
     height: 100%;
   }
@@ -60920,6 +61454,10 @@ html {
     margin: 300px;
   }
 
+  .desktop\:m-phone-portrait {
+    margin: 1.25rem;
+  }
+
   .desktop\:-m-1 {
     margin: -0.25rem;
   }
@@ -61006,6 +61544,10 @@ html {
 
   .desktop\:-m-300px {
     margin: -300px;
+  }
+
+  .desktop\:-m-phone-portrait {
+    margin: -1.25rem;
   }
 
   .desktop\:my-0 {
@@ -61248,6 +61790,16 @@ html {
     margin-right: 300px;
   }
 
+  .desktop\:my-phone-portrait {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .desktop\:mx-phone-portrait {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
   .desktop\:-my-1 {
     margin-top: -0.25rem;
     margin-bottom: -0.25rem;
@@ -61466,6 +62018,16 @@ html {
   .desktop\:-mx-300px {
     margin-left: -300px;
     margin-right: -300px;
+  }
+
+  .desktop\:-my-phone-portrait {
+    margin-top: -1.25rem;
+    margin-bottom: -1.25rem;
+  }
+
+  .desktop\:-mx-phone-portrait {
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
   }
 
   .desktop\:mt-0 {
@@ -61852,6 +62414,22 @@ html {
     margin-left: 300px;
   }
 
+  .desktop\:mt-phone-portrait {
+    margin-top: 1.25rem;
+  }
+
+  .desktop\:mr-phone-portrait {
+    margin-right: 1.25rem;
+  }
+
+  .desktop\:mb-phone-portrait {
+    margin-bottom: 1.25rem;
+  }
+
+  .desktop\:ml-phone-portrait {
+    margin-left: 1.25rem;
+  }
+
   .desktop\:-mt-1 {
     margin-top: -0.25rem;
   }
@@ -62202,6 +62780,22 @@ html {
 
   .desktop\:-ml-300px {
     margin-left: -300px;
+  }
+
+  .desktop\:-mt-phone-portrait {
+    margin-top: -1.25rem;
+  }
+
+  .desktop\:-mr-phone-portrait {
+    margin-right: -1.25rem;
+  }
+
+  .desktop\:-mb-phone-portrait {
+    margin-bottom: -1.25rem;
+  }
+
+  .desktop\:-ml-phone-portrait {
+    margin-left: -1.25rem;
   }
 
   .desktop\:max-h-full {
@@ -62562,6 +63156,10 @@ html {
     padding: 300px;
   }
 
+  .desktop\:p-phone-portrait {
+    padding: 1.25rem;
+  }
+
   .desktop\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -62790,6 +63388,16 @@ html {
   .desktop\:px-300px {
     padding-left: 300px;
     padding-right: 300px;
+  }
+
+  .desktop\:py-phone-portrait {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .desktop\:px-phone-portrait {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .desktop\:pt-0 {
@@ -63158,6 +63766,22 @@ html {
 
   .desktop\:pl-300px {
     padding-left: 300px;
+  }
+
+  .desktop\:pt-phone-portrait {
+    padding-top: 1.25rem;
+  }
+
+  .desktop\:pr-phone-portrait {
+    padding-right: 1.25rem;
+  }
+
+  .desktop\:pb-phone-portrait {
+    padding-bottom: 1.25rem;
+  }
+
+  .desktop\:pl-phone-portrait {
+    padding-left: 1.25rem;
   }
 
   .desktop\:placeholder-transparent::-webkit-input-placeholder {
@@ -68268,6 +68892,10 @@ html {
 
   .desktop\:w-300px {
     width: 300px;
+  }
+
+  .desktop\:w-phone-portrait {
+    width: 1.25rem;
   }
 
   .desktop\:w-1\/2 {

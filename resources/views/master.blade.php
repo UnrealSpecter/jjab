@@ -8,7 +8,7 @@
         <div id="vue">
 
             <!-- LOGO ANIMATION & EYE CATCHER. -->
-            <wrapper id="#" class="bg-white min-h-screen" title="title one">
+            <wrapper id="#" class="bg-white min-h-screen flex-center" title="title one">
                 <container>
                     <brand-menu></brand-menu>
                     <logo-animation></logo-animation>
@@ -62,7 +62,7 @@
             </wrapper>
 
             <!-- JJABS -->
-            <wrapper id="wie-zijn-wij">
+            <wrapper id="wie-zijn-wij" class="">
                 <container>
 
                     <!-- TRANSITION -->

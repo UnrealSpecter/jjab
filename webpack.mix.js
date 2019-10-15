@@ -1,6 +1,6 @@
 const mix = require('laravel-mix');
 
-require('laravel-mix-tailwind');
+// require('laravel-mix-tailwind');
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -13,6 +13,10 @@ require('laravel-mix-tailwind');
  */
 
 mix.js('resources/js/vue.js', 'public/scripts')
-    .sass('resources/sass/tailwind.scss', 'public/styles')
-    // .sass('resources/sass/hamburgers/hamburgers.scss', 'public/styles')
-    .tailwind();
+    .postCss('resources/sass/tailwind.css', 'public/styles/tailwind.css', [
+            require('postcss-import'),
+            require('tailwindcss'),
+    ]);
+    // .sass('resources/sass/tailwind.scss', 'public/styles')
+    // // .sass('resources/sass/hamburgers/hamburgers.scss', 'public/styles')
+    // .tailwind();

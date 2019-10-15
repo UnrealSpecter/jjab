@@ -1,0 +1,9 @@
+.brand-title {
+    @apply text-2.5rem font-anton text-center tracking-2px text-white mb-phone-portrait
+}
+
+@screen tablet-landscape {
+    .brand-title {
+        @apply text-6rem mb-10
+    }
+}

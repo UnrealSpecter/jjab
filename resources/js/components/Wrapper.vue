@@ -1,6 +1,6 @@
 <template>
 
-    <div :id="`${ id }`" class="wrapper bg-white flex-center relative">
+    <div :id="`${ id }`" class="wrapper bg-white relative">
         <slot></slot>
     </div>
 
