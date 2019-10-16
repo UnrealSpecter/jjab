@@ -9,7 +9,7 @@
 
             <!-- LOGO ANIMATION & EYE CATCHER. -->
             <wrapper id="#" class="bg-white min-h-screen flex-center" title="title one">
-                <container>
+                <container class="desktop:absolute top-0 h-screen">
                     <brand-menu></brand-menu>
                     <logo-animation></logo-animation>
                 </container>
@@ -36,14 +36,14 @@
                 <container>
 
                     <!-- TRANSITION -->
-                    <page-transition>Onze kennisbank</page-transition>
+                    <!-- <page-transition>Onze kennisbank</page-transition> -->
 
                     @foreach($explanations as $explanation)
                     <!-- TITLE -->
                     <brand-title id="{{ $explanation->title }}">{{ $explanation->title }}</brand-title>
 
                     <!-- EXPLANATION -->
-                    <explanation title="{{ $explanation->subtitle }}" description="{{ $explanation->description }}"></explanation>
+                    <explanation subtitle="{{ $explanation->subtitle }}" description="{{ $explanation->description }}"></explanation>
 
                     <!-- ANIMATION -->
                     <div data-emergence="hidden" data-animation="animated fadeInUp" class="w-full flex flex-row justify-between mb-16 ">
@@ -51,18 +51,18 @@
                     </div>
 
                     <!-- CARD WRAPPER -->
-                    <div class="w-full flex flex-row justify-between">
+                    <!-- <div class="w-full flex flex-row justify-between"> -->
                         @foreach($explanation->examples as $index => $example)
-                        <card>{{ $example->question }}</card>
+                        <!-- <card>{{ $example->question }}</card> -->
                         @endforeach
-                    </div>
+                    <!-- </div> -->
                     @endforeach
 
                 </container>
             </wrapper>
 
             <!-- JJABS -->
-            <wrapper id="wie-zijn-wij" class="">
+            <wrapper id="wie-zijn-wij" class="hidden">
                 <container>
 
                     <!-- TRANSITION -->
@@ -80,7 +80,7 @@
             </wrapper>
 
             <!-- CONTACT -->
-            <wrapper id="contact" class="bg-jjab-orange">
+            <wrapper id="contact" class="bg-jjab-orange hidden">
                 <container>
 
                     <!-- TRANSITION -->

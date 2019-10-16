@@ -1,0 +1,15 @@
+.box-title {
+    @apply text-2.5rem text-center tracking-2px text-white mb-phone-portrait
+}
+
+@screen tablet-landscape {
+    .box-title {
+        @apply text-4rem mb-5
+    }
+}
+
+@screen laptop {
+    .box-title {
+        @apply text-6rem mb-10
+    }
+}

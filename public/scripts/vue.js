@@ -50799,8 +50799,7 @@ var render = function() {
   return _c(
     "div",
     {
-      staticClass:
-        "mb-16 shadow-md rounded-jjab flex flex-col justify-center items-center w-4/5 tablet-landscape:w-full bg-jjab-purple p-6 tablet-landscape:p-16",
+      staticClass: "box bg-jjab-purple",
       attrs: {
         id: "juridisch-advies",
         "data-emergence": "hidden",
@@ -50808,25 +50807,22 @@ var render = function() {
       }
     },
     [
-      _c(
-        "h1",
-        {
-          staticClass:
-            "text-2.5rem text-center tablet-landscape:text-6rem anton tracking-2px text-white mb-phone-portrait tablet-landscape:mb-10"
-        },
-        [_vm._v("Juridisch Advies Nodig?")]
-      ),
+      _c("h1", { staticClass: "box-title anton" }, [
+        _vm._v("Juridisch Advies Nodig?")
+      ]),
       _vm._v(" "),
       _c(
         "div",
         {
           staticClass:
-            "button-wrapper flex flex-col tablet-landscape:flex-row justify-center w-full tablet-landscape:w-1/2 items-center tracking-2px"
+            "button-wrapper flex flex-col tablet-landscape:flex-row justify-center w-full items-center tracking-2px"
         },
         [
-          _c("brand-button", { attrs: { href: "stel-je-vraag" } }, [
-            _vm._v("Mail")
-          ]),
+          _c(
+            "brand-button",
+            { staticClass: "w-full anton", attrs: { href: "stel-je-vraag" } },
+            [_vm._v("Mail")]
+          ),
           _vm._v(" "),
           _c(
             "span",
@@ -50837,7 +50833,11 @@ var render = function() {
             [_vm._v("of")]
           ),
           _vm._v(" "),
-          _c("brand-button", { attrs: { href: "contact" } }, [_vm._v("App")])
+          _c(
+            "brand-button",
+            { staticClass: "w-full anton", attrs: { href: "contact" } },
+            [_vm._v("App")]
+          )
         ],
         1
       ),
@@ -50846,7 +50846,7 @@ var render = function() {
         "span",
         {
           staticClass:
-            "text-2rem tablet-landscape:text-4rem text-white anton h-full flex-center p-3 tablet-landscape:p-5"
+            "text-2rem tablet-landscape:text-4rem text-white anton h-full flex-center"
         },
         [_vm._v("ons!")]
       )
@@ -50945,15 +50945,14 @@ var render = function() {
   return _c(
     "div",
     {
-      staticClass:
-        "shadow-md rounded-jjab flex flex-col justify-center items-center w-4/5 tablet-landscape:w-full bg-jjab-purple p-6 tablet-landscape:p-16 mb-16",
+      staticClass: "box bg-jjab-purple",
       attrs: {
         "data-emergence": "hidden",
         "data-animation": "animated fadeInUp"
       }
     },
     [
-      _c("h2", { staticClass: "brand-title" }, [
+      _c("h2", { staticClass: "box-title anton" }, [
         _vm._v("Juridische Kennis Opdoen?")
       ]),
       _vm._v(" "),
@@ -50968,7 +50967,8 @@ var render = function() {
             "brand-button",
             {
               key: "tag-" + index,
-              staticClass: "mb-phone-portrait tablet-landscape:m-2",
+              staticClass:
+                "button anton w-full mb-3 tablet-landscape:mx-5 tablet-landscape:mb-5",
               attrs: { href: tag }
             },
             [_vm._v(_vm._s(tag))]
@@ -51065,8 +51065,7 @@ var render = function() {
   return _c(
     "div",
     {
-      staticClass:
-        "absolute top-150px shadow-md w-full rounded-jjab flex-center shadow-md top-0 h-300px bg-jjab-purple text-white text-8rem anton",
+      staticClass: "page-transition anton",
       attrs: {
         "data-emergence": "hidden",
         "data-animation": "animated fadeInUp"
@@ -51150,7 +51149,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['title', 'description']
+    props: ['subtitle', 'description']
 });
 
 /***/ }),
@@ -51164,26 +51163,20 @@ var render = function() {
   return _c(
     "div",
     {
-      staticClass:
-        "w-full rounded-jjab shadow-md bg-jjab-blue p-16 text-white text-2.5rem w-1/2 my-16 flex flex-col justify-center items-center",
+      staticClass: "box bg-jjab-blue",
       attrs: {
         "data-emergence": "hidden",
         "data-animation": "animated fadeInUp"
       }
     },
     [
-      _c("h1", { staticClass: "text-white anton text-6rem mb-5 text-center" }, [
-        _vm._v(_vm._s(_vm.title))
+      _c("h1", { staticClass: "box-title anton" }, [
+        _vm._v(_vm._s(_vm.subtitle))
       ]),
       _vm._v(" "),
-      _c(
-        "p",
-        {
-          staticClass:
-            "w-full lower-case leading-normal text-white roboto text-2rem text-left "
-        },
-        [_vm._v(_vm._s(_vm.description))]
-      )
+      _c("p", { staticClass: "explanation-description roboto" }, [
+        _vm._v(_vm._s(_vm.description))
+      ])
     ]
   )
 }
@@ -51820,8 +51813,7 @@ var render = function() {
   return _c(
     "h1",
     {
-      staticClass:
-        "anton text-center w-full text-jjab-purple text-10rem my-16 leading-none",
+      staticClass: "anton brand-title",
       attrs: {
         id: "" + _vm.id,
         "data-emergence": "hidden",
@@ -51919,11 +51911,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "a",
-    {
-      staticClass:
-        "text-1.5rem tablet-landscape:text-2rem hover:bg-jjab-orange-hover transition-all-250ms hover:shadow-xl w-full tablet-landscape:w-300px outline-none anton p-5 text-white text-center rounded-jjab shadow-md bg-jjab-orange leading-none",
-      attrs: { href: "#" + _vm.href }
-    },
+    { staticClass: "button", attrs: { href: "#" + _vm.href } },
     [_vm._t("default")],
     2
   )
@@ -52144,7 +52132,7 @@ var staticRenderFns = [
       "div",
       {
         staticClass:
-          "w-3/4 desktop:w-full h-600px relative flex flex-row justify-center items-center"
+          "w-3/4 desktop:w-3/5 h-screen absolute flex flex-row justify-center items-center"
       },
       [
         _c("img", {
@@ -52742,7 +52730,7 @@ var staticRenderFns = [
           "div",
           {
             staticClass:
-              "tablet-landscape:flex flex-row justify-between flex-grow leading-none py-2"
+              "hidden tablet-landscape:flex flex-row justify-between flex-grow leading-none py-2"
           },
           [
             _c(
@@ -52785,8 +52773,7 @@ var staticRenderFns = [
             _c(
               "a",
               {
-                staticClass:
-                  "transition-all-250ms hover:bg-jjab-orange-hover tracking-2px h-20 flex-center text-2rem bg-jjab-orange rounded-full px-10 shadow-md",
+                staticClass: "tracking-2px h-20 flex-center text-2rem ",
                 attrs: { href: "#contact" }
               },
               [_vm._v("contact")]

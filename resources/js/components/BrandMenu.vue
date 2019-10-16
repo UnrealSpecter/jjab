@@ -14,12 +14,12 @@
         </div>
 
         <!-- non-mobile -->
-        <div class="tablet-landscape:flex flex-row justify-between flex-grow leading-none py-2">
+        <div class="hidden tablet-landscape:flex flex-row justify-between flex-grow leading-none py-2">
             <a href="#" class="tracking-2px h-20 flex-center text-3rem px-10">JJAB</a>
             <a href="#kennisbank" class="tracking-2px h-20 flex-center text-2rem ">Kennisbank</a>
             <a href="#wie-zijn-wij" class="tracking-2px h-20 flex-center text-2rem ">Wie zijn wij?</a>
             <a href="#contact" class="transition-all-250ms hover:bg-jjab-orange-hover tracking-2px h-20 flex-center text-2rem bg-jjab-orange rounded-full px-10 shadow-md">ik heb een vraag</a>
-            <a href="#contact" class="transition-all-250ms hover:bg-jjab-orange-hover tracking-2px h-20 flex-center text-2rem bg-jjab-orange rounded-full px-10 shadow-md">contact</a>
+            <a href="#contact" class="tracking-2px h-20 flex-center text-2rem ">contact</a>
         </div>
 
     </header>

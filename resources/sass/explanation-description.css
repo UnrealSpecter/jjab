@@ -1,0 +1,21 @@
+.explanation-description {
+    @apply text-white leading-tight
+}
+
+@screen tablet-portrait {
+    .explanation-description {
+        @apply text-1.25rem
+    }
+}
+
+@screen tablet-landscape {
+    .explanation-description {
+        @apply text-1.5rem
+    }
+}
+
+@screen laptop {
+    .explanation-description {
+        @apply
+    }
+}

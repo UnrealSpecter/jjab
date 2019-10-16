@@ -1,9 +1,27 @@
 .brand-title {
-    @apply text-2.5rem font-anton text-center tracking-2px text-white mb-phone-portrait
+    @apply text-center w-4/5 text-jjab-purple text-3.5rem my-4 leading-none
+}
+
+@screen tablet-portrait {
+    .brand-title {
+        @apply w-full text-6rem my-6
+    }
 }
 
 @screen tablet-landscape {
     .brand-title {
-        @apply text-6rem mb-10
+        @apply w-full text-7rem my-8
+    }
+}
+
+@screen laptop {
+    .brand-title {
+        @apply w-full text-8rem my-12
+    }
+}
+
+@screen desktop {
+    .brand-title {
+        @apply w-full text-10rem my-16
     }
 }

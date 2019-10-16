@@ -1,0 +1,21 @@
+.box {
+    @apply mb-16 shadow-md rounded-jjab flex flex-col justify-center items-center w-4/5 p-8
+}
+
+@screen tablet-landscape {
+    .box {
+        @apply w-3/4 p-8
+    }
+}
+
+@screen laptop {
+    .box {
+        @apply w-full p-12
+    }
+}
+
+@screen desktop {
+    .box {
+        @apply w-full p-16
+    }
+}

@@ -1,6 +1,6 @@
 <template>
 
-    <div class="w-3/4 desktop:w-full h-600px relative flex flex-row justify-center items-center">
+    <div class="w-3/4 desktop:w-3/5 h-screen absolute flex flex-row justify-center items-center">
         <!-- <div class="flex items-center justify-center logo-piece-wrapper"> -->
             <img
                 data-emergence="hidden" id="blue-part" data-animation="animated fadeInLeft duration-1s"

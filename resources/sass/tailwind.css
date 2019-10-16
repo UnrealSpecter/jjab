@@ -1,7 +1,12 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import 'box';
+@import 'box-title';
 @import 'brand-title';
+@import 'button';
+@import 'page-transition';
+@import 'explanation-description';
 
 html {
     scroll-behavior: smooth;

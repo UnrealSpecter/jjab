@@ -1,0 +1,13 @@
+.button {
+    @apply whitespace-no-wrap text-1.5rem transition-all-250ms outline-none p-5 text-white text-center rounded-jjab shadow-md bg-jjab-orange leading-none
+}
+
+.button:hover {
+    @apply bg-jjab-orange-hover shadow-xl
+}
+
+@screen tablet-landscape {
+    .button {
+        @apply text-2rem w-300px
+    }
+}
