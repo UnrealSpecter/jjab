@@ -1,0 +1,21 @@
+.footer-icon {
+    @apply mb-2 text-1.5rem
+}
+
+@screen tablet-portrait {
+    .footer-icon {
+        @apply mb-4 text-2.5rem
+    }
+}
+
+@screen tablet-landscape {
+    .footer-icon {
+        @apply text-2.5rem mb-3
+    }
+}
+
+@screen laptop {
+    .footer-icon {
+        @apply text-3rem mb-5
+    }
+}

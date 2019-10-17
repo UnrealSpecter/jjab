@@ -1,0 +1,15 @@
+.footer-group {
+    @apply h-100px w-full flex flex-col justify-center items-center
+}
+
+@screen tablet-portrait {
+    .footer-group {
+        @apply h-150px
+    }
+}
+
+@screen tablet-landscape {
+    .footer-group {
+        @apply h-32 w-1/3
+    }
+}

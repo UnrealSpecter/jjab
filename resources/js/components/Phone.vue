@@ -1,18 +1,15 @@
 <template>
 
-    <div data-emergence="hidden" data-animation="animated fadeInUp">
-
-        <!-- CONTACT TITLE -->
-        <brand-title id="app-ons">App Ons!</brand-title>
+    <div class="w-4/5 tablet-portrait:w-3/4 laptop:w-full" data-emergence="hidden" data-animation="animated fadeInUp">
 
         <!-- PHONE WRAPPER -->
-        <div class="w-full flex flex-row justify-center items-end relative mt-10 min-h-screen">
+        <div class="w-full flex flex-row justify-center items-end relative h-300px tablet-portrait:h-600px laptop:h-500px desktop:h-700px">
 
             <!-- PHONE IMAGE -->
             <img alt="een afbeelding van een smartphone" class="absolute h-full animated no-drag" src="/images/smartphone-render.svg">
 
             <!-- SOCIAL -->
-            <div class="w-1/2 top-0 pt-300px px-24 absolute">
+            <div class="w-3/5 tablet-landscape:w-1/2 top-0 pt-100px tablet-portrait:pt-200px laptop:w-1/4 laptop:pt-200px desktop:pt-250px absolute">
 
                 <div class="row flex flex-row justify-center items-center mb-5">
                     <a class="w-1/3" href="https://www.facebook.com/stichtingjjab/" target="_blank">
@@ -43,19 +40,26 @@
         </div>
 
         <!-- FOOTER -->
-        <footer class="p-12 w-full rounded-jjab text-white bg-jjab-purple  anton flex flex-row justify-between items-center">
-            <div class="h-32 w-1/3 flex flex-col justify-center items-center">
-                <i class="text-3rem fa fa-phone mb-4"></i>
-                <span class="text-2.5rem">+‎31 6 53138729</span>
+        <footer class="tablet-landscape:p-8 p-6 w-full rounded-jjab text-white bg-jjab-purple flex-wrap anton flex flex-row justify-between items-center">
+
+            <!-- PHONE -->
+            <div class="footer-group">
+                <i class="fa fa-phone footer-icon"></i>
+                <span class="footer-text">+‎31 6 53138729</span>
             </div>
-            <div class="h-32 w-1/3 flex flex-col justify-center items-center">
-                <i class="text-3.5rem fa fa-envelope mb-4"></i>
-                <span class="text-2.5rem">info@jjab.nl</span>
+
+            <!-- MAIL -->
+            <div class="footer-group">
+                <i class="fa fa-envelope footer-icon"></i>
+                <span class="footer-text">info@jjab.nl</span>
             </div>
-            <div class="h-32 w-1/3 flex flex-col justify-center items-center">
-                <i class="text-4rem fa fa-map-marker-alt mb-4"></i>
-                <span class="text-2.5rem">Baander 5, 7811HH Emmen</span>
+
+            <!-- ADRES -->
+            <div class="footer-group">
+                <i class="fa fa-map-marker-alt footer-icon"></i>
+                <span class="footer-text">Baander 5, 7811HH Emmen</span>
             </div>
+
         </footer>
 
     </div>

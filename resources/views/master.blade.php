@@ -36,7 +36,7 @@
                 <container>
 
                     <!-- TRANSITION -->
-                    <!-- <page-transition>Onze kennisbank</page-transition> -->
+                    <page-transition>Onze kennisbank</page-transition>
 
                     @foreach($explanations as $explanation)
                     <!-- TITLE -->
@@ -46,16 +46,14 @@
                     <explanation subtitle="{{ $explanation->subtitle }}" description="{{ $explanation->description }}"></explanation>
 
                     <!-- ANIMATION -->
-                    <div data-emergence="hidden" data-animation="animated fadeInUp" class="w-full flex flex-row justify-between mb-16 ">
-                        <youtube class="rounded-jjab shadow-md w-full h-700px" video-id="{{ $explanation->video }}" />
-                    </div>
+                    <youtube data-emergence="hidden" data-animation="animated fadeInUp" class="youtube" video-id="{{ $explanation->video }}" /></youtube>
 
                     <!-- CARD WRAPPER -->
-                    <!-- <div class="w-full flex flex-row justify-between"> -->
-                        @foreach($explanation->examples as $index => $example)
-                        <!-- <card>{{ $example->question }}</card> -->
+                    <div class="w-4/5 tablet-landscape:w-3/4 laptop:w-full flex flex-row flex-wrap justify-center tablet-landscape:justify-between">
+                        @foreach($explanation->examples as $example)
+                        <card>{{ $example->question }}</card>
                         @endforeach
-                    <!-- </div> -->
+                    </div>
                     @endforeach
 
                 </container>
@@ -80,17 +78,23 @@
             </wrapper>
 
             <!-- CONTACT -->
-            <wrapper id="contact" class="bg-jjab-orange hidden">
+            <wrapper id="contact" class="bg-jjab-orange">
                 <container>
 
                     <!-- TRANSITION -->
                     <page-transition>Contact</page-transition>
 
                     <!-- EXPLANATION -->
-                    <explanation title="Waar kunnen we je bij helpen?" description="Je kunt hier zonder verplichting je vraag stellen. Dan krijg je van ons z.s.m een mail terug. Dit is geheel vrijblijvend. Je kunt op basis van het antwoord zelf kiezen wat het vervolg is."></explanation>
+                    <explanation subtitle="Waar kunnen we je bij helpen?" description="Je kunt hier zonder verplichting je vraag stellen. Dan krijg je van ons z.s.m een mail terug. Dit is geheel vrijblijvend. Je kunt op basis van het antwoord zelf kiezen wat het vervolg is."></explanation>
+
+                    <!-- STEL JE VRAAG -->
+                    <brand-title id="mail">Stel je vraag!</brand-title>
 
                     <!-- MAIL FORM -->
                     <jjab-form></jjab-form>
+
+                    <!-- CONTACT TITLE -->
+                    <brand-title id="app-ons">App Ons!</brand-title>
 
                     <!-- APP ONS -->
                     <phone></phone>

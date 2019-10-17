@@ -7,6 +7,13 @@
 @import 'button';
 @import 'page-transition';
 @import 'explanation-description';
+@import 'youtube';
+@import 'card';
+@import 'text-input';
+@import 'text-error';
+@import 'footer-group';
+@import 'footer-icon';
+@import 'footer-text';
 
 html {
     scroll-behavior: smooth;

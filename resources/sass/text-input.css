@@ -1,0 +1,19 @@
+.text-input {
+    @apply outline-none w-full mb-5 shadow-md py-5 px-10 text-1rem text-jjab-purple leading-none bg-white rounded-jjab overflow-hidden
+}
+
+@screen tablet-portrait {
+    .text-input {
+        @apply text-1.5rem
+    }
+}
+
+.text-input:placeholder {
+    @apply text-jjab-purple-placeholder
+}
+
+@screen desktop {
+    .text-input {
+        @apply outline-none w-full tracking-5px mb-10 shadow-md p-10 text-2.5rem text-jjab-purple leading-none bg-white rounded-jjab overflow-hidden
+    }
+}

@@ -1,9 +1,21 @@
 .button {
-    @apply whitespace-no-wrap text-1.5rem transition-all-250ms outline-none p-5 text-white text-center rounded-jjab shadow-md bg-jjab-orange leading-none
+    @apply whitespace-no-wrap cursor-pointer text-1.5rem transition-all-250ms outline-none py-5 px-10 text-white text-center rounded-jjab shadow-md leading-none
 }
 
 .button:hover {
-    @apply bg-jjab-orange-hover shadow-xl
+    @apply shadow-xl
+}
+
+.button.purple:hover {
+    @apply bg-jjab-purple-hover
+}
+
+.button.purple {
+    @apply bg-jjab-purple
+}
+
+.button.orange {
+    @apply bg-jjab-orange
 }
 
 @screen tablet-landscape {

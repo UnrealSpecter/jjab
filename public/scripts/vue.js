@@ -50820,7 +50820,10 @@ var render = function() {
         [
           _c(
             "brand-button",
-            { staticClass: "w-full anton", attrs: { href: "stel-je-vraag" } },
+            {
+              staticClass: "w-full anton orange",
+              attrs: { href: "stel-je-vraag" }
+            },
             [_vm._v("Mail")]
           ),
           _vm._v(" "),
@@ -50835,7 +50838,7 @@ var render = function() {
           _vm._v(" "),
           _c(
             "brand-button",
-            { staticClass: "w-full anton", attrs: { href: "contact" } },
+            { staticClass: "w-full anton orange", attrs: { href: "contact" } },
             [_vm._v("App")]
           )
         ],
@@ -50968,7 +50971,7 @@ var render = function() {
             {
               key: "tag-" + index,
               staticClass:
-                "button anton w-full mb-3 tablet-landscape:mx-5 tablet-landscape:mb-5",
+                "button orange anton w-full mb-3 tablet-landscape:mx-5 tablet-landscape:mb-5",
               attrs: { href: tag }
             },
             [_vm._v(_vm._s(tag))]
@@ -51276,6 +51279,27 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -51338,13 +51362,13 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
+    { staticClass: "w-4/5 tablet-portrait:w-3/4 laptop:w-2/3 desktop:w-full" },
     [
-      _c("brand-title", { attrs: { id: "mail" } }, [_vm._v("Stel je vraag!")]),
-      _vm._v(" "),
       _c(
         "form",
         {
-          staticClass: "flex flex-col justify-center items-end",
+          staticClass:
+            "flex flex-col justify-center items-center tablet-portrait:items-end",
           attrs: { action: "", method: "post" }
         },
         [
@@ -51362,15 +51386,14 @@ var render = function() {
                 expression: "data.email"
               }
             ],
-            staticClass:
-              "placeholder-jjab-purple-placeholder outline-none w-full tracking-5px mb-10 shadow-md p-10 text-2.5rem text-jjab-purple leading-none bg-white anton rounded-jjab overflow-hidden",
+            staticClass: "text-input anton",
             attrs: {
               type: "email",
+              placeholder: "email",
               "data-emergence": "hidden",
               "data-animation": "animated fadeInUp",
               name: "data[email]",
-              value: "{ data.email }",
-              placeholder: "email"
+              value: "{ data.email }"
             },
             domProps: { value: _vm.data.email },
             on: {
@@ -51411,8 +51434,7 @@ var render = function() {
                 expression: "data.content"
               }
             ],
-            staticClass:
-              "placeholder-jjab-purple-placeholder outline-none w-full tracking-5px mb-10 shadow-md p-10 text-2.5rem text-jjab-purple bg-white leading-none anton rounded-jjab overflow-hidden h-200px",
+            staticClass: "text-input anton h-100px tablet-portrait:h-200px",
             attrs: {
               "data-emergence": "hidden",
               "data-animation": "animated fadeInUp",
@@ -51451,8 +51473,7 @@ var render = function() {
             : _vm._e(),
           _vm._v(" "),
           _c("input", {
-            staticClass:
-              "transition-all-250ms hover:bg-jjab-purple-hover hover:shadow-xl placeholder-jjab-purple outline-none w-1/4 cursor-pointer mb-10 tracking-5px shadow-md p-10 text-4rem tracking-wide leading-none text-white bg-jjab-purple anton rounded-jjab overflow-hidden",
+            staticClass: "button purple anton",
             attrs: {
               "data-emergence": "hidden",
               "data-animation": "animated fadeInUp",
@@ -51468,8 +51489,7 @@ var render = function() {
           })
         ]
       )
-    ],
-    1
+    ]
   )
 }
 var staticRenderFns = []
@@ -52001,8 +52021,7 @@ var render = function() {
   return _c(
     "div",
     {
-      staticClass:
-        "desktop:h-300px rounded-jjab shadow-md bg-jjab-purple anton mb-16 p-10 py-5 leading-tight text-white text-2rem w-1/4",
+      staticClass: "card anton",
       attrs: {
         "data-emergence": "hidden",
         "data-animation": "animated fadeInUp"
@@ -52311,6 +52330,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
@@ -52322,23 +52345,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    {
-      attrs: {
-        "data-emergence": "hidden",
-        "data-animation": "animated fadeInUp"
-      }
-    },
-    [
-      _c("brand-title", { attrs: { id: "app-ons" } }, [_vm._v("App Ons!")]),
-      _vm._v(" "),
-      _vm._m(0),
-      _vm._v(" "),
-      _vm._m(1)
-    ],
-    1
-  )
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function() {
@@ -52348,218 +52355,222 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass:
-          "w-full flex flex-row justify-center items-end relative mt-10 min-h-screen"
-      },
-      [
-        _c("img", {
-          staticClass: "absolute h-full animated no-drag",
-          attrs: {
-            alt: "een afbeelding van een smartphone",
-            src: "/images/smartphone-render.svg"
-          }
-        }),
-        _vm._v(" "),
-        _c("div", { staticClass: "w-1/2 top-0 pt-300px px-24 absolute" }, [
-          _c(
-            "div",
-            {
-              staticClass: "row flex flex-row justify-center items-center mb-5"
-            },
-            [
-              _c(
-                "a",
-                {
-                  staticClass: "w-1/3",
-                  attrs: {
-                    href: "https://www.facebook.com/stichtingjjab/",
-                    target: "_blank"
-                  }
-                },
-                [
-                  _c("img", {
-                    staticClass:
-                      "w-full facebook d-none no-padding-margin animated img-fluid",
-                    attrs: {
-                      alt: "facebook social media knop",
-                      draggable: "false",
-                      src: "/images/apps/facebook.svg"
-                    }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "w-1/3 mx-5",
-                  attrs: {
-                    href: "https://www.instagram.com/stichting.jjab/?hl=nl",
-                    target: "_blank"
-                  }
-                },
-                [
-                  _c("img", {
-                    staticClass:
-                      "w-full no-padding-margin instagram d-none animated img-fluid",
-                    attrs: {
-                      alt: "instagram social media knop",
-                      draggable: "false",
-                      src: "/images/apps/instagram.svg"
-                    }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "w-1/3",
-                  attrs: {
-                    href:
-                      "https://www.linkedin.com/in/stichting-jjab-0a3594159/",
-                    target: "_blank"
-                  }
-                },
-                [
-                  _c("img", {
-                    staticClass:
-                      "w-full linkedin d-none animated no-padding-margin img-fluid",
-                    attrs: {
-                      alt: "linkedin social media knop",
-                      draggable: "false",
-                      src: "/images/apps/linkedin.svg"
-                    }
-                  })
-                ]
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "row flex flex-row justify-center items-center" },
-            [
-              _c(
-                "a",
-                {
-                  staticClass: "w-1/3",
-                  attrs: {
-                    href:
-                      "https://www.google.nl/maps/place/Baander+5,+7811+HH+Emmen/@52.7814346,6.8939633,17z/data=!3m1!4b1!4m5!3m4!1s0x47b7e63e008b13f1:0xe5e555e1b3c9242c!8m2!3d52.7814346!4d6.896152",
-                    target: "_blank"
-                  }
-                },
-                [
-                  _c("img", {
-                    staticClass:
-                      "w-full snapchat d-none animated no-padding-margin img-fluid",
-                    attrs: {
-                      alt: "google maps social media knop",
-                      draggable: "false",
-                      src: "/images/apps/google-maps.svg"
-                    }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "w-1/3 mx-5",
-                  attrs: {
-                    href:
-                      "mailto:info@jjab.nl?subject=help! JJAB&body=Waar kunnen we je mee helpen?%0D%0A %0D%0A",
-                    target: "_blank"
-                  }
-                },
-                [
-                  _c("img", {
-                    staticClass:
-                      "w-full gmail d-none animated no-padding-margin img-fluid",
-                    attrs: {
-                      alt: "via deze knop open je een mail:to naar jjab",
-                      draggable: "false",
-                      src: "/images/apps/gmail.svg"
-                    }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "w-1/3 animated bounce infinite slow",
-                  attrs: {
-                    href: "https://api.whatsapp.com/send?phone=31653138729",
-                    target: "_blank"
-                  }
-                },
-                [
-                  _c("img", {
-                    staticClass:
-                      "w-full whatsapp d-none animated no-padding-margin img-fluid",
-                    attrs: {
-                      alt: "klik op deze knop om whatsapp te openen",
-                      draggable: "false",
-                      src: "/images/apps/whatsapp.svg"
-                    }
-                  })
-                ]
-              )
-            ]
-          )
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "footer",
-      {
-        staticClass:
-          "p-12 w-full rounded-jjab text-white bg-jjab-purple  anton flex flex-row justify-between items-center"
+        staticClass: "w-4/5 tablet-portrait:w-3/4 laptop:w-full",
+        attrs: {
+          "data-emergence": "hidden",
+          "data-animation": "animated fadeInUp"
+        }
       },
       [
         _c(
           "div",
           {
-            staticClass: "h-32 w-1/3 flex flex-col justify-center items-center"
+            staticClass:
+              "w-full flex flex-row justify-center items-end relative h-300px tablet-portrait:h-600px laptop:h-500px desktop:h-700px"
           },
           [
-            _c("i", { staticClass: "text-3rem fa fa-phone mb-4" }),
+            _c("img", {
+              staticClass: "absolute h-full animated no-drag",
+              attrs: {
+                alt: "een afbeelding van een smartphone",
+                src: "/images/smartphone-render.svg"
+              }
+            }),
             _vm._v(" "),
-            _c("span", { staticClass: "text-2.5rem" }, [
-              _vm._v("+‎31 6 53138729")
-            ])
+            _c(
+              "div",
+              {
+                staticClass:
+                  "w-3/5 tablet-landscape:w-1/2 top-0 pt-100px tablet-portrait:pt-200px laptop:w-1/4 laptop:pt-200px desktop:pt-250px absolute"
+              },
+              [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "row flex flex-row justify-center items-center mb-5"
+                  },
+                  [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "w-1/3",
+                        attrs: {
+                          href: "https://www.facebook.com/stichtingjjab/",
+                          target: "_blank"
+                        }
+                      },
+                      [
+                        _c("img", {
+                          staticClass:
+                            "w-full facebook d-none no-padding-margin animated img-fluid",
+                          attrs: {
+                            alt: "facebook social media knop",
+                            draggable: "false",
+                            src: "/images/apps/facebook.svg"
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "w-1/3 mx-5",
+                        attrs: {
+                          href:
+                            "https://www.instagram.com/stichting.jjab/?hl=nl",
+                          target: "_blank"
+                        }
+                      },
+                      [
+                        _c("img", {
+                          staticClass:
+                            "w-full no-padding-margin instagram d-none animated img-fluid",
+                          attrs: {
+                            alt: "instagram social media knop",
+                            draggable: "false",
+                            src: "/images/apps/instagram.svg"
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "w-1/3",
+                        attrs: {
+                          href:
+                            "https://www.linkedin.com/in/stichting-jjab-0a3594159/",
+                          target: "_blank"
+                        }
+                      },
+                      [
+                        _c("img", {
+                          staticClass:
+                            "w-full linkedin d-none animated no-padding-margin img-fluid",
+                          attrs: {
+                            alt: "linkedin social media knop",
+                            draggable: "false",
+                            src: "/images/apps/linkedin.svg"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "row flex flex-row justify-center items-center"
+                  },
+                  [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "w-1/3",
+                        attrs: {
+                          href:
+                            "https://www.google.nl/maps/place/Baander+5,+7811+HH+Emmen/@52.7814346,6.8939633,17z/data=!3m1!4b1!4m5!3m4!1s0x47b7e63e008b13f1:0xe5e555e1b3c9242c!8m2!3d52.7814346!4d6.896152",
+                          target: "_blank"
+                        }
+                      },
+                      [
+                        _c("img", {
+                          staticClass:
+                            "w-full snapchat d-none animated no-padding-margin img-fluid",
+                          attrs: {
+                            alt: "google maps social media knop",
+                            draggable: "false",
+                            src: "/images/apps/google-maps.svg"
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "w-1/3 mx-5",
+                        attrs: {
+                          href:
+                            "mailto:info@jjab.nl?subject=help! JJAB&body=Waar kunnen we je mee helpen?%0D%0A %0D%0A",
+                          target: "_blank"
+                        }
+                      },
+                      [
+                        _c("img", {
+                          staticClass:
+                            "w-full gmail d-none animated no-padding-margin img-fluid",
+                          attrs: {
+                            alt: "via deze knop open je een mail:to naar jjab",
+                            draggable: "false",
+                            src: "/images/apps/gmail.svg"
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "w-1/3 animated bounce infinite slow",
+                        attrs: {
+                          href:
+                            "https://api.whatsapp.com/send?phone=31653138729",
+                          target: "_blank"
+                        }
+                      },
+                      [
+                        _c("img", {
+                          staticClass:
+                            "w-full whatsapp d-none animated no-padding-margin img-fluid",
+                          attrs: {
+                            alt: "klik op deze knop om whatsapp te openen",
+                            draggable: "false",
+                            src: "/images/apps/whatsapp.svg"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                )
+              ]
+            )
           ]
         ),
         _vm._v(" "),
         _c(
-          "div",
+          "footer",
           {
-            staticClass: "h-32 w-1/3 flex flex-col justify-center items-center"
+            staticClass:
+              "tablet-landscape:p-8 p-6 w-full rounded-jjab text-white bg-jjab-purple flex-wrap anton flex flex-row justify-between items-center"
           },
           [
-            _c("i", { staticClass: "text-3.5rem fa fa-envelope mb-4" }),
+            _c("div", { staticClass: "footer-group" }, [
+              _c("i", { staticClass: "fa fa-phone footer-icon" }),
+              _vm._v(" "),
+              _c("span", { staticClass: "footer-text" }, [
+                _vm._v("+‎31 6 53138729")
+              ])
+            ]),
             _vm._v(" "),
-            _c("span", { staticClass: "text-2.5rem" }, [_vm._v("info@jjab.nl")])
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "h-32 w-1/3 flex flex-col justify-center items-center"
-          },
-          [
-            _c("i", { staticClass: "text-4rem fa fa-map-marker-alt mb-4" }),
+            _c("div", { staticClass: "footer-group" }, [
+              _c("i", { staticClass: "fa fa-envelope footer-icon" }),
+              _vm._v(" "),
+              _c("span", { staticClass: "footer-text" }, [
+                _vm._v("info@jjab.nl")
+              ])
+            ]),
             _vm._v(" "),
-            _c("span", { staticClass: "text-2.5rem" }, [
-              _vm._v("Baander 5, 7811HH Emmen")
+            _c("div", { staticClass: "footer-group" }, [
+              _c("i", { staticClass: "fa fa-map-marker-alt footer-icon" }),
+              _vm._v(" "),
+              _c("span", { staticClass: "footer-text" }, [
+                _vm._v("Baander 5, 7811HH Emmen")
+              ])
             ])
           ]
         )

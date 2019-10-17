@@ -1,6 +1,6 @@
 <template>
 
-    <div data-emergence="hidden" data-animation="animated fadeInUp" class="desktop:h-300px rounded-jjab shadow-md bg-jjab-purple anton mb-16 p-10 py-5 leading-tight text-white text-2rem w-1/4">
+    <div data-emergence="hidden" data-animation="animated fadeInUp" class="card anton">
         <slot></slot>
     </div>
 
@@ -8,5 +8,6 @@
 
 <script>
     export default {
+
     }
 </script>

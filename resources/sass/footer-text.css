@@ -1,0 +1,21 @@
+.footer-text {
+    @apply text-1.5rem text-center
+}
+
+@screen tablet-portrait {
+    .footer-text {
+        @apply text-2rem tracking-2px
+    }
+}
+
+@screen tablet-landscape {
+    .footer-text {
+        @apply text-1rem whitespace-no-wrap
+    }
+}
+
+@screen laptop {
+    .footer-text {
+        @apply text-1.75rem whitespace-no-wrap
+    }
+}

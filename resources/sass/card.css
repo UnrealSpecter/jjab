@@ -1,0 +1,27 @@
+.card {
+    @apply w-full mb-16 p-10 leading-tight text-white text-1.5rem rounded-jjab shadow-md bg-jjab-purple
+}
+
+@screen tablet-portrait {
+    .card {
+        @apply w-300px
+    }
+}
+
+@screen tablet-landscape {
+    .card {
+        @apply w-225px text-1.25rem
+    }
+}
+
+@screen laptop {
+    .card {
+        @apply w-300px h-300px text-1.5rem
+    }
+}
+
+@screen desktop {
+    .card {
+        @apply w-1/4 h-300px text-2rem
+    }
+}
