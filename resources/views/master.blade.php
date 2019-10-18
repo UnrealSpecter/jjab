@@ -46,8 +46,9 @@
                     <explanation subtitle="{{ $explanation->subtitle }}" description="{{ $explanation->description }}"></explanation>
 
                     <!-- ANIMATION -->
+                    @if($explanation->video)
                     <youtube data-emergence="hidden" data-animation="animated fadeInUp" class="youtube" video-id="{{ $explanation->video }}" /></youtube>
-
+                    @endif
                     <!-- CARD WRAPPER -->
                     <div class="w-4/5 tablet-landscape:w-3/4 laptop:w-full flex flex-row flex-wrap justify-center tablet-landscape:justify-between">
                         @foreach($explanation->examples as $example)
