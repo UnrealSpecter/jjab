@@ -1,6 +1,6 @@
 <template>
 
-    <div class="w-3/4 desktop:w-3/5 h-screen absolute flex flex-row justify-center items-center">
+    <div class="w-4/5 tablet-landscape:w-3/4 laptop:w-3/5 h-screen absolute flex flex-row justify-center items-center">
         <!-- <div class="flex items-center justify-center logo-piece-wrapper"> -->
             <img
                 data-emergence="hidden" id="blue-part" data-animation="animated fadeInLeft duration-1s"
@@ -25,7 +25,7 @@
         <!-- <div class="flex flex-col align-center justify-center absolute"> -->
             <h1
                 data-emergence="hidden" id="text-part" data-animation="animated fadeInUp duration-1s delay-1s"
-                class="tracking-2px anton z-50 text-white text-3.5rem desktop:text-12.5rem antialiased subpixel-antialiased">
+                class="tracking-2px anton z-50 text-white text-3.5rem tablet-portrait:text-7rem tablet-landscape:text-8rem desktop:text-10rem antialiased subpixel-antialiased">
                 JJAB
             </h1>
         <!-- </div> -->

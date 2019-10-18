@@ -1,3 +1,27 @@
 .page-transition {
-    @apply absolute top-150px shadow-md w-full rounded-jjab text-center flex flex-row justify-center items-center shadow-md h-300px bg-jjab-purple text-white text-8rem
+    @apply h-100px top-50px text-2rem absolute shadow-md w-4/5 text-center flex flex-row justify-center items-center rounded-jjab shadow-md bg-jjab-purple text-white
+}
+
+@screen tablet-portrait {
+    .page-transition {
+        @apply h-200px top-100px text-3rem w-4/5
+    }
+}
+
+@screen tablet-landscape {
+    .page-transition {
+        @apply text-5rem w-3/4
+    }
+}
+
+@screen laptop {
+    .page-transition {
+        @apply text-6rem w-full
+    }
+}
+
+@screen desktop {
+    .page-transition {
+        @apply top-150px h-300px text-8rem
+    }
 }

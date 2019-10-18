@@ -20,7 +20,7 @@
                 <container>
 
                     <!-- INTRODUCTION INFORMATION -->
-                    <!-- <introduction>Hallo Jongere!</introduction> -->
+                    <introduction>{{ $introduction->first()->text }}</introduction>
 
                     <!-- CALL TO ACTION -->
                     <call-to-action></call-to-action>
@@ -60,14 +60,14 @@
             </wrapper>
 
             <!-- JJABS -->
-            <wrapper id="wie-zijn-wij" class="hidden">
+            <wrapper id="wie-zijn-wij">
                 <container>
 
                     <!-- TRANSITION -->
                     <page-transition>Over JJAB</page-transition>
 
                     <!-- EXPLANATION -->
-                    <explanation title="Benieuwd naar wie wij zijn?" description="Lees een stukje over onze achtergrond, waarom we bestaan etc."></explanation>
+                    <explanation class="mt-16" subtitle="Benieuwd naar wie wij zijn?" description="Lees een stukje over onze achtergrond, waarom we bestaan etc."></explanation>
 
                     <!-- EMPLOYEE -->
                     @foreach($employees as $employee)
@@ -85,7 +85,7 @@
                     <page-transition>Contact</page-transition>
 
                     <!-- EXPLANATION -->
-                    <explanation subtitle="Waar kunnen we je bij helpen?" description="Je kunt hier zonder verplichting je vraag stellen. Dan krijg je van ons z.s.m een mail terug. Dit is geheel vrijblijvend. Je kunt op basis van het antwoord zelf kiezen wat het vervolg is."></explanation>
+                    <explanation class="mt-16" subtitle="Waar kunnen we je bij helpen?" description="Je kunt hier zonder verplichting je vraag stellen. Dan krijg je van ons z.s.m een mail terug. Dit is geheel vrijblijvend. Je kunt op basis van het antwoord zelf kiezen wat het vervolg is."></explanation>
 
                     <!-- STEL JE VRAAG -->
                     <brand-title id="mail">Stel je vraag!</brand-title>

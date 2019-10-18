@@ -10,6 +10,6 @@
 
 @screen laptop {
     .box-title {
-        @apply text-6rem mb-10
+        @apply text-4.5rem mb-10
     }
 }

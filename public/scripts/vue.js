@@ -50607,7 +50607,8 @@ var render = function() {
   return _c(
     "div",
     {
-      staticClass: "container relative py-150px mx-auto flex-wrap flex-center"
+      staticClass:
+        "container relative py-50px tablet-portrait:py-100px desktop:py-150px mx-auto flex-wrap flex-center"
     },
     [_vm._t("default")],
     2
@@ -50685,9 +50686,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
-/* harmony default export */ __webpack_exports__["default"] = ({
-    props: []
-});
+/* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
 /* 61 */
@@ -50701,7 +50700,7 @@ var render = function() {
     "p",
     {
       staticClass:
-        "w-4/5 tablet-landscape:w-full p-10 flex-center anton text-jjab-orange text-2.5rem text-center"
+        "box bg-jjab-orange text-white w-4/5 tablet-landscape:w-3/4 laptop:w-full p-10 flex-center anton text-1.25rem tablet-portrait:text-1.5rem tablet-landscape:text-1.75rem text-left desktop:text-2.5rem text-center tracking-loose"
     },
     [_vm._t("default")],
     2
@@ -51591,54 +51590,71 @@ var render = function() {
   return _c(
     "div",
     {
-      staticClass: "w-full wrapper flex flex-col mb-16",
+      staticClass:
+        "w-4/5 tablet-landscape:w-3/4 laptop:w-full wrapper flex flex-col mb-16",
       attrs: {
         "data-emergence": "hidden",
         "data-animation": "animated fadeInUp"
       }
     },
     [
-      _c("div", { staticClass: "w-full h-600px flex flex-row flex-no-wrap" }, [
-        _c(
-          "div",
-          {
+      _c(
+        "div",
+        {
+          staticClass:
+            "w-full flex laptop:flex-row flex-col justify-center items-center flex-no-wrap"
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass:
+                "flex flex-col justify-center items-start w-full h-full"
+            },
+            [
+              _c(
+                "h2",
+                {
+                  staticClass:
+                    "text-center laptop:text-left w-full px-4 laptop:px-12 text-2.5rem laptop:text-4rem tablet-portrait:text-5rem mb-5 text-jjab-purple anton"
+                },
+                [_vm._v(_vm._s(_vm.employee.title))]
+              ),
+              _vm._v(" "),
+              _c(
+                "p",
+                {
+                  staticClass:
+                    "text-center tablet-portrait:text-left capitalized px-4 laptop:px-12 flex-center text-1rem laptop:text-1.5rem desktop:text-2rem tablet-portrait:text-1.5rem roboto text-jjab-purple"
+                },
+                [_vm._v(_vm._s(_vm.employee.description))]
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c("img", {
             staticClass:
-              "flex flex-col justify-center items-start w-full h-full"
-          },
-          [
-            _c(
-              "h2",
-              { staticClass: "px-12 text-4rem mb-5 text-jjab-orange anton" },
-              [_vm._v(_vm._s(_vm.employee.title))]
-            ),
-            _vm._v(" "),
-            _c(
-              "p",
-              {
-                staticClass:
-                  "px-12 flex-center text-2rem roboto lowercase text-jjab-orange"
-              },
-              [_vm._v(_vm._s(_vm.employee.description))]
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c("img", {
-          staticClass: "w-auto h-full object-fit",
-          attrs: { src: "storage/" + _vm.employee.photo }
-        })
-      ]),
+              "w-auto w-full tablet-portrait:w-1/2 tablet-landscape:w-1/3 object-fit",
+            attrs: { src: "storage/" + _vm.employee.photo }
+          })
+        ]
+      ),
       _vm._v(" "),
       _c(
         "div",
         {
           staticClass:
-            "flex flex-col rounded-jjab shadow-md bg-jjab-purple w-full px-10 py-16 justify-center items-center"
+            "flex flex-col rounded-jjab shadow-md bg-jjab-orange w-full px-10 py-16 justify-center items-center"
         },
         [
-          _c("h1", { staticClass: "text-6rem text-white anton" }, [
-            _vm._v(_vm._s(_vm.employee.name))
-          ])
+          _c(
+            "h1",
+            {
+              staticClass:
+                "text-2.5rem whitespace-no-wrap tablet-portrait:text-5rem laptop:text-6rem text-white anton"
+            },
+            [_vm._v(_vm._s(_vm.employee.name))]
+          )
         ]
       )
     ]
@@ -52151,7 +52167,7 @@ var staticRenderFns = [
       "div",
       {
         staticClass:
-          "w-3/4 desktop:w-3/5 h-screen absolute flex flex-row justify-center items-center"
+          "w-4/5 tablet-landscape:w-3/4 laptop:w-3/5 h-screen absolute flex flex-row justify-center items-center"
       },
       [
         _c("img", {
@@ -52191,7 +52207,7 @@ var staticRenderFns = [
           "h1",
           {
             staticClass:
-              "tracking-2px anton z-50 text-white text-3.5rem desktop:text-12.5rem antialiased subpixel-antialiased",
+              "tracking-2px anton z-50 text-white text-3.5rem tablet-portrait:text-7rem tablet-landscape:text-8rem desktop:text-10rem antialiased subpixel-antialiased",
             attrs: {
               "data-emergence": "hidden",
               id: "text-part",
@@ -52381,14 +52397,14 @@ var staticRenderFns = [
               "div",
               {
                 staticClass:
-                  "w-3/5 tablet-landscape:w-1/2 top-0 pt-100px tablet-portrait:pt-200px laptop:w-1/4 laptop:pt-200px desktop:pt-250px absolute"
+                  "w-3/5 phone-landscape:w-1/3 tablet-landscape:w-1/2 top-0 pt-100px tablet-portrait:pt-200px laptop:w-1/4 laptop:pt-200px desktop:pt-250px absolute"
               },
               [
                 _c(
                   "div",
                   {
                     staticClass:
-                      "row flex flex-row justify-center items-center mb-5"
+                      "flex flex-row justify-center items-center mb-5"
                   },
                   [
                     _c(
@@ -52402,11 +52418,8 @@ var staticRenderFns = [
                       },
                       [
                         _c("img", {
-                          staticClass:
-                            "w-full facebook d-none no-padding-margin animated img-fluid",
                           attrs: {
                             alt: "facebook social media knop",
-                            draggable: "false",
                             src: "/images/apps/facebook.svg"
                           }
                         })
@@ -52425,11 +52438,8 @@ var staticRenderFns = [
                       },
                       [
                         _c("img", {
-                          staticClass:
-                            "w-full no-padding-margin instagram d-none animated img-fluid",
                           attrs: {
                             alt: "instagram social media knop",
-                            draggable: "false",
                             src: "/images/apps/instagram.svg"
                           }
                         })
@@ -52448,11 +52458,8 @@ var staticRenderFns = [
                       },
                       [
                         _c("img", {
-                          staticClass:
-                            "w-full linkedin d-none animated no-padding-margin img-fluid",
                           attrs: {
                             alt: "linkedin social media knop",
-                            draggable: "false",
                             src: "/images/apps/linkedin.svg"
                           }
                         })
@@ -52463,9 +52470,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c(
                   "div",
-                  {
-                    staticClass: "row flex flex-row justify-center items-center"
-                  },
+                  { staticClass: "flex flex-row justify-center items-center" },
                   [
                     _c(
                       "a",
@@ -52479,11 +52484,8 @@ var staticRenderFns = [
                       },
                       [
                         _c("img", {
-                          staticClass:
-                            "w-full snapchat d-none animated no-padding-margin img-fluid",
                           attrs: {
                             alt: "google maps social media knop",
-                            draggable: "false",
                             src: "/images/apps/google-maps.svg"
                           }
                         })
@@ -52502,11 +52504,8 @@ var staticRenderFns = [
                       },
                       [
                         _c("img", {
-                          staticClass:
-                            "w-full gmail d-none animated no-padding-margin img-fluid",
                           attrs: {
                             alt: "via deze knop open je een mail:to naar jjab",
-                            draggable: "false",
                             src: "/images/apps/gmail.svg"
                           }
                         })
@@ -52525,11 +52524,8 @@ var staticRenderFns = [
                       },
                       [
                         _c("img", {
-                          staticClass:
-                            "w-full whatsapp d-none animated no-padding-margin img-fluid",
                           attrs: {
                             alt: "klik op deze knop om whatsapp te openen",
-                            draggable: "false",
                             src: "/images/apps/whatsapp.svg"
                           }
                         })
@@ -52694,7 +52690,7 @@ var staticRenderFns = [
       "header",
       {
         staticClass:
-          "mx-2 px-5 desktop:px-10 shadow-md absolute top-0 mt-10 text-white anton w-full rounded-full flex flex-row justify-between bg-jjab-purple",
+          "mx-2 px-8 desktop:px-10 shadow-md absolute top-0 mt-10 text-white anton w-full rounded-full flex flex-row justify-between bg-jjab-purple z-50",
         attrs: {
           "data-emergence": "hidden",
           "data-animation": "animated fadeInDown"
@@ -52741,13 +52737,14 @@ var staticRenderFns = [
           "div",
           {
             staticClass:
-              "hidden tablet-landscape:flex flex-row justify-between flex-grow leading-none py-2"
+              "hidden tablet-portrait:flex flex-row justify-between flex-grow leading-none py-2"
           },
           [
             _c(
               "a",
               {
-                staticClass: "tracking-2px h-20 flex-center text-3rem px-10",
+                staticClass:
+                  "whitespace-no-wrap tracking-2px h-20 flex-center text-1.25rem tablet-landscape:text-1.75rem laptop:text-2.5rem  px-5 tablet-landscape:px-10",
                 attrs: { href: "#" }
               },
               [_vm._v("JJAB")]
@@ -52756,7 +52753,8 @@ var staticRenderFns = [
             _c(
               "a",
               {
-                staticClass: "tracking-2px h-20 flex-center text-2rem ",
+                staticClass:
+                  "whitespace-no-wrap tracking-2px h-20 flex-center text-1rem tablet-landscape:text-1.25rem laptop:text-1.75rem  ",
                 attrs: { href: "#kennisbank" }
               },
               [_vm._v("Kennisbank")]
@@ -52765,7 +52763,8 @@ var staticRenderFns = [
             _c(
               "a",
               {
-                staticClass: "tracking-2px h-20 flex-center text-2rem ",
+                staticClass:
+                  "whitespace-no-wrap tracking-2px h-20 flex-center text-1rem tablet-landscape:text-1.25rem laptop:text-1.75rem  ",
                 attrs: { href: "#wie-zijn-wij" }
               },
               [_vm._v("Wie zijn wij?")]
@@ -52775,7 +52774,7 @@ var staticRenderFns = [
               "a",
               {
                 staticClass:
-                  "transition-all-250ms hover:bg-jjab-orange-hover tracking-2px h-20 flex-center text-2rem bg-jjab-orange rounded-full px-10 shadow-md",
+                  "whitespace-no-wrap transition-all-250ms hover:bg-jjab-orange-hover tracking-2px h-20 flex-center text-1rem tablet-landscape:text-1.25rem laptop:text-1.75rem  bg-jjab-orange rounded-full px-5 tablet-landscape:px-10 shadow-md",
                 attrs: { href: "#contact" }
               },
               [_vm._v("ik heb een vraag")]
@@ -52784,7 +52783,8 @@ var staticRenderFns = [
             _c(
               "a",
               {
-                staticClass: "tracking-2px h-20 flex-center text-2rem ",
+                staticClass:
+                  "whitespace-no-wrap tracking-2px h-20 flex-center text-1rem tablet-landscape:text-1.25rem laptop:text-1.75rem ",
                 attrs: { href: "#contact" }
               },
               [_vm._v("contact")]

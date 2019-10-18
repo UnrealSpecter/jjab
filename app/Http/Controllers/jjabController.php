@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 
+use App\Introduction;
 use App\Explanation;
 use App\Employee;
 
@@ -13,6 +14,7 @@ class jjabController extends Controller
     {
         // $contact = Contact::firstOrFail();
         // $quotes = Quote::all();
+        $introduction = Introduction::all();
         $employees = Employee::all();
         $explanations = Explanation::with('examples')->get();
 
@@ -24,6 +26,7 @@ class jjabController extends Controller
         }
 
         $collection = [
+            'introduction' => $introduction,
             'tags' => $tags,
             'explanations' => $explanations,
             'employees' => $employees
