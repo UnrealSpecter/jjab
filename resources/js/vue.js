@@ -12,7 +12,7 @@ import VueYoutube from 'vue-youtube';
 require('./bootstrap');
 
 window.Vue = require('vue');
-Vue.use(YoutubeVue);
+Vue.use(VueYoutube);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
