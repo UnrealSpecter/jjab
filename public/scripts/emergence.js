@@ -9,7 +9,7 @@ $(document).ready(function(){
 function initEmergence(){
 
     // hide all elements that implement emergence
-    $("*[data-emergence='hidden']").addClass('invisible');
+    // $("*[data-emergence='hidden']").addClass('invisible');
 
     startEmergence();
 }
@@ -21,7 +21,7 @@ function startEmergence(){
         reset: true,
         handheld: false,
         throttle: 250,
-        elemCushion: 0.25,
+        elemCushion: 0,
         offsetTop: 0,
         offsetRight: 0,
         offsetBottom: 0,
