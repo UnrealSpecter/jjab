@@ -6,13 +6,13 @@
  */
 
 import Vue from 'vue';
-import VueYoutube from 'vue-youtube';
-
+import YoutubeVue from 'youtube-vue'
+// import VueYoutube from 'vue-youtube';
 
 require('./bootstrap');
 
 window.Vue = require('vue');
-Vue.use(VueYoutube);
+Vue.use(YoutubeVue);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -41,5 +41,11 @@ Vue.component('phone', require('./components/Phone.vue'));
 Vue.component('brand-menu', require('./components/BrandMenu.vue'));
 
 const app = new Vue({
-    el: '#vue'
+    el: '#vue',
+    components: {
+        YoutubeVue
+    },
+    data : {
+        video_id:"PABUl_EX_hw", loop:0, autoplay:1
+   }
 });
