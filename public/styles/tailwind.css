@@ -12801,6 +12801,19 @@ video {
   }
 }
 
+.text-error {
+  width: 100%;
+  padding: 3rem;
+  color: #fff;
+  -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 2rem;
+  background-color: #68bedb;
+  margin-bottom: 2.5rem;
+  @apply flex justify-center items-center;
+  font-size: 2.5rem
+}
+
 .footer-group {
   height: 100px;
   width: 100%;

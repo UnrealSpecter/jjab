@@ -9,7 +9,7 @@ $(document).ready(function(){
 function initEmergence(){
 
     // hide all elements that implement emergence
-    // $("*[data-emergence='hidden']").addClass('invisible');
+    $("*[data-emergence='hidden']").addClass('invisible');
 
     startEmergence();
 }

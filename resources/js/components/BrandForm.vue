@@ -18,7 +18,7 @@
                 value="{ data.email }">
 
             <!-- EMAIL ERROR -->
-            <p v-if="errors.email" class="w-full p-12 text-white shadow-md rounded-jjab bg-jjab-blue anton mb-10 flex-center text-2.5rem">
+            <p v-if="errors.email" class="text-error anton">
                 <span class="fa fa-exclamation-circle mr-5 text-3rem"></span>Vul een geldig emailadres in.
             </p>
 
@@ -33,7 +33,7 @@
                 class="text-input anton h-100px tablet-portrait:h-200px" placeholder="stel je vraag!"></textarea>
 
             <!-- TEXT ERROR -->
-            <p v-if="errors.content" class="w-full p-12 text-white shadow-md rounded-jjab bg-jjab-blue anton mb-10 flex-center text-2.5rem">
+            <p v-if="errors.content" class="text-error anton">
                 <span class="fa fa-exclamation-circle mr-5 text-3rem"></span>Dit veld mag niet leeg zijn.
             </p>
 

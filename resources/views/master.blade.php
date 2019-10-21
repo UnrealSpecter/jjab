@@ -40,14 +40,14 @@
 
                     @foreach($explanations as $explanation)
                     <!-- TITLE -->
-                    <!-- <brand-title id="{{ $explanation->title }}">{{ $explanation->title }}</brand-title> -->
+                    <brand-title id="{{ $explanation->title }}">{{ $explanation->title }}</brand-title>
 
                     <!-- EXPLANATION -->
-                    <!-- <explanation subtitle="{{ $explanation->subtitle }}" description="{{ $explanation->description }}"></explanation> -->
+                    <explanation subtitle="{{ $explanation->subtitle }}" description="{{ $explanation->description }}"></explanation>
 
                     <!-- ANIMATION -->
                     @if($explanation->video)
-                    <!-- <youtube data-emergence="hidden" data-animation="animated fadeInUp" class="youtube" video-id="{{ $explanation->video }}" /></youtube> -->
+                    <youtube data-emergence="hidden" data-animation="animated fadeInUp" class="youtube" video-id="{{ $explanation->video }}" /></youtube>
                     <!-- <youtube-vue data-emergence="hidden" data-animation="animated fadeInUp" class="youtube" :videoid="video_id" /> -->
                     @endif
                     <!-- CARD WRAPPER -->
@@ -84,19 +84,19 @@
                 <container>
 
                     <!-- TRANSITION -->
-                    <!-- <page-transition>Contact</page-transition> -->
+                    <page-transition>Contact</page-transition>
 
                     <!-- EXPLANATION -->
-                    <!-- <explanation class="mt-16" subtitle="Waar kunnen we je bij helpen?" description="Je kunt hier zonder verplichting je vraag stellen. Dan krijg je van ons z.s.m een mail terug. Dit is geheel vrijblijvend. Je kunt op basis van het antwoord zelf kiezen wat het vervolg is."></explanation> -->
+                    <explanation class="mt-16" subtitle="Waar kunnen we je bij helpen?" description="Je kunt hier zonder verplichting je vraag stellen. Dan krijg je van ons z.s.m een mail terug. Dit is geheel vrijblijvend. Je kunt op basis van het antwoord zelf kiezen wat het vervolg is."></explanation>
 
                     <!-- STEL JE VRAAG -->
-                    <!-- <brand-title id="mail">Stel je vraag!</brand-title> -->
+                    <brand-title id="mail">Stel je vraag!</brand-title>
 
                     <!-- MAIL FORM -->
                     <jjab-form></jjab-form>
 
                     <!-- CONTACT TITLE -->
-                    <!-- <brand-title id="app-ons">App Ons!</brand-title> -->
+                    <brand-title id="app-ons">App Ons!</brand-title>
 
                     <!-- APP ONS -->
                     <phone></phone>
