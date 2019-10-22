@@ -5,7 +5,7 @@
 
     <!-- SCRIPTS -->
     <script src="{{ asset('/scripts/vue.js') }}"></script>
-    <!-- <script src="{{ asset('scripts/emergence.js') }}"></script> -->
+    <script src="{{ asset('scripts/emergence.js') }}"></script>
     <!-- <script src="{{ asset('/scripts/logo-animation.js') }}"></script> -->
 
     <script src="//cdn.jsdelivr.net/npm/eruda"></script>
