@@ -9,6 +9,8 @@ function initEmergence(){
     // hide all elements that implement emergence
     $("*[data-emergence='hidden']").addClass('invisible');
 
+    logoAnimation();
+
     startEmergence();
 }
 
@@ -30,7 +32,7 @@ function startEmergence(){
             if (state === 'visible') {
 
                 console.log('revealing element');
-                
+
                 var element = $(element);
 
                 var hasAnimated = element.data('has-animated');
