@@ -9,7 +9,7 @@ function initEmergence(){
     // hide all elements that implement emergence
     $("*[data-emergence='hidden']").addClass('invisible');
 
-    logoAnimation();
+    // logoAnimation();
 
     startEmergence();
 }
