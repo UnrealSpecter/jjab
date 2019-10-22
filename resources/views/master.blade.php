@@ -99,7 +99,11 @@
                     <brand-title id="app-ons">App Ons!</brand-title>
 
                     <!-- APP ONS -->
-                    <phone></phone>
+                    <phone
+                        phone="{{ $contact->phone_number }}"
+                        mail="{{ $contact->email }}"
+                        adres="{{ $contact->address }}">
+                    </phone>
 
                 </container>
             </wrapper>

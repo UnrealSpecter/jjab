@@ -19,7 +19,7 @@
 
             <!-- EMAIL ERROR -->
             <p v-if="errors.email" class="text-error anton">
-                <span class="fa fa-exclamation-circle mr-5 text-3rem"></span>Vul een geldig emailadres in.
+                <span class="fa fa-exclamation-circle error-icon"></span>Vul een geldig emailadres in.
             </p>
 
             <!-- CONTENT -->
@@ -34,7 +34,7 @@
 
             <!-- TEXT ERROR -->
             <p v-if="errors.content" class="text-error anton">
-                <span class="fa fa-exclamation-circle mr-5 text-3rem"></span>Dit veld mag niet leeg zijn.
+                <span class="fa fa-exclamation-circle error-icon"></span>Dit veld mag niet leeg zijn.
             </p>
 
             <!-- SUBMIT -->

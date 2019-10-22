@@ -1,3 +1,15 @@
 .text-error {
-    @apply w-full p-12 text-white shadow-md rounded-jjab bg-jjab-blue mb-10 flex-center text-2.5rem
+    @apply text-0.75rem py-5 px-10 mb-5 flex flex-row justify-center items-center whitespace-no-wrap w-full text-white shadow-md rounded-jjab bg-jjab-blue flex-center
+}
+
+@screen tablet-portrait {
+    .text-error {
+        @apply text-1.25rem
+    }
+}
+
+@screen desktop {
+    .text-error {
+        @apply text-2.5rem mb-10 p-12
+    }
 }

@@ -29,5 +29,6 @@ class VoyagerDatabaseSeeder extends Seeder
         $this->seed('EmployeesTableSeeder');
         $this->seed('ExamplesTableSeeder');
         $this->seed('IntroductionsTableSeeder');
+        $this->seed('ContactsTableSeeder');
     }
 }

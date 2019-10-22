@@ -21,7 +21,7 @@ class CreateContactsTable extends Migration {
 			$table->string('house_number');
 			$table->string('postal_code');
 			$table->string('residence');
-			$table->string('anbi')->nullable();
+			// $table->string('anbi')->nullable();
 			$table->timestamps();
 		});
 	}

@@ -7,17 +7,18 @@ use App\Http\Controllers\Controller;
 use App\Introduction;
 use App\Explanation;
 use App\Employee;
+use App\Contact;
 
 class jjabController extends Controller
 {
     public function index()
     {
-        // $contact = Contact::firstOrFail();
-        // $quotes = Quote::all();
         $introduction = Introduction::all();
         $employees = Employee::all();
         $explanations = Explanation::with('examples')->get();
-
+        $contact = Contact::firstOrFail();
+        $contact->address = $contact->street_name . ' ' . $contact->house_number . ', ' . $contact->postal_code . ' ' . $contact->residence;
+        
         $tags = [];
 
         foreach($explanations as $explanation){
@@ -29,7 +30,8 @@ class jjabController extends Controller
             'introduction' => $introduction,
             'tags' => $tags,
             'explanations' => $explanations,
-            'employees' => $employees
+            'employees' => $employees,
+            'contact' => $contact
         ];
 
         return view('master')->with($collection, 'collection');

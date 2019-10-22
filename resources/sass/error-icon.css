@@ -1,0 +1,21 @@
+.error-icon {
+    @apply mr-5 text-1.25rem
+}
+
+@screen tablet-portrait {
+    .error-icon {
+        @apply text-1.5rem text-left
+    }
+}
+
+@screen tablet-landscape {
+    .error-icon {
+        @apply text-1.75rem
+    }
+}
+
+@screen desktop {
+    .error-icon {
+        @apply text-3rem
+    }
+}

@@ -1,10 +1,10 @@
 .text-input {
-    @apply outline-none w-full mb-5 shadow-md py-5 px-10 text-1rem text-jjab-purple leading-none bg-white rounded-jjab overflow-hidden
+    @apply outline-none text-center w-full mb-5 shadow-md py-5 px-10 text-1rem text-jjab-purple leading-none bg-white rounded-jjab overflow-hidden
 }
 
 @screen tablet-portrait {
     .text-input {
-        @apply text-1.5rem
+        @apply text-1.5rem text-left
     }
 }
 

@@ -45,19 +45,19 @@
             <!-- PHONE -->
             <div class="footer-group">
                 <i class="fa fa-phone footer-icon"></i>
-                <span class="footer-text">+‎31 6 53138729</span>
+                <span class="footer-text">{{ phone }}</span>
             </div>
 
             <!-- MAIL -->
             <div class="footer-group">
                 <i class="fa fa-envelope footer-icon"></i>
-                <span class="footer-text">info@jjab.nl</span>
+                <span class="footer-text">{{ mail }}</span>
             </div>
 
             <!-- ADRES -->
             <div class="footer-group">
                 <i class="fa fa-map-marker-alt footer-icon"></i>
-                <span class="footer-text">Baander 5, 7811HH Emmen</span>
+                <span class="footer-text">{{ adres }}</span>
             </div>
 
         </footer>
@@ -68,5 +68,6 @@
 
 <script>
     export default {
+        props: ['mail', 'adres', 'phone']
     }
 </script>

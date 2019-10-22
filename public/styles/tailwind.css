@@ -12757,6 +12757,7 @@ video {
 
 .text-input {
   outline: 0;
+  text-align: center;
   width: 100%;
   margin-bottom: 1.25rem;
   -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -12775,7 +12776,8 @@ video {
 
 @media (min-width: 768px) {
   .text-input {
-    font-size: 1.5rem
+    font-size: 1.5rem;
+    text-align: left
   }
 }
 
@@ -12802,16 +12804,47 @@ video {
 }
 
 .text-error {
+  font-size: 0.75rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  margin-bottom: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
   width: 100%;
-  padding: 3rem;
   color: #fff;
   -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
           box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   border-radius: 2rem;
   background-color: #68bedb;
-  margin-bottom: 2.5rem;
-  @apply flex justify-center items-center;
-  font-size: 2.5rem
+  @apply flex justify-center items-center
+}
+
+@media (min-width: 768px) {
+  .text-error {
+    font-size: 1.25rem
+  }
+}
+
+@media (min-width: 1500px) {
+  .text-error {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding: 3rem
+  }
 }
 
 .footer-group {
@@ -12894,6 +12927,30 @@ video {
   .footer-text {
     font-size: 1.75rem;
     white-space: nowrap
+  }
+}
+
+.error-icon {
+  margin-right: 1.25rem;
+  font-size: 1.25rem
+}
+
+@media (min-width: 768px) {
+  .error-icon {
+    font-size: 1.5rem;
+    text-align: left
+  }
+}
+
+@media (min-width: 992px) {
+  .error-icon {
+    font-size: 1.75rem
+  }
+}
+
+@media (min-width: 1500px) {
+  .error-icon {
+    font-size: 3rem
   }
 }
 

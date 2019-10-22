@@ -14,6 +14,7 @@
 @import 'footer-group';
 @import 'footer-icon';
 @import 'footer-text';
+@import 'error-icon';
 
 html {
     scroll-behavior: smooth;
