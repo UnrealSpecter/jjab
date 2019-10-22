@@ -14,6 +14,8 @@ function initEmergence(){
 
 function startEmergence(){
 
+    console.log('starting emergence');
+
     emergence.init({
         container: window,
         reset: true,
@@ -27,6 +29,8 @@ function startEmergence(){
         callback: function(element, state) {
             if (state === 'visible') {
 
+                console.log('revealing element');
+                
                 var element = $(element);
 
                 var hasAnimated = element.data('has-animated');
