@@ -6,7 +6,7 @@
  */
 
 import Vue from 'vue';
-// import YoutubeVue from 'youtube-vue'
+import YoutubeVue from 'youtube-vue';
 import VueYoutube from 'vue-youtube';
 
 require('./bootstrap');

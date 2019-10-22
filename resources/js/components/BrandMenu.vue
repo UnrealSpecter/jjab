@@ -18,8 +18,8 @@
             <a href="#" class="whitespace-no-wrap tracking-2px h-20 flex-center text-1.25rem tablet-landscape:text-1.75rem laptop:text-2.5rem  px-5 tablet-landscape:px-10">JJAB</a>
             <a href="#kennisbank" class="whitespace-no-wrap tracking-2px h-20 flex-center text-1rem tablet-landscape:text-1.25rem laptop:text-1.75rem  ">Kennisbank</a>
             <a href="#wie-zijn-wij" class="whitespace-no-wrap tracking-2px h-20 flex-center text-1rem tablet-landscape:text-1.25rem laptop:text-1.75rem  ">Wie zijn wij?</a>
-            <a href="#contact" class="whitespace-no-wrap transition-all-250ms hover:bg-jjab-orange-hover tracking-2px h-20 flex-center text-1rem tablet-landscape:text-1.25rem laptop:text-1.75rem  bg-jjab-orange rounded-full px-5 tablet-landscape:px-10 shadow-md">ik heb een vraag</a>
-            <a href="#contact" class="whitespace-no-wrap tracking-2px h-20 flex-center text-1rem tablet-landscape:text-1.25rem laptop:text-1.75rem ">contact</a>
+            <a href="#mail" class="whitespace-no-wrap transition-all-250ms hover:bg-jjab-orange-hover tracking-2px h-20 flex-center text-1rem tablet-landscape:text-1.25rem laptop:text-1.75rem  bg-jjab-orange rounded-full px-5 tablet-landscape:px-10 shadow-md">ik heb een vraag</a>
+            <a href="#app-ons" class="whitespace-no-wrap tracking-2px h-20 flex-center text-1rem tablet-landscape:text-1.25rem laptop:text-1.75rem ">contact</a>
         </div>
 
     </header>
