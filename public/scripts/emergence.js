@@ -1,10 +1,8 @@
 var animation;
 
-$(document).ready(function(){
-
-    initEmergence();
-
-});
+window.onload = function(){
+      window.document.body.onload =  initEmergence(); // note removed parentheses
+};
 
 function initEmergence(){
 
@@ -19,7 +17,7 @@ function startEmergence(){
     emergence.init({
         container: window,
         reset: true,
-        handheld: false,
+        handheld: true,
         throttle: 250,
         elemCushion: 0,
         offsetTop: 0,
