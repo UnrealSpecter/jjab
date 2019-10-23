@@ -1,18 +1,40 @@
 var animation;
 
+//scroll to top before starting anything.
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
+
 window.onload = function(){
-      window.document.body.onload =  initEmergence(); // note removed parentheses
+    window.document.body.onload =  playLogoAnimation(); // note removed parentheses
 };
 
-function initEmergence(){
+var hidden = 'hidden';
 
-    // hide all elements that implement emergence
-    $("*[data-emergence='hidden']").addClass('invisible');
+function playLogoAnimation(){
 
-    // logoAnimation();
+    if(window.devicePixelRatio == 1.25 ){
+        alert('zoom 125% scaling');
+        $("body").addClass("reset-zoom");
+    }
 
-    startEmergence();
+    history.pushState('', '', window.location.pathname);
+
+    var blueShape = $('#blue-shape');
+    var purpleShape = $('#purple-shape');
+    var orangeShape = $('#orange-shape');
+    var text = $('#logo-text');
+    var nav = $('#nav');
+
+    playAnimation(blueShape, 'animated fadeInLeft duration-1s');
+    playAnimation(purpleShape, 'animated fadeInRight duration-1s');
+    playAnimation(orangeShape, 'animated fadeIn duration-1s delay-1s');
+    playAnimation(text, 'animated fadeInUp duration-1s delay-1s');
+    playAnimation(nav, 'animated fadeInDown delay-1s', startEmergence());
+
 }
+
+
 
 function startEmergence(){
 

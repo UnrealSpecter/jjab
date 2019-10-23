@@ -52173,33 +52173,27 @@ var staticRenderFns = [
       },
       [
         _c("img", {
-          staticClass: "absolute w-auto h-full",
+          staticClass: "invisible absolute w-auto h-full",
           attrs: {
-            "data-emergence": "hidden",
-            id: "blue-part",
-            "data-animation": "animated fadeInLeft duration-1s",
+            id: "blue-shape",
             alt: "blue part of the jjab logo",
             src: "/images/blue-shape.svg"
           }
         }),
         _vm._v(" "),
         _c("img", {
-          staticClass: "absolute w-auto h-full",
+          staticClass: "invisible absolute w-auto h-full",
           attrs: {
-            "data-emergence": "hidden",
-            id: "purple-part",
-            "data-animation": "animated fadeInRight duration-1s",
+            id: "purple-shape",
             alt: "purple part of the jjab logo",
             src: "/images/purple-shape.svg"
           }
         }),
         _vm._v(" "),
         _c("img", {
-          staticClass: "absolute w-auto h-full",
+          staticClass: "invisible absolute w-auto h-full",
           attrs: {
-            "data-emergence": "hidden",
-            id: "orange-part",
-            "data-animation": "animated fadeIn duration-1s delay-1s",
+            id: "orange-shape",
             alt: "orange part of the jjab logo",
             src: "images/orange-shape.svg"
           }
@@ -52209,12 +52203,8 @@ var staticRenderFns = [
           "h1",
           {
             staticClass:
-              "tracking-2px anton z-50 text-white text-3.5rem tablet-portrait:text-7rem tablet-landscape:text-8rem desktop:text-10rem antialiased subpixel-antialiased",
-            attrs: {
-              "data-emergence": "hidden",
-              id: "text-part",
-              "data-animation": "animated fadeInUp duration-1s delay-1s"
-            }
+              "invisible tracking-2px anton z-50 text-white text-3.5rem tablet-portrait:text-7rem tablet-landscape:text-8rem desktop:text-10rem antialiased subpixel-antialiased",
+            attrs: { id: "logo-text" }
           },
           [_vm._v("\n            JJAB\n        ")]
         )
@@ -52685,11 +52675,8 @@ var staticRenderFns = [
       "header",
       {
         staticClass:
-          "mx-2 px-8 desktop:px-10 shadow-md absolute top-0 mt-10 text-white anton w-full rounded-full flex flex-row justify-between bg-jjab-purple z-50",
-        attrs: {
-          "data-emergence": "hidden",
-          "data-animation": "animated fadeInDown"
-        }
+          "invisible mx-2 px-8 desktop:px-10 shadow-md absolute top-0 mt-10 text-white anton w-full rounded-full flex flex-row justify-between bg-jjab-purple z-50",
+        attrs: { id: "nav" }
       },
       [
         _c(

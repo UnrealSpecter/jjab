@@ -1,6 +1,6 @@
 <template>
 
-    <header data-emergence="hidden" data-animation="animated fadeInDown" class="mx-2 px-8 desktop:px-10 shadow-md absolute top-0 mt-10 text-white anton w-full rounded-full flex flex-row justify-between bg-jjab-purple z-50">
+    <header id="nav" class="invisible mx-2 px-8 desktop:px-10 shadow-md absolute top-0 mt-10 text-white anton w-full rounded-full flex flex-row justify-between bg-jjab-purple z-50">
 
         <!-- mobile -->
         <div class="hidden flex-row flex-grow justify-between px-5">

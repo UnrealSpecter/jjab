@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="nl">
+<html lang="nl" class="scroll-auto">
     <head data-enhance="false">
         @include('meta')
         @include('styles')
