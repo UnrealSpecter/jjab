@@ -40,8 +40,8 @@
 }
 
 .reset-zoom{
-      zoom: 100%; /* all browsers */
-     -moz-transform: scale(1);  /* Firefox */
+    zoom: 75%; /* all browsers */
+    -moz-transform: scale(0.75);  /* Firefox */
 }
 
 [data-emergence='hidden'] {
