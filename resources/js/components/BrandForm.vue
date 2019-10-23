@@ -11,7 +11,7 @@
             <input
                 type="email"
                 placeholder="email"
-                class="text-input anton"
+                class="invisible text-input anton"
                 data-emergence="hidden" data-animation="animated fadeInUp"
                 @keydown="clearError('email')"
                 v-model="data.email" name="data[email]"
@@ -30,7 +30,7 @@
                 @keydown="clearError('content')"
                 name="data[content]"
                 value="{ data.content }"
-                class="text-input anton h-100px tablet-portrait:h-200px" placeholder="stel je vraag!"></textarea>
+                class="invisible text-input anton h-100px tablet-portrait:h-200px" placeholder="stel je vraag!"></textarea>
 
             <!-- TEXT ERROR -->
             <p v-if="errors.content" class="text-error anton">
@@ -41,7 +41,7 @@
             <input
                 data-emergence="hidden"
                 data-animation="animated fadeInUp"
-                class="button purple anton"
+                class="invisible button purple anton"
                 type="submit"
                 value="help!"
                 @click.prevent="submit()" >

@@ -14,8 +14,7 @@ var hidden = 'hidden';
 function playLogoAnimation(){
 
     if(window.devicePixelRatio == 1.25 ){
-        alert('zoom 125% scaling');
-        $("body").addClass("reset-zoom");
+        document.body.style.zoom = "75%";
     }
 
     history.pushState('', '', window.location.pathname);
@@ -25,16 +24,16 @@ function playLogoAnimation(){
     var orangeShape = $('#orange-shape');
     var text = $('#logo-text');
     var nav = $('#nav');
+    var pageTransition = $('#page-transition');
 
     playAnimation(blueShape, 'animated fadeInLeft duration-1s');
     playAnimation(purpleShape, 'animated fadeInRight duration-1s');
     playAnimation(orangeShape, 'animated fadeIn duration-1s delay-1s');
     playAnimation(text, 'animated fadeInUp duration-1s delay-1s');
-    playAnimation(nav, 'animated fadeInDown delay-1s', startEmergence());
+    playAnimation(nav, 'animated fadeInDown delay-1s');
+    playAnimation(pageTransition, 'animated fadeInUp delay-2s', startEmergence());
 
 }
-
-
 
 function startEmergence(){
 

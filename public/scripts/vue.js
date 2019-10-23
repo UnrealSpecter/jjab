@@ -50700,8 +50700,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+
+    props: ['subtitle', 'description']
+
+});
 
 /***/ }),
 /* 62 */
@@ -50712,17 +50725,43 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "p",
-    {
-      staticClass:
-        "box bg-jjab-orange text-white w-4/5 tablet-landscape:w-3/4 laptop:w-full p-10 flex-center roboto text-1.25rem tablet-portrait:text-1.5rem tablet-landscape:text-1.75rem text-left desktop:text-2.5rem text-center tracking-loose",
-      attrs: {
-        "data-emergence": "hidden",
-        "data-animation": "animated fadeInUp"
-      }
-    },
-    [_vm._t("default")],
-    2
+    "div",
+    { staticClass: "w-4/5 tablet-landscape:w-3/4 laptop:w-full" },
+    [
+      _c(
+        "div",
+        {
+          staticClass:
+            "invisible rounded-jjab w-full mt-16 bg-jjab-orange text-white w-4/5 tablet-landscape:w-3/4 laptop:w-full p-10 flex-center roboto text-1.25rem tablet-portrait:text-1.5rem tablet-landscape:text-1.75rem text-left desktop:text-2.5rem text-center tracking-loose",
+          attrs: {
+            "data-emergence": "hidden",
+            "data-animation": "animated fadeInUp"
+          }
+        },
+        [
+          _c("h1", { staticClass: "box-title anton" }, [
+            _vm._v(_vm._s(_vm.subtitle))
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass:
+            "invisible rounded-jjab my-16 w-full bg-jjab-orange text-white p-10 flex-center roboto text-1.25rem tablet-portrait:text-1.5rem tablet-landscape:text-1.75rem text-left desktop:text-2.5rem text-center tracking-loose",
+          attrs: {
+            "data-emergence": "hidden",
+            "data-animation": "animated fadeInUp"
+          }
+        },
+        [
+          _c("p", { staticClass: "explanation-description roboto" }, [
+            _vm._v(_vm._s(_vm.description))
+          ])
+        ]
+      )
+    ]
   )
 }
 var staticRenderFns = []
@@ -50817,7 +50856,7 @@ var render = function() {
   return _c(
     "div",
     {
-      staticClass: "box bg-jjab-purple",
+      staticClass: "invisible box bg-jjab-purple",
       attrs: {
         id: "juridisch-advies",
         "data-emergence": "hidden",
@@ -50826,14 +50865,14 @@ var render = function() {
     },
     [
       _c("h1", { staticClass: "box-title anton" }, [
-        _vm._v("Juridisch Advies Nodig?")
+        _vm._v("Heb jij Juridisch Advies Nodig?")
       ]),
       _vm._v(" "),
       _c(
         "div",
         {
           staticClass:
-            "button-wrapper flex flex-col tablet-landscape:flex-row justify-center w-full items-center tracking-2px"
+            "button-wrapper flex flex-col tablet-portrait:flex-row justify-center w-full items-center tracking-2px"
         },
         [
           _c(
@@ -50864,7 +50903,7 @@ var render = function() {
         "span",
         {
           staticClass:
-            "text-2rem tablet-landscape:text-4rem text-white anton h-full flex-center"
+            "text-2rem tablet-landscape:text-4rem text-white anton h-full flex-center mt-5"
         },
         [_vm._v("ons!")]
       )
@@ -50963,7 +51002,7 @@ var render = function() {
   return _c(
     "div",
     {
-      staticClass: "box bg-jjab-purple",
+      staticClass: "invisible box bg-jjab-purple",
       attrs: {
         "data-emergence": "hidden",
         "data-animation": "animated fadeInUp"
@@ -50971,7 +51010,7 @@ var render = function() {
     },
     [
       _c("h2", { staticClass: "box-title anton" }, [
-        _vm._v("Juridische Kennis Opdoen?")
+        _vm._v("Wil je Juridische Kennis Opdoen?")
       ]),
       _vm._v(" "),
       _c(
@@ -51083,7 +51122,7 @@ var render = function() {
   return _c(
     "div",
     {
-      staticClass: "page-transition anton",
+      staticClass: "invisible page-transition anton",
       attrs: {
         "data-emergence": "hidden",
         "data-animation": "animated fadeInUp"
@@ -51181,7 +51220,7 @@ var render = function() {
   return _c(
     "div",
     {
-      staticClass: "box bg-jjab-blue",
+      staticClass: "invisible box bg-jjab-blue",
       attrs: {
         "data-emergence": "hidden",
         "data-animation": "animated fadeInUp"
@@ -51401,7 +51440,7 @@ var render = function() {
                 expression: "data.email"
               }
             ],
-            staticClass: "text-input anton",
+            staticClass: "invisible text-input anton",
             attrs: {
               type: "email",
               placeholder: "email",
@@ -51442,7 +51481,8 @@ var render = function() {
                 expression: "data.content"
               }
             ],
-            staticClass: "text-input anton h-100px tablet-portrait:h-200px",
+            staticClass:
+              "invisible text-input anton h-100px tablet-portrait:h-200px",
             attrs: {
               "data-emergence": "hidden",
               "data-animation": "animated fadeInUp",
@@ -51474,7 +51514,7 @@ var render = function() {
             : _vm._e(),
           _vm._v(" "),
           _c("input", {
-            staticClass: "button purple anton",
+            staticClass: "invisible button purple anton",
             attrs: {
               "data-emergence": "hidden",
               "data-animation": "animated fadeInUp",
@@ -51576,6 +51616,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['employee']
@@ -51593,69 +51638,62 @@ var render = function() {
     "div",
     {
       staticClass:
-        "w-4/5 tablet-landscape:w-3/4 laptop:w-full wrapper flex flex-col mb-16",
-      attrs: {
-        "data-emergence": "hidden",
-        "data-animation": "animated fadeInUp"
-      }
+        "w-4/5 tablet-landscape:w-3/4 laptop:w-full wrapper flex flex-col mb-16"
     },
     [
       _c(
-        "div",
+        "h1",
         {
           staticClass:
-            "w-full flex laptop:flex-row flex-col justify-center items-center flex-no-wrap"
+            "invisible text-2.5rem whitespace-no-wrap tablet-portrait:text-5rem laptop:text-6rem text-jjab-purple text-center anton",
+          attrs: {
+            "data-emergence": "hidden",
+            "data-animation": "animated fadeInUp"
+          }
+        },
+        [_vm._v(_vm._s(_vm.employee.name))]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "invisible",
+          attrs: {
+            "data-emergence": "hidden",
+            "data-animation": "animated fadeInUp"
+          }
         },
         [
           _c(
             "div",
             {
               staticClass:
-                "flex flex-col justify-center items-start w-full h-full"
+                "w-full desktop:w-full flex laptop:flex-row flex-col justify-center items-center flex-no-wrap"
             },
             [
-              _c(
-                "h2",
-                {
-                  staticClass:
-                    "text-center laptop:text-left w-full px-4 laptop:px-12 text-2.5rem laptop:text-4rem tablet-portrait:text-5rem mb-5 text-jjab-purple anton"
-                },
-                [_vm._v(_vm._s(_vm.employee.title))]
-              ),
-              _vm._v(" "),
+              _c("img", {
+                staticClass: "w-1/2 laptop:w-1/3 object-fit",
+                attrs: { src: "storage/" + _vm.employee.photo }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "flex flex-col rounded-jjab shadow-md bg-jjab-orange text-white w-full px-3 py-5 tablet-portrait:px-5 tablet-portrait:py-7 desktop:px-10 desktop:py-16 justify-center items-center"
+            },
+            [
               _c(
                 "p",
                 {
                   staticClass:
-                    "text-center tablet-portrait:text-left capitalized px-4 laptop:px-12 flex-center text-1rem laptop:text-1.5rem desktop:text-2rem tablet-portrait:text-1.5rem roboto text-jjab-purple"
+                    "text-center tablet-portrait:text-left capitalized px-4 laptop:px-12 flex-center text-1rem laptop:text-1.5rem desktop:text-2rem tablet-portrait:text-1.5rem roboto"
                 },
                 [_vm._v(_vm._s(_vm.employee.description))]
               )
             ]
-          ),
-          _vm._v(" "),
-          _c("img", {
-            staticClass:
-              "w-auto w-full tablet-portrait:w-1/2 tablet-landscape:w-1/3 object-fit",
-            attrs: { src: "storage/" + _vm.employee.photo }
-          })
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass:
-            "flex flex-col rounded-jjab shadow-md bg-jjab-orange w-full px-10 py-16 justify-center items-center"
-        },
-        [
-          _c(
-            "h1",
-            {
-              staticClass:
-                "text-2.5rem whitespace-no-wrap tablet-portrait:text-5rem laptop:text-6rem text-white anton"
-            },
-            [_vm._v(_vm._s(_vm.employee.name))]
           )
         ]
       )
@@ -51851,7 +51889,7 @@ var render = function() {
   return _c(
     "h1",
     {
-      staticClass: "anton brand-title",
+      staticClass: "invisible anton brand-title",
       attrs: {
         id: "" + _vm.id,
         "data-emergence": "hidden",
@@ -52039,7 +52077,7 @@ var render = function() {
   return _c(
     "div",
     {
-      staticClass: "card roboto",
+      staticClass: "invisible card roboto",
       attrs: {
         "data-emergence": "hidden",
         "data-animation": "animated fadeInUp"
@@ -52358,7 +52396,7 @@ var render = function() {
   return _c(
     "div",
     {
-      staticClass: "w-4/5 tablet-portrait:w-3/4 laptop:w-full",
+      staticClass: "invisible w-4/5 tablet-portrait:w-3/4 laptop:w-full",
       attrs: {
         "data-emergence": "hidden",
         "data-animation": "animated fadeInUp"

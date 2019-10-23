@@ -15,6 +15,8 @@ class CreateIntroductionsTable extends Migration {
 		Schema::create('introductions', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->text('title');
+			$table->text('subtitle');
 			$table->longtext('text');
 			$table->timestamps();
 		});

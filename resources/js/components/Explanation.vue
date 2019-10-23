@@ -1,6 +1,6 @@
 <template>
 
-    <div data-emergence="hidden" data-animation="animated fadeInUp" class="box bg-jjab-blue">
+    <div data-emergence="hidden" data-animation="animated fadeInUp" class="invisible box bg-jjab-blue">
         <h1 class="box-title anton">{{ subtitle }}</h1>
         <p class="explanation-description roboto">{{ description }}</p>
     </div>

@@ -1,7 +1,7 @@
 <template>
 
-    <div data-emergence="hidden" data-animation="animated fadeInUp" class="box bg-jjab-purple">
-        <h2 class="box-title anton">Juridische Kennis Opdoen?</h2>
+    <div data-emergence="hidden" data-animation="animated fadeInUp" class="invisible box bg-jjab-purple">
+        <h2 class="box-title anton">Wil je Juridische Kennis Opdoen?</h2>
         <!-- <p class="text-2rem roboto lowercase text-white mb-10">Kies uit een van de onderstaande onderwerpen</p> -->
 
         <div class="tag-wrapper w-full flex flex-row flex-wrap justify-center">

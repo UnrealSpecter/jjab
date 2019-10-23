@@ -12496,6 +12496,13 @@ video {
   margin-bottom: 1.25rem
 }
 
+@media (min-width: 768px) {
+  .box-title {
+    font-size: 2rem;
+    margin-bottom: 1.25rem
+  }
+}
+
 @media (min-width: 992px) {
   .box-title {
     font-size: 4rem;

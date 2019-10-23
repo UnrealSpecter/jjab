@@ -38,12 +38,3 @@
 .scroll-auto {
     scroll-behavior: auto;
 }
-
-.reset-zoom{
-    zoom: 75%; /* all browsers */
-    -moz-transform: scale(0.75);  /* Firefox */
-}
-
-[data-emergence='hidden'] {
-    visibility: hidden;
-}

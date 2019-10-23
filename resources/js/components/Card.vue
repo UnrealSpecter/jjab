@@ -1,6 +1,6 @@
 <template>
 
-    <div data-emergence="hidden" data-animation="animated fadeInUp" class="card roboto">
+    <div data-emergence="hidden" data-animation="animated fadeInUp" class="invisible card roboto">
         <slot></slot>
     </div>
 

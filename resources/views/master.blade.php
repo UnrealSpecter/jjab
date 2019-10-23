@@ -19,8 +19,11 @@
             <wrapper id="#" class="min-h-screen" title="title one">
                 <container>
 
+                    <!-- PAGE TRANSITION -->
+                    <page-transition id="page-transition">{{ $introduction->title }}</page-transition>
+
                     <!-- INTRODUCTION INFORMATION -->
-                    <introduction>{{ $introduction->first()->text }}</introduction>
+                    <introduction subtitle="{{ $introduction->subtitle }}" description="{{ $introduction->text }}"></introduction>
 
                     <!-- CALL TO ACTION -->
                     <call-to-action></call-to-action>

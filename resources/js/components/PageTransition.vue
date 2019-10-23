@@ -1,7 +1,7 @@
 
 <template>
 
-    <div data-emergence="hidden" data-animation="animated fadeInUp" class="page-transition anton">
+    <div data-emergence="hidden" data-animation="animated fadeInUp" class="invisible page-transition anton">
         <slot></slot>
     </div>
 

@@ -1,6 +1,6 @@
 <template>
 
-    <div class="w-4/5 tablet-portrait:w-3/4 laptop:w-full" data-emergence="hidden" data-animation="animated fadeInUp">
+    <div class="invisible w-4/5 tablet-portrait:w-3/4 laptop:w-full" data-emergence="hidden" data-animation="animated fadeInUp">
 
         <!-- PHONE WRAPPER -->
         <div class="w-full flex flex-row justify-center items-end relative h-300px tablet-portrait:h-600px laptop:h-500px desktop:h-700px">

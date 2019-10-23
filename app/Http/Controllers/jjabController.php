@@ -13,12 +13,12 @@ class jjabController extends Controller
 {
     public function index()
     {
-        $introduction = Introduction::all();
+        $introduction = Introduction::firstOrFail();
         $employees = Employee::all();
         $explanations = Explanation::with('examples')->get();
         $contact = Contact::firstOrFail();
         $contact->address = $contact->street_name . ' ' . $contact->house_number . ', ' . $contact->postal_code . ' ' . $contact->residence;
-        
+
         $tags = [];
 
         foreach($explanations as $explanation){
