@@ -52735,7 +52735,7 @@ var staticRenderFns = [
               {
                 staticClass:
                   "whitespace-no-wrap mx-3 transition-all-250ms hover:bg-jjab-orange-hover tracking-2px flex-center px-1 text-0.75rem bg-jjab-orange rounded-full px-5 shadow-md",
-                attrs: { href: "#contact" }
+                attrs: { href: "#mail" }
               },
               [_vm._v("Ik heb een vraag?")]
             )

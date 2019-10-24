@@ -5,7 +5,7 @@
         <!-- mobile -->
         <div class="tablet-portrait:hidden w-full flex flex-row flex-grow justify-between px-2 py-3 h-20">
             <a href="#" class=" tracking-2px flex-center text-1.25rem px-2">JJAB</a>
-            <a href="#contact" class="whitespace-no-wrap mx-3 transition-all-250ms hover:bg-jjab-orange-hover tracking-2px flex-center px-1 text-0.75rem bg-jjab-orange rounded-full px-5 shadow-md">Ik heb een vraag?</a>
+            <a href="#mail" class="whitespace-no-wrap mx-3 transition-all-250ms hover:bg-jjab-orange-hover tracking-2px flex-center px-1 text-0.75rem bg-jjab-orange rounded-full px-5 shadow-md">Ik heb een vraag?</a>
             <!-- <a href="#contact" class="w-1/3 transition-all-250ms hover:bg-jjab-orange-hover tracking-2px flex-center px-3 text-1rem bg-jjab-orange rounded-full px-5 shadow-md">menu</a> -->
         </div>
 

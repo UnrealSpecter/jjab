@@ -38,6 +38,29 @@ class jjabController extends Controller
 
     }
 
+    public function sendMail(){
+
+        $name = "Dhevak";
+        $email = "info@dhevak.nl";
+
+        $data = array(
+            'name' => "Name",
+            'body' => "Body"
+        );
+
+        Mail::send("emails.mail", $data, function($message) use ($name, $email) {
+
+            $message
+                ->to($email, $name)
+                ->subject('Laravel Test Mail');
+
+            $message
+                ->from("SENDER_EMAIL_ADDRESS", 'Test Mail');
+
+        });
+
+    }
+
     // public function anbi()
     // {
     //     $contact = Contact::firstOrFail();

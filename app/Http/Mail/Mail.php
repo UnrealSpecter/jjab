@@ -41,7 +41,7 @@ class Contact extends Mailable
      */
     public function build()
     {
-        return $this->subject('A New Message')
+        return $this->subject('Nieuw Bericht!')
                     ->from('dhevak@jjab-website.nl')
                     ->to($this->request['mailTo'])
                     ->markdown('emails.mail');
