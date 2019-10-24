@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 
+use Mail;
+
 use App\Introduction;
 use App\Explanation;
 use App\Employee;
@@ -38,24 +40,28 @@ class jjabController extends Controller
 
     }
 
-    public function sendMail(){
+    public function sendMail(Request $request){
 
-        $name = "Dhevak";
-        $email = "info@dhevak.nl";
+        $data = json_decode($request->getContent());
+
+        return response()->json([
+            'name' => 'Abigail',
+            'state' => 'CA'
+        ]);
+
+        $from = "mail-service@dhevak.nl";
 
         $data = array(
-            'name' => "Name",
-            'body' => "Body"
+            'email' => $data->email,
+            'content' => $data->content,
         );
 
-        Mail::send("emails.mail", $data, function($message) use ($name, $email) {
+        Mail::send("emails.mail", $data, function($message) use ($from, $email, $content) {
 
             $message
-                ->to($email, $name)
-                ->subject('Laravel Test Mail');
-
-            $message
-                ->from("SENDER_EMAIL_ADDRESS", 'Test Mail');
+                ->to('info@dhevak.nl', 'JJAB')
+                ->subject('Nieuw vraag van: ' . $email)
+                ->from($from, ' DHEVAK ');
 
         });
 

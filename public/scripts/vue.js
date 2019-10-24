@@ -51390,10 +51390,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 content: this.data.content
             }).then(function (response) {
                 if (response.data) {
-                    //success
+                    console.log('mail succes');
                 }
             }).catch(function (error) {
-                //error
+                console.log('mail error');
             });
         },
         clearError: function clearError(key) {
@@ -51419,7 +51419,7 @@ var render = function() {
         {
           staticClass:
             "flex flex-col justify-center items-center tablet-portrait:items-end",
-          attrs: { action: "", method: "post" }
+          attrs: { action: "/mail", method: "post" }
         },
         [
           _c("input", {

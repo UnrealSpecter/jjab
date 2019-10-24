@@ -2,7 +2,7 @@
 
     <div class="w-4/5 tablet-portrait:w-3/4 laptop:w-2/3 desktop:w-full">
 
-        <form action="" method="post" class="flex flex-col justify-center items-center tablet-portrait:items-end">
+        <form action="/mail" method="post" class="flex flex-col justify-center items-center tablet-portrait:items-end">
 
             <!-- CSRF TOKEN -->
             <input type="hidden" name="_token" :value="csrf">
@@ -96,11 +96,11 @@
                 })
                 .then(function (response) {
                     if(response.data){
-                        //success
+                        console.log('mail succes');
                     }
                 })
                 .catch(function(error) {
-                    //error
+                    console.log('mail error');
                 });
             },
             clearError: function(key){
