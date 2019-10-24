@@ -44,6 +44,8 @@ class jjabController extends Controller
 
         $data = json_decode($request->getContent());
 
+        $to = Contact::firstOrFail()->email;
+
         $email = $data->email;
         $content = $data->content;
 
@@ -57,9 +59,9 @@ class jjabController extends Controller
             Mail::send("emails.mail", $data, function($message) use ($email, $content) {
 
                 $message
-                    ->to('info@dhevak.nl', 'JJAB')
+                    ->to($to, 'JJAB')
                     ->subject('Nieuw vraag van: ' . $email)
-                    ->from($email, ' DHEVAK ');
+                    ->from($email, ' DHEVAK ( ͡° ͜ʖ ͡°) ');
 
             });
 
