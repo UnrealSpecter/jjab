@@ -1,5 +1,5 @@
 .brand-title {
-    @apply text-center w-4/5 text-jjab-purple text-3.5rem my-4 leading-none
+    @apply text-center w-4/5 text-jjab-purple text-3rem my-4 leading-none
 }
 
 @screen tablet-portrait {

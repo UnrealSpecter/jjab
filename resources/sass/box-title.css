@@ -1,5 +1,5 @@
 .box-title {
-    @apply text-2.5rem text-center tracking-2px text-white mb-phone-portrait
+    @apply text-2rem text-center tracking-2px text-white mb-phone-portrait
 }
 
 @screen tablet-portrait {
