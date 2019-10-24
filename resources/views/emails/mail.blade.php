@@ -1,6 +1,6 @@
 Hallo JJAB!
 
-<h1>Niewe vraag van: {{ $email }}</h1>
+<h2>Nieuwe vraag van: {{ $email }}</h2>
 
 <br />
 

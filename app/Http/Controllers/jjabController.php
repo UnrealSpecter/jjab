@@ -56,7 +56,7 @@ class jjabController extends Controller
 
         try {
 
-            Mail::send("emails.mail", $data, function($message) use ($email, $content) {
+            Mail::send("emails.mail", $data, function($message) use ($to, $email, $content) {
 
                 $message
                     ->to($to, 'JJAB')

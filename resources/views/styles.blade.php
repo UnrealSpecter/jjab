@@ -4,7 +4,6 @@
     <link rel="stylesheet" href="{{ asset('plugins/normalize/css/normalize.css')}}" />
     <link rel="stylesheet" href="{{ asset('/styles/tailwind.css') }}">
     <link rel="stylesheet" href="{{ asset('/plugins/animate/css/animate.css') }}">
-    <link rel="stylesheet" href="https://use.typekit.net/kmd4otu.css">
     <link rel="stylesheet" href="{{ asset('/styles/fonts.css') }}">
     <link rel="stylesheet" href="{{ asset('/styles/font-awesome.min.css') }}">
 
