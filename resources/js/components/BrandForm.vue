@@ -89,18 +89,18 @@
 
             },
             send: function(){
-
+                
                 axios.post('/mail', {
                     email: this.data.email,
                     content: this.data.content
                 })
                 .then(function (response) {
                     if(response.data){
-                        console.log('mail succes');
+
                     }
                 })
                 .catch(function(error) {
-                    console.log('mail error');
+
                 });
             },
             clearError: function(key){

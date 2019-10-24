@@ -3,6 +3,7 @@ var animation;
 //scroll to top before starting anything.
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
+    history.pushState('', '', window.location.pathname);
 }
 
 window.onload = function(){
@@ -37,8 +38,6 @@ function playLogoAnimation(){
 
 function startEmergence(){
 
-    console.log('starting emergence');
-
     emergence.init({
         container: window,
         reset: true,
@@ -51,8 +50,6 @@ function startEmergence(){
         offsetLeft: 0,
         callback: function(element, state) {
             if (state === 'visible') {
-
-                console.log('revealing element');
 
                 var element = $(element);
 

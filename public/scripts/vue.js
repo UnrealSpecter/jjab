@@ -51389,12 +51389,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 email: this.data.email,
                 content: this.data.content
             }).then(function (response) {
-                if (response.data) {
-                    console.log('mail succes');
-                }
-            }).catch(function (error) {
-                console.log('mail error');
-            });
+                if (response.data) {}
+            }).catch(function (error) {});
         },
         clearError: function clearError(key) {
             this.errors[key] = "";

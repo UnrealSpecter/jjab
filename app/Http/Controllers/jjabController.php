@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 
 use Mail;
 
@@ -44,26 +44,37 @@ class jjabController extends Controller
 
         $data = json_decode($request->getContent());
 
-        return response()->json([
-            'name' => 'Abigail',
-            'state' => 'CA'
-        ]);
-
-        $from = "mail-service@dhevak.nl";
+        $email = $data->email;
+        $content = $data->content;
 
         $data = array(
-            'email' => $data->email,
-            'content' => $data->content,
+            'email' => $email,
+            'content' => $content,
         );
 
-        Mail::send("emails.mail", $data, function($message) use ($from, $email, $content) {
+        try {
 
-            $message
-                ->to('info@dhevak.nl', 'JJAB')
-                ->subject('Nieuw vraag van: ' . $email)
-                ->from($from, ' DHEVAK ');
+            Mail::send("emails.mail", $data, function($message) use ($email, $content) {
 
-        });
+                $message
+                    ->to('info@dhevak.nl', 'JJAB')
+                    ->subject('Nieuw vraag van: ' . $email)
+                    ->from($email, ' DHEVAK ');
+
+            });
+
+            return response()->json('mail success', 201);
+
+        }
+        catch (Exception $exception) {
+
+            return response()->json([
+                'status' => 'error',
+                'msg'    => 'Error',
+                'errors' => 'errors',
+            ], 422);
+
+        }
 
     }
 
