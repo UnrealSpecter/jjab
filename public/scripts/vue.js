@@ -50732,7 +50732,7 @@ var render = function() {
         "div",
         {
           staticClass:
-            "invisible rounded-jjab w-full mt-16 bg-jjab-orange text-white w-4/5 tablet-landscape:w-3/4 laptop:w-full p-10 flex-center roboto text-1.25rem tablet-portrait:text-1.5rem tablet-landscape:text-1.75rem text-left desktop:text-2.5rem text-center tracking-loose",
+            "invisible rounded-jjab w-full mt-16 bg-jjab-orange text-white laptop:w-full p-10 flex-center roboto text-1.25rem tablet-portrait:text-1.5rem tablet-landscape:text-1.75rem text-left desktop:text-2.5rem text-center tracking-loose",
           attrs: {
             "data-emergence": "hidden",
             "data-animation": "animated fadeInUp"

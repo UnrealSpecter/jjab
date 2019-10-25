@@ -10,7 +10,7 @@
 
 @screen tablet-landscape {
     .box-title {
-        @apply text-4rem mb-5
+        @apply text-3rem mb-5
     }
 }
 
