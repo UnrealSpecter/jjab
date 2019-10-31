@@ -52690,6 +52690,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
@@ -52727,20 +52729,10 @@ var staticRenderFns = [
               "a",
               {
                 staticClass:
-                  "w-3/12 tracking-2px flex-center text-1.25rem px-1",
-                attrs: { href: "#" }
-              },
-              [_vm._v("JJAB")]
-            ),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                staticClass:
-                  "w-6/12 whitespace-no-wrap mx-3 transition-all-250ms hover:bg-jjab-orange-hover tracking-2px flex-center px-3 text-1rem bg-jjab-orange rounded-full px-5 shadow-md",
+                  "w-9/12 whitespace-no-wrap mx-3 transition-all-250ms hover:bg-jjab-orange-hover tracking-2px flex-center px-3 text-0.75rem bg-jjab-orange rounded-full px-5 shadow-md",
                 attrs: { href: "#mail" }
               },
-              [_vm._v("vraag?")]
+              [_vm._v("ik heb een vraag?")]
             ),
             _vm._v(" "),
             _c(

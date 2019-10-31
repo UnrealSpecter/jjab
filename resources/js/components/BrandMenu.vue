@@ -4,14 +4,16 @@
 
         <!-- mobile -->
         <div class="tablet-portrait:hidden w-full flex flex-row flex-grow justify-between px-1 py-3 h-20">
-            <a href="#" class="w-3/12 tracking-2px flex-center text-1.25rem px-1">JJAB</a>
-            <a href="#mail" class="w-6/12 whitespace-no-wrap mx-3 transition-all-250ms hover:bg-jjab-orange-hover tracking-2px flex-center px-3 text-1rem bg-jjab-orange rounded-full px-5 shadow-md">vraag?</a>
+
+            <a href="#mail" class="w-9/12 whitespace-no-wrap mx-3 transition-all-250ms hover:bg-jjab-orange-hover tracking-2px flex-center px-3 text-0.75rem bg-jjab-orange rounded-full px-5 shadow-md">ik heb een vraag?</a>
+
             <!-- MENU BUTTON -->
             <div id="menu-button" class="flex flex-col justify-center items-center w-3/12">
                 <span class="w-full h-2 mb-2 bg-jjab-orange rounded-jjab"></span>
                 <span class="w-full h-2 mb-2 bg-jjab-orange rounded-jjab"></span>
                 <span class="w-full h-2 bg-jjab-orange rounded-jjab"></span>
             </div>
+
         </div>
 
         <!-- mobile content -->
