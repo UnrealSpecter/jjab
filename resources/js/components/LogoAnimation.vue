@@ -25,7 +25,7 @@
         <!-- <div class="flex flex-col align-center justify-center absolute"> -->
             <h1
                 id="logo-text"
-                class="invisible tracking-2px anton z-50 text-white text-3.5rem tablet-portrait:text-7rem tablet-landscape:text-8rem desktop:text-10rem antialiased subpixel-antialiased">
+                class="invisible tracking-2px anton z-40 text-white text-3.5rem tablet-portrait:text-7rem tablet-landscape:text-8rem desktop:text-10rem antialiased subpixel-antialiased">
                 JJAB
             </h1>
         <!-- </div> -->

@@ -52233,7 +52233,7 @@ var staticRenderFns = [
           "h1",
           {
             staticClass:
-              "invisible tracking-2px anton z-50 text-white text-3.5rem tablet-portrait:text-7rem tablet-landscape:text-8rem desktop:text-10rem antialiased subpixel-antialiased",
+              "invisible tracking-2px anton z-40 text-white text-3.5rem tablet-portrait:text-7rem tablet-landscape:text-8rem desktop:text-10rem antialiased subpixel-antialiased",
             attrs: { id: "logo-text" }
           },
           [_vm._v("\n            JJAB\n        ")]
@@ -52684,6 +52684,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
@@ -52714,13 +52720,14 @@ var staticRenderFns = [
           "div",
           {
             staticClass:
-              "tablet-portrait:hidden w-full flex flex-row flex-grow justify-between px-2 py-3 h-20"
+              "tablet-portrait:hidden w-full flex flex-row flex-grow justify-between px-1 py-3 h-20"
           },
           [
             _c(
               "a",
               {
-                staticClass: " tracking-2px flex-center text-1.25rem px-2",
+                staticClass:
+                  "w-3/12 tracking-2px flex-center text-1.25rem px-1",
                 attrs: { href: "#" }
               },
               [_vm._v("JJAB")]
@@ -52730,10 +52737,31 @@ var staticRenderFns = [
               "a",
               {
                 staticClass:
-                  "whitespace-no-wrap mx-3 transition-all-250ms hover:bg-jjab-orange-hover tracking-2px flex-center px-1 text-0.75rem bg-jjab-orange rounded-full px-5 shadow-md",
+                  "w-6/12 whitespace-no-wrap mx-3 transition-all-250ms hover:bg-jjab-orange-hover tracking-2px flex-center px-3 text-1rem bg-jjab-orange rounded-full px-5 shadow-md",
                 attrs: { href: "#mail" }
               },
-              [_vm._v("Ik heb een vraag?")]
+              [_vm._v("vraag?")]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "flex flex-col justify-center items-center w-3/12",
+                attrs: { id: "menu-button" }
+              },
+              [
+                _c("span", {
+                  staticClass: "w-full h-2 mb-2 bg-jjab-orange rounded-jjab"
+                }),
+                _vm._v(" "),
+                _c("span", {
+                  staticClass: "w-full h-2 mb-2 bg-jjab-orange rounded-jjab"
+                }),
+                _vm._v(" "),
+                _c("span", {
+                  staticClass: "w-full h-2 bg-jjab-orange rounded-jjab"
+                })
+              ]
             )
           ]
         ),
@@ -52753,14 +52781,24 @@ var staticRenderFns = [
           "div",
           {
             staticClass:
-              "hidden tablet-portrait:flex flex-row justify-between flex-grow leading-none py-3 laptop:py-2"
+              "invisible pointer-events-none fixed bg-jjab-purple px-10 top-0 left-0 h-screen w-screen tablet-portrait:flex flex-row justify-between flex-grow leading-none py-3 laptop:py-2",
+            attrs: { id: "menu-items" }
           },
           [
+            _c(
+              "span",
+              {
+                staticClass: "absolute top-0 right-0 p-5 text-3rem",
+                attrs: { id: "close-button" }
+              },
+              [_vm._v("x")]
+            ),
+            _vm._v(" "),
             _c(
               "a",
               {
                 staticClass:
-                  "whitespace-no-wrap tracking-2px h-20 flex-center text-1.25rem tablet-landscape:text-1.75rem laptop:text-2.5rem px-3 tablet-landscape:px-10",
+                  "whitespace-no-wrap tracking-2px h-20 flex-center text-3rem tablet-landscape:text-1.75rem laptop:text-2.5rem px-3 tablet-landscape:px-10",
                 attrs: { href: "#" }
               },
               [_vm._v("JJAB")]
@@ -52770,7 +52808,7 @@ var staticRenderFns = [
               "a",
               {
                 staticClass:
-                  "whitespace-no-wrap tracking-2px h-20 flex-center text-1rem tablet-landscape:text-1rem laptop:text-1.75rem  ",
+                  "whitespace-no-wrap tracking-2px h-20 flex-center text-1.75rem tablet-landscape:text-1rem laptop:text-1.75rem  ",
                 attrs: { href: "#kennisbank" }
               },
               [_vm._v("Kennisbank")]
@@ -52780,7 +52818,7 @@ var staticRenderFns = [
               "a",
               {
                 staticClass:
-                  "whitespace-no-wrap tracking-2px h-20 flex-center text-1rem tablet-landscape:text-1rem laptop:text-1.75rem  ",
+                  "whitespace-no-wrap tracking-2px h-20 flex-center text-1.75rem tablet-landscape:text-1rem laptop:text-1.75rem  ",
                 attrs: { href: "#wie-zijn-wij" }
               },
               [_vm._v("Wie zijn wij?")]
@@ -52790,7 +52828,7 @@ var staticRenderFns = [
               "a",
               {
                 staticClass:
-                  "whitespace-no-wrap transition-all-250ms hover:bg-jjab-orange-hover tracking-2px h-20 flex-center text-1rem tablet-landscape:text-1rem laptop:text-1.75rem  bg-jjab-orange rounded-full px-5 tablet-landscape:px-10 shadow-md",
+                  "whitespace-no-wrap transition-all-250ms order-last hover:bg-jjab-orange-hover tracking-2px h-20 flex-center text-1.75rem tablet-landscape:text-1rem laptop:text-1.75rem  bg-jjab-orange rounded-full px-5 tablet-landscape:px-10 shadow-md",
                 attrs: { href: "#mail" }
               },
               [_vm._v("ik heb een vraag")]
@@ -52800,7 +52838,7 @@ var staticRenderFns = [
               "a",
               {
                 staticClass:
-                  "whitespace-no-wrap tracking-2px h-20 flex-center text-1rem tablet-landscape:text-1rem laptop:text-1.75rem ",
+                  "whitespace-no-wrap tracking-2px h-20 flex-center text-1.75rem tablet-landscape:text-1rem laptop:text-1.75rem ",
                 attrs: { href: "#app-ons" }
               },
               [_vm._v("contact")]
