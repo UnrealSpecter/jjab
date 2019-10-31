@@ -10,4 +10,4 @@
 
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
-<title>Stichting Jeugd Juridisch Advies Bureau ( JJAB ) biedt alle jongeren tussen de 12 en 27</title>
+<title>Gratis juridisch advies | Jongeren tussen de 12 en 27 jaar |  Jeugd Juridisch Advies Bureau ( JJAB )</title>

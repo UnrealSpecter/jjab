@@ -52687,11 +52687,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
@@ -52738,42 +52733,32 @@ var staticRenderFns = [
             _c(
               "div",
               {
-                staticClass: "flex flex-col justify-center items-center w-3/12",
+                staticClass:
+                  "flex flex-col justify-center items-center py-2 w-3/12",
                 attrs: { id: "menu-button" }
               },
               [
                 _c("span", {
-                  staticClass: "w-full h-2 mb-2 bg-jjab-orange rounded-jjab"
+                  staticClass: "w-full h-3 mb-2 bg-jjab-orange rounded-jjab"
                 }),
                 _vm._v(" "),
                 _c("span", {
-                  staticClass: "w-full h-2 mb-2 bg-jjab-orange rounded-jjab"
+                  staticClass: "w-full h-3 mb-2 bg-jjab-orange rounded-jjab"
                 }),
                 _vm._v(" "),
                 _c("span", {
-                  staticClass: "w-full h-2 bg-jjab-orange rounded-jjab"
+                  staticClass: "w-full h-3 bg-jjab-orange rounded-jjab"
                 })
               ]
             )
           ]
         ),
         _vm._v(" "),
-        _c("div", { staticClass: "mobile flex flex-col hidden" }, [
-          _c(
-            "a",
-            {
-              staticClass: "tracking-2px h-20 flex-center text-3rem px-10",
-              attrs: { href: "#" }
-            },
-            [_vm._v("JJAB")]
-          )
-        ]),
-        _vm._v(" "),
         _c(
           "div",
           {
             staticClass:
-              "invisible pointer-events-none fixed tablet-portrait:relative tablet-portrait:visible bg-jjab-purple tablet-portrait:bg-transparent px-10 tablet-portrait:px-2 top-0 left-0 h-screen w-screen tablet-portrait:h-auto tablet-portrait:w-full tablet-portrait:flex flex-row justify-between flex-grow leading-none py-3 laptop:py-2",
+              "invisible pointer-events-none fixed tablet-portrait:relative tablet-portrait:visible bg-jjab-purple tablet-portrait:bg-transparent px-10 tablet-portrait:px-2 top-0 left-0 h-screen w-screen tablet-portrait:h-auto tablet-portrait:w-full tablet-portrait:flex flex-row justify-between flex-grow leading-none tablet-portrait:py-3 laptop:py-2",
             attrs: { id: "menu-items" }
           },
           [
@@ -52781,7 +52766,7 @@ var staticRenderFns = [
               "span",
               {
                 staticClass:
-                  "absolute top-0 right-0 p-5 text-3rem tablet-portrait:hidden",
+                  "absolute h-24 top-0 right-0 flex-center text-3rem tablet-portrait:hidden mr-5",
                 attrs: { id: "close-button" }
               },
               [_vm._v("x")]
@@ -52791,7 +52776,7 @@ var staticRenderFns = [
               "a",
               {
                 staticClass:
-                  "whitespace-no-wrap tracking-2px h-20 flex-center text-3rem tablet-portrait:text-1.25rem tablet-landscape:text-1.75rem laptop:text-2.5rem px-3 tablet-landscape:px-10",
+                  "whitespace-no-wrap tracking-2px h-24 tablet-portret:h-20 flex-center text-3rem tablet-portrait:text-1.25rem tablet-landscape:text-1.75rem laptop:text-2.5rem px-3 tablet-landscape:px-10",
                 attrs: { href: "#" }
               },
               [_vm._v("JJAB")]
@@ -52801,7 +52786,7 @@ var staticRenderFns = [
               "a",
               {
                 staticClass:
-                  "whitespace-no-wrap tracking-2px h-20 flex-center tablet-portrait:text-1rem text-1.75rem tablet-landscape:text-1rem laptop:text-1.75rem  ",
+                  "whitespace-no-wrap tracking-2px h-16 tablet-portret:h-20 flex-center tablet-portrait:text-1rem text-1.75rem tablet-landscape:text-1rem laptop:text-1.75rem  ",
                 attrs: { href: "#kennisbank" }
               },
               [_vm._v("Kennisbank")]
@@ -52811,7 +52796,7 @@ var staticRenderFns = [
               "a",
               {
                 staticClass:
-                  "whitespace-no-wrap tracking-2px h-20 flex-center text-1.75rem tablet-portrait:text-1rem tablet-landscape:text-1rem laptop:text-1.75rem  ",
+                  "whitespace-no-wrap tracking-2px h-16 tablet-portret:h-20 flex-center text-1.75rem tablet-portrait:text-1rem tablet-landscape:text-1rem laptop:text-1.75rem  ",
                 attrs: { href: "#wie-zijn-wij" }
               },
               [_vm._v("Wie zijn wij?")]
@@ -52821,7 +52806,7 @@ var staticRenderFns = [
               "a",
               {
                 staticClass:
-                  "whitespace-no-wrap transition-all-250ms hover:bg-jjab-orange-hover tracking-2px h-20 flex-center text-1.75rem tablet-portrait:text-1rem tablet-landscape:text-1rem laptop:text-1.75rem  bg-jjab-orange rounded-full px-5 tablet-landscape:px-10 shadow-md",
+                  "whitespace-no-wrap transition-all-250ms hover:bg-jjab-orange-hover tracking-2px h-16 tablet-portret:h-20 flex-center text-1.75rem tablet-portrait:text-1rem tablet-landscape:text-1rem laptop:text-1.75rem  bg-jjab-orange rounded-full px-5 tablet-landscape:px-10 shadow-md",
                 attrs: { href: "#mail" }
               },
               [_vm._v("ik heb een vraag")]
@@ -52831,7 +52816,7 @@ var staticRenderFns = [
               "a",
               {
                 staticClass:
-                  "whitespace-no-wrap tracking-2px h-20 flex-center text-1.75rem tablet-portrait:text-1rem tablet-landscape:text-1rem laptop:text-1.75rem ",
+                  "whitespace-no-wrap tracking-2px h-16 tablet-portret:h-20 flex-center text-1.75rem tablet-portrait:text-1rem tablet-landscape:text-1rem laptop:text-1.75rem ",
                 attrs: { href: "#app-ons" }
               },
               [_vm._v("contact")]
