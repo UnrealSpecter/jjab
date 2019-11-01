@@ -22,7 +22,7 @@
             <a href="#" class="whitespace-no-wrap tracking-2px h-24 tablet-portrait:h-20 flex-center text-3rem tablet-portrait:text-1.25rem tablet-landscape:text-1.75rem laptop:text-2.5rem px-3 tablet-landscape:px-10">JJAB</a>
             <a href="#kennisbank" class="whitespace-no-wrap tracking-2px h-16 tablet-portrait:h-20 flex-center tablet-portrait:text-1rem text-1.75rem tablet-landscape:text-1rem laptop:text-1.75rem  ">Kennisbank</a>
             <a href="#wie-zijn-wij" class="whitespace-no-wrap tracking-2px h-16 tablet-portrait:h-20 flex-center text-1.75rem tablet-portrait:text-1rem tablet-landscape:text-1rem laptop:text-1.75rem  ">Wie zijn wij?</a>
-            <a href="#mail" class="whitespace-no-wrap hover:bg-jjab-orange-hover tracking-2px h-16 tablet-portrait:h-20 flex-center text-1.75rem tablet-portrait:text-1rem tablet-landscape:text-1rem laptop:text-1.75rem  bg-jjab-orange rounded-full px-5 tablet-landscape:px-10 shadow-md">ik heb een vraag!</a>
+            <a href="#mail" class="whitespace-no-wrap hover:bg-jjab-orange-hover tracking-2px h-16 tablet-portrait:h-20 flex-center text-1.75rem tablet-portrait:text-1rem tablet-landscape:text-1rem laptop:text-1.75rem bg-jjab-orange rounded-full px-5 tablet-landscape:px-10 shadow-md">ik heb een vraag!</a>
             <a href="#app-ons" class="whitespace-no-wrap tracking-2px h-16 tablet-portrait:h-20 flex-center text-1.75rem tablet-portrait:text-1rem tablet-landscape:text-1rem laptop:text-1.75rem ">contact</a>
         </div>
 

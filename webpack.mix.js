@@ -16,7 +16,10 @@ mix.js('resources/js/vue.js', 'public/scripts')
     .postCss('resources/sass/tailwind.css', 'public/styles/tailwind.css', [
             require('postcss-import'),
             require('tailwindcss'),
-    ]);
+    ])
+    .browserSync({
+        proxy: 'jjab.test'
+    });
     // .sass('resources/sass/tailwind.scss', 'public/styles')
     // // .sass('resources/sass/hamburgers/hamburgers.scss', 'public/styles')
     // .tailwind();

@@ -52882,7 +52882,7 @@ var staticRenderFns = [
               "a",
               {
                 staticClass:
-                  "whitespace-no-wrap hover:bg-jjab-orange-hover tracking-2px h-16 tablet-portrait:h-20 flex-center text-1.75rem tablet-portrait:text-1rem tablet-landscape:text-1rem laptop:text-1.75rem  bg-jjab-orange rounded-full px-5 tablet-landscape:px-10 shadow-md",
+                  "whitespace-no-wrap hover:bg-jjab-orange-hover tracking-2px h-16 tablet-portrait:h-20 flex-center text-1.75rem tablet-portrait:text-1rem tablet-landscape:text-1rem laptop:text-1.75rem bg-jjab-orange rounded-full px-5 tablet-landscape:px-10 shadow-md",
                 attrs: { href: "#mail" }
               },
               [_vm._v("ik heb een vraag!")]
