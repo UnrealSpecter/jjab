@@ -9,7 +9,7 @@
             <img alt="een afbeelding van een smartphone" class="absolute h-full animated no-drag" src="/images/smartphone-render.svg">
 
             <!-- SOCIAL -->
-            <div class="w-3/5 phone-landscape:w-1/3 tablet-landscape:w-1/2 top-0 pt-100px tablet-portrait:pt-200px laptop:w-1/4 laptop:pt-200px desktop:pt-250px absolute">
+            <div class="w-3/5 phone-landscape:w-1/3 tablet-portrait:w-1/2 top-0 pt-100px tablet-portrait:pt-200px laptop:w-1/4 laptop:pt-200px desktop:pt-250px absolute">
 
                 <div class="flex flex-row justify-center items-center mb-5">
                     <a class="w-1/3" href="https://www.facebook.com/stichtingjjab/" target="_blank">

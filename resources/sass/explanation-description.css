@@ -1,5 +1,5 @@
 .explanation-description {
-    @apply text-white leading-tight
+    @apply text-white leading-tight mt-5 text-1rem
 }
 
 @screen tablet-portrait {
@@ -16,6 +16,6 @@
 
 @screen laptop {
     .explanation-description {
-        @apply
+
     }
 }

@@ -12667,7 +12667,9 @@ video {
 
 .explanation-description {
   color: #fff;
-  line-height: 1.25
+  line-height: 1.25;
+  margin-top: 1.25rem;
+  font-size: 1rem
 }
 
 @media (min-width: 768px) {

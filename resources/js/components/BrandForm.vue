@@ -38,13 +38,23 @@
             </p>
 
             <!-- SUBMIT -->
-            <input
-                data-emergence="hidden"
-                data-animation="animated fadeInUp"
-                class="invisible button purple anton"
-                type="submit"
-                value="help!"
-                @click.prevent="submit()" >
+            <div class="relative w-full flex flex-row justify-end items-center text-jjab-purple">
+
+                <p v-if="mailSent" class="text-error anton">
+                    <i class="fas fa-check mr-5"></i> hulp is onderweg!
+                </p>
+
+                <button
+                    v-if="!mailSent"
+                    id="submit-button"
+                    data-emergence="hidden"
+                    data-animation="animated fadeInUp"
+                    class="invisible button purple anton"
+                    @click.prevent="submit()">
+                    help!
+                </button>
+
+            </div>
 
         </form>
 
@@ -63,6 +73,7 @@
                 },
                 errors: {
                 },
+                mailSent: false
             }
         },
         methods: {
@@ -72,6 +83,9 @@
                     this.send();
                 }
 
+            },
+            updateMailStatus(){
+                this.mailSent = true;
             },
             validate: function(){
 
@@ -89,18 +103,17 @@
 
             },
             send: function(){
-                
+
+                const vm = this;
+
                 axios.post('/mail', {
                     email: this.data.email,
                     content: this.data.content
                 })
                 .then(function (response) {
-                    if(response.data){
-
-                    }
+                    vm.mailSent = true;
                 })
                 .catch(function(error) {
-
                 });
             },
             clearError: function(key){

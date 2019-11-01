@@ -50706,9 +50706,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 
@@ -50732,26 +50729,15 @@ var render = function() {
         "div",
         {
           staticClass:
-            "invisible rounded-jjab w-full mt-16 bg-jjab-orange text-white laptop:w-full p-10 flex-center roboto text-1.25rem tablet-portrait:text-1.5rem tablet-landscape:text-1.75rem text-left desktop:text-2.5rem text-center tracking-loose",
-          attrs: {
-            "data-emergence": "hidden",
-            "data-animation": "animated fadeInUp"
-          }
-        },
-        [_c("h1", { staticClass: "anton" }, [_vm._v(_vm._s(_vm.subtitle))])]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass:
-            "invisible rounded-jjab my-16 w-full bg-jjab-orange text-white p-10 flex-center roboto text-1.25rem tablet-portrait:text-1.5rem tablet-landscape:text-1.75rem text-left desktop:text-2.5rem text-center tracking-loose",
+            "invisible rounded-jjab w-full my-16 bg-jjab-orange text-white laptop:w-full p-10 flex flex-col justify-center items-center roboto text-1.25rem tablet-portrait:text-1.5rem tablet-landscape:text-1.75rem text-left desktop:text-2.5rem text-center tracking-loose",
           attrs: {
             "data-emergence": "hidden",
             "data-animation": "animated fadeInUp"
           }
         },
         [
+          _c("h1", { staticClass: "anton" }, [_vm._v(_vm._s(_vm.subtitle))]),
+          _vm._v(" "),
           _c("p", { staticClass: "explanation-description roboto" }, [
             _vm._v(_vm._s(_vm.description))
           ])
@@ -51350,6 +51336,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -51359,7 +51355,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 email: '',
                 content: ''
             },
-            errors: {}
+            errors: {},
+            mailSent: false
         };
     },
     methods: {
@@ -51369,6 +51366,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 this.send();
             }
         },
+        updateMailStatus: function updateMailStatus() {
+            this.mailSent = true;
+        },
+
         validate: function validate() {
 
             this.errors = {};
@@ -51385,11 +51386,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         },
         send: function send() {
 
+            var vm = this;
+
             axios.post('/mail', {
                 email: this.data.email,
                 content: this.data.content
             }).then(function (response) {
-                if (response.data) {}
+                vm.mailSent = true;
             }).catch(function (error) {});
         },
         clearError: function clearError(key) {
@@ -51505,21 +51508,42 @@ var render = function() {
               ])
             : _vm._e(),
           _vm._v(" "),
-          _c("input", {
-            staticClass: "invisible button purple anton",
-            attrs: {
-              "data-emergence": "hidden",
-              "data-animation": "animated fadeInUp",
-              type: "submit",
-              value: "help!"
+          _c(
+            "div",
+            {
+              staticClass:
+                "relative w-full flex flex-row justify-end items-center text-jjab-purple"
             },
-            on: {
-              click: function($event) {
-                $event.preventDefault()
-                return _vm.submit()
-              }
-            }
-          })
+            [
+              _vm.mailSent
+                ? _c("p", { staticClass: "text-error anton" }, [
+                    _c("i", { staticClass: "fas fa-check mr-5" }),
+                    _vm._v(" hulp is onderweg!\n            ")
+                  ])
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.mailSent
+                ? _c(
+                    "button",
+                    {
+                      staticClass: "invisible button purple anton",
+                      attrs: {
+                        id: "submit-button",
+                        "data-emergence": "hidden",
+                        "data-animation": "animated fadeInUp"
+                      },
+                      on: {
+                        click: function($event) {
+                          $event.preventDefault()
+                          return _vm.submit()
+                        }
+                      }
+                    },
+                    [_vm._v("\n                help!\n            ")]
+                  )
+                : _vm._e()
+            ]
+          )
         ]
       )
     ]
@@ -52456,7 +52480,7 @@ var staticRenderFns = [
           "div",
           {
             staticClass:
-              "w-3/5 phone-landscape:w-1/3 tablet-landscape:w-1/2 top-0 pt-100px tablet-portrait:pt-200px laptop:w-1/4 laptop:pt-200px desktop:pt-250px absolute"
+              "w-3/5 phone-landscape:w-1/3 tablet-portrait:w-1/2 top-0 pt-100px tablet-portrait:pt-200px laptop:w-1/4 laptop:pt-200px desktop:pt-250px absolute"
           },
           [
             _c(
@@ -52727,7 +52751,7 @@ var staticRenderFns = [
                   "w-9/12 whitespace-no-wrap mx-3 transition-all-250ms hover:bg-jjab-orange-hover tracking-2px flex-center px-3 text-0.75rem bg-jjab-orange rounded-full px-5 shadow-md",
                 attrs: { href: "#mail" }
               },
-              [_vm._v("ik heb een vraag?")]
+              [_vm._v("ik heb een vraag!")]
             ),
             _vm._v(" "),
             _c(
@@ -52758,8 +52782,8 @@ var staticRenderFns = [
           "div",
           {
             staticClass:
-              "invisible pointer-events-none fixed tablet-portrait:relative tablet-portrait:visible bg-jjab-purple tablet-portrait:bg-transparent px-10 tablet-portrait:px-2 top-0 left-0 h-screen w-screen tablet-portrait:h-auto tablet-portrait:w-full tablet-portrait:flex flex-row justify-between flex-grow leading-none tablet-portrait:py-3 laptop:py-2",
-            attrs: { id: "menu-items" }
+              "invisible pointer-events-none tablet-portrait:visible tablet-portrait:pointer-events-auto fixed tablet-portrait:relative tablet-portrait:visible bg-jjab-purple tablet-portrait:bg-transparent px-10 tablet-portrait:px-2 top-0 left-0 h-screen w-screen tablet-portrait:h-auto tablet-portrait:w-full tablet-portrait:flex flex-row justify-between flex-grow leading-none tablet-portrait:py-3 laptop:py-2",
+            attrs: { id: "menu-wrapper" }
           },
           [
             _c(
@@ -52776,7 +52800,7 @@ var staticRenderFns = [
               "a",
               {
                 staticClass:
-                  "whitespace-no-wrap tracking-2px h-24 tablet-portret:h-20 flex-center text-3rem tablet-portrait:text-1.25rem tablet-landscape:text-1.75rem laptop:text-2.5rem px-3 tablet-landscape:px-10",
+                  "whitespace-no-wrap tracking-2px h-24 tablet-portrait:h-20 flex-center text-3rem tablet-portrait:text-1.25rem tablet-landscape:text-1.75rem laptop:text-2.5rem px-3 tablet-landscape:px-10",
                 attrs: { href: "#" }
               },
               [_vm._v("JJAB")]
@@ -52786,7 +52810,7 @@ var staticRenderFns = [
               "a",
               {
                 staticClass:
-                  "whitespace-no-wrap tracking-2px h-16 tablet-portret:h-20 flex-center tablet-portrait:text-1rem text-1.75rem tablet-landscape:text-1rem laptop:text-1.75rem  ",
+                  "whitespace-no-wrap tracking-2px h-16 tablet-portrait:h-20 flex-center tablet-portrait:text-1rem text-1.75rem tablet-landscape:text-1rem laptop:text-1.75rem  ",
                 attrs: { href: "#kennisbank" }
               },
               [_vm._v("Kennisbank")]
@@ -52796,7 +52820,7 @@ var staticRenderFns = [
               "a",
               {
                 staticClass:
-                  "whitespace-no-wrap tracking-2px h-16 tablet-portret:h-20 flex-center text-1.75rem tablet-portrait:text-1rem tablet-landscape:text-1rem laptop:text-1.75rem  ",
+                  "whitespace-no-wrap tracking-2px h-16 tablet-portrait:h-20 flex-center text-1.75rem tablet-portrait:text-1rem tablet-landscape:text-1rem laptop:text-1.75rem  ",
                 attrs: { href: "#wie-zijn-wij" }
               },
               [_vm._v("Wie zijn wij?")]
@@ -52806,17 +52830,17 @@ var staticRenderFns = [
               "a",
               {
                 staticClass:
-                  "whitespace-no-wrap transition-all-250ms hover:bg-jjab-orange-hover tracking-2px h-16 tablet-portret:h-20 flex-center text-1.75rem tablet-portrait:text-1rem tablet-landscape:text-1rem laptop:text-1.75rem  bg-jjab-orange rounded-full px-5 tablet-landscape:px-10 shadow-md",
+                  "whitespace-no-wrap hover:bg-jjab-orange-hover tracking-2px h-16 tablet-portrait:h-20 flex-center text-1.75rem tablet-portrait:text-1rem tablet-landscape:text-1rem laptop:text-1.75rem  bg-jjab-orange rounded-full px-5 tablet-landscape:px-10 shadow-md",
                 attrs: { href: "#mail" }
               },
-              [_vm._v("ik heb een vraag")]
+              [_vm._v("ik heb een vraag!")]
             ),
             _vm._v(" "),
             _c(
               "a",
               {
                 staticClass:
-                  "whitespace-no-wrap tracking-2px h-16 tablet-portret:h-20 flex-center text-1.75rem tablet-portrait:text-1rem tablet-landscape:text-1rem laptop:text-1.75rem ",
+                  "whitespace-no-wrap tracking-2px h-16 tablet-portrait:h-20 flex-center text-1.75rem tablet-portrait:text-1rem tablet-landscape:text-1rem laptop:text-1.75rem ",
                 attrs: { href: "#app-ons" }
               },
               [_vm._v("contact")]
