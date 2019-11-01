@@ -44,15 +44,24 @@
                     <i class="fas fa-check mr-5"></i> hulp is onderweg!
                 </p>
 
-                <button
+                <div
                     v-if="!mailSent"
                     id="submit-button"
                     data-emergence="hidden"
                     data-animation="animated fadeInUp"
                     class="invisible button purple anton"
                     @click.prevent="submit()">
-                    help!
-                </button>
+
+                    <span v-if="!mailSending">help!</span>
+
+                    <div v-if="mailSending" class="flex flex-row flex-no-wrap">
+                        sending
+                        <div class="animated bounce slow infinite delay-100ms">.</div>
+                        <div class="animated bounce slow infinite delay-200ms">.</div>
+                        <div class="animated bounce slow infinite delay-300ms">.</div>
+                    </div>
+
+                </div>
 
             </div>
 
@@ -73,7 +82,8 @@
                 },
                 errors: {
                 },
-                mailSent: false
+                mailSent: false,
+                mailSending: false,
             }
         },
         methods: {
@@ -103,7 +113,7 @@
 
             },
             send: function(){
-
+                this.mailSending = true;
                 const vm = this;
 
                 axios.post('/mail', {

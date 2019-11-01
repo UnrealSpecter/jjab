@@ -51346,6 +51346,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -51356,7 +51365,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 content: ''
             },
             errors: {},
-            mailSent: false
+            mailSent: false,
+            mailSending: false
         };
     },
     methods: {
@@ -51385,7 +51395,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             return errorCount >= 1 ? false : true;
         },
         send: function send() {
-
+            this.mailSending = true;
             var vm = this;
 
             axios.post('/mail', {
@@ -51524,7 +51534,7 @@ var render = function() {
               _vm._v(" "),
               !_vm.mailSent
                 ? _c(
-                    "button",
+                    "div",
                     {
                       staticClass: "invisible button purple anton",
                       attrs: {
@@ -51539,7 +51549,49 @@ var render = function() {
                         }
                       }
                     },
-                    [_vm._v("\n                help!\n            ")]
+                    [
+                      !_vm.mailSending
+                        ? _c("span", [_vm._v("help!")])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.mailSending
+                        ? _c(
+                            "div",
+                            { staticClass: "flex flex-row flex-no-wrap" },
+                            [
+                              _vm._v(
+                                "\n                    sending\n                    "
+                              ),
+                              _c(
+                                "div",
+                                {
+                                  staticClass:
+                                    "animated bounce slow infinite delay-100ms"
+                                },
+                                [_vm._v(".")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                {
+                                  staticClass:
+                                    "animated bounce slow infinite delay-200ms"
+                                },
+                                [_vm._v(".")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                {
+                                  staticClass:
+                                    "animated bounce slow infinite delay-300ms"
+                                },
+                                [_vm._v(".")]
+                              )
+                            ]
+                          )
+                        : _vm._e()
+                    ]
                   )
                 : _vm._e()
             ]
