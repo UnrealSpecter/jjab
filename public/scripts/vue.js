@@ -50736,7 +50736,7 @@ var render = function() {
           }
         },
         [
-          _c("h1", { staticClass: "anton" }, [_vm._v(_vm._s(_vm.subtitle))]),
+          _c("h2", { staticClass: "anton" }, [_vm._v(_vm._s(_vm.subtitle))]),
           _vm._v(" "),
           _c("p", { staticClass: "explanation-description roboto" }, [
             _vm._v(_vm._s(_vm.description))
@@ -50846,7 +50846,7 @@ var render = function() {
       }
     },
     [
-      _c("h1", { staticClass: "box-title anton" }, [
+      _c("h2", { staticClass: "box-title anton" }, [
         _vm._v("Heb jij Juridisch Advies Nodig?")
       ]),
       _vm._v(" "),
@@ -51090,6 +51090,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
@@ -51110,8 +51112,7 @@ var render = function() {
         "data-animation": "animated fadeInUp"
       }
     },
-    [_vm._t("default")],
-    2
+    [_c("h1", [_vm._t("default")], 2)]
   )
 }
 var staticRenderFns = []
@@ -51209,7 +51210,7 @@ var render = function() {
       }
     },
     [
-      _c("h1", { staticClass: "box-title anton" }, [
+      _c("h3", { staticClass: "box-title anton" }, [
         _vm._v(_vm._s(_vm.subtitle))
       ]),
       _vm._v(" "),
@@ -51710,7 +51711,7 @@ var render = function() {
     },
     [
       _c(
-        "h1",
+        "h2",
         {
           staticClass:
             "invisible text-2.5rem whitespace-no-wrap tablet-portrait:text-5rem laptop:text-6rem text-jjab-purple text-center anton",
@@ -51955,7 +51956,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "h1",
+    "h2",
     {
       staticClass: "invisible anton brand-title",
       attrs: {
@@ -52218,14 +52219,6 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //

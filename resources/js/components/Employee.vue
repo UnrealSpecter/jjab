@@ -3,7 +3,7 @@
     <div class="w-4/5 tablet-landscape:w-3/4 laptop:w-full wrapper flex flex-col mb-16">
 
         <!-- NAME -->
-        <h1 data-emergence="hidden" data-animation="animated fadeInUp" class="invisible text-2.5rem whitespace-no-wrap tablet-portrait:text-5rem laptop:text-6rem text-jjab-purple text-center anton">{{ employee.name }}</h1>
+        <h2 data-emergence="hidden" data-animation="animated fadeInUp" class="invisible text-2.5rem whitespace-no-wrap tablet-portrait:text-5rem laptop:text-6rem text-jjab-purple text-center anton">{{ employee.name }}</h2>
 
         <div data-emergence="hidden" data-animation="animated fadeInUp" class="invisible">
 

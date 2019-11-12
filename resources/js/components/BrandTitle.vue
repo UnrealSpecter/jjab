@@ -1,8 +1,8 @@
 <template>
 
-    <h1 :id="`${ id }`" data-emergence="hidden" data-animation="animated fadeInUp" class="invisible anton brand-title">
+    <h2 :id="`${ id }`" data-emergence="hidden" data-animation="animated fadeInUp" class="invisible anton brand-title">
         <slot></slot>
-    </h1>
+    </h2>
 
 </template>
 
