@@ -10,7 +10,6 @@
     <script src="{{ asset('scripts/menu.js') }}"></script>
 
     <!-- ANALYTICS -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118817546-1"></script>
     <script src="{{ asset('plugins/google-analytics/script.js') }}"></script>
 
     @yield('additional-scripts')

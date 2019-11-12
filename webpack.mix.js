@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+require('laravel-mix-purgecss');
 
 // require('laravel-mix-tailwind');
 /*
@@ -14,12 +15,8 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/vue.js', 'public/scripts')
     .postCss('resources/sass/tailwind.css', 'public/styles/tailwind.css', [
-            require('postcss-import'),
-            require('tailwindcss'),
+        require('postcss-import'),
+        require('tailwindcss'),
+        require('autoprefixer'),
     ])
-    .browserSync({
-        proxy: 'jjab.test'
-    });
-    // .sass('resources/sass/tailwind.scss', 'public/styles')
-    // // .sass('resources/sass/hamburgers/hamburgers.scss', 'public/styles')
-    // .tailwind();
+    .purgeCss();

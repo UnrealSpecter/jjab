@@ -52853,7 +52853,7 @@ var staticRenderFns = [
               {
                 staticClass:
                   "whitespace-no-wrap tracking-2px h-24 tablet-portrait:h-20 flex-center text-3rem tablet-portrait:text-1.25rem tablet-landscape:text-1.75rem laptop:text-2.5rem px-3 tablet-landscape:px-10",
-                attrs: { href: "#" }
+                attrs: { href: "#jurdisch-advies-jongeren" }
               },
               [_vm._v("JJAB")]
             ),
