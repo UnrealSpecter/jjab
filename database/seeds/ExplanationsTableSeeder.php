@@ -12,73 +12,65 @@ class ExplanationsTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('explanations')->delete();
-
+        
         \DB::table('explanations')->insert(array (
-            0 =>
+            0 => 
             array (
                 'id' => 1,
-                'title' => 'Huisvesting',
-                'subtitle' => 'Wat houdt huurrecht precies in?',
-                'description' => 'Het huurrecht betreft het samenstel van regels op het gebied van huur. Huur is de overeenkomst waarbij de verhuurder de verplichting op zich neemt aan de huurder een zaak of gedeelte daarvan in gebruik te verstrekken, en de huurder zich verbindt tot een tegenprestatie. Vaak wordt het huurrecht in verband gebracht met de verhuur van huizen of kamers. Het huurrecht is echter ook van toepassing op het huren van een fiets of een auto.',
-                'video' => '',
+                'title' => 'Arbeidsrecht',
+                'subtitle' => 'Wanneer heb ik te maken met arbeidsrecht?',
+            'description' => 'Je hebt te maken met arbeidsrecht wanneer je aan het werk bent voor een werkgever. Het kan ook zijn dat je ziek bent en hierdoor (tijdelijk) niet aan het werk kunt.',
+                'video' => NULL,
                 'created_at' => '2019-10-07 12:55:00',
-                'updated_at' => '2019-10-08 09:39:08',
+                'updated_at' => '2019-10-31 12:55:48',
             ),
-            1 =>
-            array (
-                'id' => 2,
-                'title' => 'Werk & Inkomen',
-                'subtitle' => 'Wat houdt huurrecht precies in?',
-                'description' => 'Het huurrecht betreft het samenstel van regels op het gebied van huur. Huur is de overeenkomst waarbij de verhuurder de verplichting op zich neemt aan de huurder een zaak of gedeelte daarvan in gebruik te verstrekken, en de huurder zich verbindt tot een tegenprestatie. Vaak wordt het huurrecht in verband gebracht met de verhuur van huizen of kamers. Het huurrecht is echter ook van toepassing op het huren van een fiets of een auto.',
-                'video' => '',
-                'created_at' => '2019-10-07 12:55:00',
-                'updated_at' => '2019-10-08 09:39:08',
-            ),
-            2 =>
+            1 => 
             array (
                 'id' => 3,
                 'title' => 'Zorg',
-                'subtitle' => 'Wat houdt huurrecht precies in?',
-                'description' => 'Het huurrecht betreft het samenstel van regels op het gebied van huur. Huur is de overeenkomst waarbij de verhuurder de verplichting op zich neemt aan de huurder een zaak of gedeelte daarvan in gebruik te verstrekken, en de huurder zich verbindt tot een tegenprestatie. Vaak wordt het huurrecht in verband gebracht met de verhuur van huizen of kamers. Het huurrecht is echter ook van toepassing op het huren van een fiets of een auto.',
-                'video' => '',
+                'subtitle' => 'Welke juridische vragen zou je kunnen hebben zorg?',
+                'description' => 'Je zou kunnen denken aan problemen met je zorgverzekering. Je krijgt iets niet vergoed en je begrijpt niet waarom. Of je woont in een zorginstelling en je indicatie wordt niet verlengt. Met al deze vragen kunnen wij je verder helpen.',
+                'video' => NULL,
                 'created_at' => '2019-10-07 12:55:00',
-                'updated_at' => '2019-10-08 09:39:08',
+                'updated_at' => '2019-10-31 12:52:43',
             ),
-            3 =>
+            2 => 
             array (
                 'id' => 4,
-                'title' => 'School',
-                'subtitle' => 'Wat houdt huurrecht precies in?',
-                'description' => 'Het huurrecht betreft het samenstel van regels op het gebied van huur. Huur is de overeenkomst waarbij de verhuurder de verplichting op zich neemt aan de huurder een zaak of gedeelte daarvan in gebruik te verstrekken, en de huurder zich verbindt tot een tegenprestatie. Vaak wordt het huurrecht in verband gebracht met de verhuur van huizen of kamers. Het huurrecht is echter ook van toepassing op het huren van een fiets of een auto.',
-                'video' => '',
+                'title' => 'Ondernemers',
+                'subtitle' => 'Plannen om een bedrijf te starten?',
+                'description' => 'Heb je plannen om je eigen bedrijf te beginnen, maar weet je niet waarmee je te maken hebt?
+of wil je een vergunning aan vragen maar weet je niet hoe? Dan kun je bij ons terecht met je vragen.',
+                'video' => NULL,
                 'created_at' => '2019-10-07 12:55:00',
-                'updated_at' => '2019-10-08 09:39:08',
+                'updated_at' => '2019-10-31 12:49:41',
             ),
-            4 =>
+            3 => 
             array (
                 'id' => 5,
                 'title' => 'Huurrecht',
-                'subtitle' => 'Wat houdt huurrecht precies in?',
-                'description' => 'Het huurrecht betreft het samenstel van regels op het gebied van huur. Huur is de overeenkomst waarbij de verhuurder de verplichting op zich neemt aan de huurder een zaak of gedeelte daarvan in gebruik te verstrekken, en de huurder zich verbindt tot een tegenprestatie. Vaak wordt het huurrecht in verband gebracht met de verhuur van huizen of kamers. Het huurrecht is echter ook van toepassing op het huren van een fiets of een auto.',
-                'video' => '',
+                'subtitle' => 'Wat is huurrecht?',
+                'description' => 'Woon je op kamers of woon je in een huurhuis? Alles met betrekking tot de overeenkomst tussen jou en je huurbaas valt onder het huurrecht.',
+                'video' => NULL,
                 'created_at' => '2019-10-07 12:55:00',
-                'updated_at' => '2019-10-08 09:39:08',
+                'updated_at' => '2019-10-31 12:47:40',
             ),
-            5 =>
+            4 => 
             array (
                 'id' => 6,
-                'title' => 'Bemiddeling',
-                'subtitle' => 'Wat houdt huurrecht precies in?',
-                'description' => 'Het huurrecht betreft het samenstel van regels op het gebied van huur. Huur is de overeenkomst waarbij de verhuurder de verplichting op zich neemt aan de huurder een zaak of gedeelte daarvan in gebruik te verstrekken, en de huurder zich verbindt tot een tegenprestatie. Vaak wordt het huurrecht in verband gebracht met de verhuur van huizen of kamers. Het huurrecht is echter ook van toepassing op het huren van een fiets of een auto.',
-                'video' => '',
+                'title' => 'Belasting',
+                'subtitle' => 'Wat is belastingaangifte?',
+                'description' => 'Een aangifte die je jaarlijks doet bij de belastingdienst. Veel jongeren vergeten het te doen, maar je kan geld
+ontvangen van de overheid. Zelfs nog van 4 jaar geleden!',
+                'video' => NULL,
                 'created_at' => '2019-10-07 12:55:00',
-                'updated_at' => '2019-10-08 09:39:08',
+                'updated_at' => '2019-11-01 14:28:01',
             ),
         ));
-
-
+        
+        
     }
 }

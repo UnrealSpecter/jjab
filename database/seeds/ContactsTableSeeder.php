@@ -12,8 +12,12 @@ class ContactsTableSeeder extends Seeder
      */
     public function run()
     {
+        
+
+        \DB::table('contacts')->delete();
+        
         \DB::table('contacts')->insert(array (
-            0 =>
+            0 => 
             array (
                 'id' => 1,
                 'phone_number' => '06 22654017',
@@ -22,12 +26,11 @@ class ContactsTableSeeder extends Seeder
                 'house_number' => '5',
                 'postal_code' => '7811 HH',
                 'residence' => 'Emmen',
-                // 'anbi' => null,
                 'created_at' => '2018-03-07 22:18:35',
                 'updated_at' => '2018-03-07 22:18:35',
             ),
         ));
-
-
+        
+        
     }
 }

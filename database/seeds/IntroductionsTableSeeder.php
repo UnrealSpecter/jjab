@@ -12,18 +12,22 @@ class IntroductionsTableSeeder extends Seeder
      */
     public function run()
     {
+        
+
+        \DB::table('introductions')->delete();
+        
         \DB::table('introductions')->insert(array (
-            0 =>
+            0 => 
             array (
                 'id' => 1,
                 'title' => 'Hallo!',
-                'subtitle' => 'Wij zijn Stiching Jeugd Juridisch Advies.',
-                'text' => 'Wij zijn een stichting gericht op het helpen van jongeren door jongeren.
-We bieden jongeren gratis juridische advies. Onze medewerkers een juridische achtergrond. Hiermee
-kunnen wij diverse vragen beantwoorden of helpen bij juridische zaken.',
+                'subtitle' => 'Wij zijn Stiching Jeugd Juridisch Advies Bureau',
+                'text' => 'Wij zijn een stichting gericht op het gratis helpen van jongeren met juridische vragen in de breedste zin van het woord.',
+                'created_at' => NULL,
+                'updated_at' => '2019-10-24 12:39:33',
             ),
         ));
-
-
+        
+        
     }
 }
