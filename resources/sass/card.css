@@ -1,5 +1,5 @@
 .card {
-    @apply w-full mb-16 p-10 leading-tight text-white text-1.5rem rounded-jjab shadow-md bg-jjab-purple
+    @apply w-full leading-tight text-white text-1.5rem rounded-jjab shadow-md bg-jjab-purple
 }
 
 @screen tablet-portrait {
@@ -22,6 +22,6 @@
 
 @screen desktop {
     .card {
-        @apply w-1/4 h-300px text-2rem
+        @apply w-1/4 h-300px text-2rem p-40 mb-20
     }
 }
