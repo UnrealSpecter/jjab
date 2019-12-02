@@ -39,7 +39,7 @@ function playLogoAnimation(){
 
 function startEmergence(){
 
-    if(scaledDevice){
+    if(!scaledDevice){
         emergence.init({
             container: window,
             reset: true,
