@@ -11,11 +11,9 @@ window.onload = function(){
 };
 
 var hidden = 'hidden';
-var scaledDevice = false;
 function playLogoAnimation(){
 
     if(window.devicePixelRatio == 1.25 ){
-        scaledDevice = true;
         document.body.style.zoom = "80%";
     }
 
@@ -39,35 +37,33 @@ function playLogoAnimation(){
 
 function startEmergence(){
 
-    if(!scaledDevice){
-        emergence.init({
-            container: window,
-            reset: true,
-            handheld: true,
-            throttle: 250,
-            elemCushion: 0,
-            offsetTop: 0,
-            offsetRight: 0,
-            offsetBottom: 0,
-            offsetLeft: 0,
-            callback: function(element, state) {
-                if (state === 'visible') {
+    emergence.init({
+        container: window,
+        reset: true,
+        handheld: true,
+        throttle: 250,
+        elemCushion: 0,
+        offsetTop: 0,
+        offsetRight: 0,
+        offsetBottom: 0,
+        offsetLeft: 0,
+        callback: function(element, state) {
+            if (state === 'visible') {
 
-                    var element = $(element);
+                var element = $(element);
 
-                    var hasAnimated = element.data('has-animated');
+                var hasAnimated = element.data('has-animated');
 
-                    animation = element.data('animation');
+                animation = element.data('animation');
 
-                    if(!hasAnimated) {
-                        playAnimation(element, animation);
-                    }
-
+                if(!hasAnimated) {
+                    playAnimation(element, animation);
                 }
-            }
 
-        });
-    }
+            }
+        }
+
+    });
 
 }
 
