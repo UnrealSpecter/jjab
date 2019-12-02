@@ -15,7 +15,7 @@ var hidden = 'hidden';
 function playLogoAnimation(){
 
     if(window.devicePixelRatio == 1.25 ){
-        document.body.style.zoom = "75%";
+        document.body.style.zoom = "80%";
     }
 
     history.pushState('', '', window.location.pathname);
