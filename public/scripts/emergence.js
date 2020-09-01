@@ -13,8 +13,8 @@ window.onload = function(){
 var hidden = 'hidden';
 function playLogoAnimation(){
 
-    if(window.devicePixelRatio == 1.25 ){
-        document.body.style.zoom = "80%";
+    if(window.devicePixelRatio >= 1.25 ){
+        document.body.style.zoom = "75%";
     }
 
     history.pushState('', '', window.location.pathname);
