@@ -13,9 +13,11 @@ window.onload = function(){
 var hidden = 'hidden';
 function playLogoAnimation(){
 
-    if(window.devicePixelRatio >= 1.25 ){
-        document.body.style.zoom = "75%";
-    }
+
+
+    console.log(window.devicePixelRatio);
+
+
 
     history.pushState('', '', window.location.pathname);
 
@@ -31,7 +33,16 @@ function playLogoAnimation(){
     playAnimation(orangeShape, 'animated fadeIn duration-1s delay-1s');
     playAnimation(text, 'animated fadeInUp duration-1s delay-1s');
     playAnimation(nav, 'animated fadeInDown delay-1s');
-    playAnimation(pageTransition, 'animated fadeInUp delay-2s', startEmergence());
+
+    if(window.devicePixelRatio >= 1.20 ){
+        document.body.style.zoom = "75%";
+        $('.invisible').removeClass('invisible');
+        $('#logo-animation-wrapper').addClass('mt-200px');
+        $('#wat-doen-wij').addClass('mt-200px');
+    }
+    else {
+        playAnimation(pageTransition, 'animated fadeInUp delay-2s', startEmergence());
+    }
 
 }
 

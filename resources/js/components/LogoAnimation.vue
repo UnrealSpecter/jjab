@@ -1,6 +1,6 @@
 <template>
 
-    <div class="w-4/5 tablet-landscape:w-3/4 laptop:w-3/5 h-screen absolute flex flex-row justify-center items-center">
+    <div id="logo-animation-wrapper" class="w-4/5 tablet-landscape:w-3/4 laptop:w-3/5 h-screen absolute flex flex-row justify-center items-center">
             <img
                 id="blue-shape"
                 alt="blue part of the jjab logo"

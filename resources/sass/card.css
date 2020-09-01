@@ -22,6 +22,6 @@
 
 @screen desktop {
     .card {
-        @apply w-1/4 h-300px text-2rem p-40 mb-20
+        @apply w-1/4 h-300px text-2rem p-30px mb-20
     }
 }

@@ -8,7 +8,7 @@
         <div id="vue">
 
             <!-- LOGO ANIMATION & EYE CATCHER. -->
-            <wrapper id="#jurdisch-advies-jongeren" class="bg-white min-h-screen flex-center" title="title one">
+            <wrapper id="jurdisch-advies-jongeren" class="bg-white min-h-screen flex-center" title="title one">
                 <container class="desktop:absolute top-0 h-screen">
                     <brand-menu></brand-menu>
                     <logo-animation></logo-animation>
@@ -16,7 +16,7 @@
             </wrapper>
 
             <!-- INTRODUCTION WRAPPER -->
-            <wrapper id="#wat-doen-wij" class="min-h-screen" title="title one">
+            <wrapper id="wat-doen-wij" class="min-h-screen" title="title one">
                 <container>
 
                     <!-- PAGE TRANSITION -->
