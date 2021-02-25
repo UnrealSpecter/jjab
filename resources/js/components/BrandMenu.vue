@@ -17,7 +17,7 @@
         </div>
 
         <!-- non-mobile -->
-        <div id="menu-wrapper" class="invisible pointer-events-none tablet-portrait:visible tablet-portrait:pointer-events-auto fixed tablet-portrait:relative tablet-portrait:visible bg-jjab-purple tablet-portrait:bg-transparent px-10 tablet-portrait:px-2 top-0 left-0 h-screen w-screen tablet-portrait:h-auto tablet-portrait:w-full tablet-portrait:flex flex-row justify-between flex-grow leading-none tablet-portrait:py-3 laptop:py-2">
+        <div id="menu-wrapper" class="invisible pointer-events-none h-full w-full tablet-portrait:visible tablet-portrait:pointer-events-auto fixed tablet-portrait:relative tablet-portrait:visible bg-jjab-purple tablet-portrait:bg-transparent px-10 tablet-portrait:px-2 top-0 left-0 tablet-portrait:h-auto tablet-portrait:w-full tablet-portrait:flex flex-row justify-between flex-grow leading-none tablet-portrait:py-3 laptop:py-2">
             <span id="close-button" class="absolute h-24 top-0 right-0 flex-center text-3rem tablet-portrait:hidden mr-5">x</span>
             <a href="#jurdisch-advies-jongeren" class="whitespace-no-wrap tracking-2px h-24 tablet-portrait:h-20 flex-center text-3rem tablet-portrait:text-1.25rem tablet-landscape:text-1.75rem laptop:text-2.5rem px-3 tablet-landscape:px-10">JJAB</a>
             <a href="#kennisbank" class="whitespace-no-wrap tracking-2px h-16 tablet-portrait:h-20 flex-center tablet-portrait:text-1rem text-1.75rem tablet-landscape:text-1rem laptop:text-1.75rem  ">Kennisbank</a>

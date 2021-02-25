@@ -12926,7 +12926,9 @@ video {
   border-radius: 2rem;
   -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
           box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  background-color: #622a70
+  background-color: #622a70;
+  padding: 30px;
+  margin-bottom: 5rem
 }
 
 @media (min-width: 768px) {
@@ -12954,9 +12956,7 @@ video {
   .card {
     width: 25%;
     height: 300px;
-    font-size: 2rem;
-    padding: 30px;
-    margin-bottom: 5rem
+    font-size: 2rem
   }
 }
 

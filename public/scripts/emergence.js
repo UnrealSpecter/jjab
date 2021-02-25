@@ -37,6 +37,7 @@ function playLogoAnimation(){
     if(window.devicePixelRatio >= 1.20 ){
         document.body.style.zoom = "75%";
         $('.invisible').removeClass('invisible');
+        $('#menu-wrapper').addClass('invisible');
         $('#logo-animation-wrapper').addClass('mt-200px');
         $('#wat-doen-wij').addClass('mt-200px');
     }

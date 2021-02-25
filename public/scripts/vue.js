@@ -52511,7 +52511,7 @@ var staticRenderFns = [
       "div",
       {
         staticClass:
-          "w-full flex flex-row justify-center items-end relative h-300px tablet-portrait:h-600px laptop:h-500px desktop:h-700px"
+          "w-full flex flex-row justify-center items-end relative h-400px tablet-portrait:h-600px laptop:h-500px desktop:h-700px"
       },
       [
         _c("img", {
@@ -52526,7 +52526,7 @@ var staticRenderFns = [
           "div",
           {
             staticClass:
-              "w-3/5 phone-landscape:w-1/3 tablet-portrait:w-1/2 top-0 pt-100px tablet-portrait:pt-200px laptop:w-1/4 laptop:pt-200px desktop:pt-250px absolute"
+              "w-3/5 phone-landscape:w-1/3 tablet-portrait:w-1/2 top-0 pt-150px tablet-portrait:pt-200px laptop:w-1/4 laptop:pt-200px desktop:pt-250px absolute"
           },
           [
             _c(
@@ -52828,7 +52828,7 @@ var staticRenderFns = [
           "div",
           {
             staticClass:
-              "invisible pointer-events-none tablet-portrait:visible tablet-portrait:pointer-events-auto fixed tablet-portrait:relative tablet-portrait:visible bg-jjab-purple tablet-portrait:bg-transparent px-10 tablet-portrait:px-2 top-0 left-0 h-screen w-screen tablet-portrait:h-auto tablet-portrait:w-full tablet-portrait:flex flex-row justify-between flex-grow leading-none tablet-portrait:py-3 laptop:py-2",
+              "invisible pointer-events-none h-full w-full tablet-portrait:visible tablet-portrait:pointer-events-auto fixed tablet-portrait:relative tablet-portrait:visible bg-jjab-purple tablet-portrait:bg-transparent px-10 tablet-portrait:px-2 top-0 left-0 tablet-portrait:h-auto tablet-portrait:w-full tablet-portrait:flex flex-row justify-between flex-grow leading-none tablet-portrait:py-3 laptop:py-2",
             attrs: { id: "menu-wrapper" }
           },
           [
